@@ -185,59 +185,75 @@ export function buildStringFromParams(paramsStr, defs = {}) {
 
 // Create or update a database file
 // Adapted from https://github.com/FlashpointProject/FPA-Rust/blob/master/crates/flashpoint-database-builder/src/main.rs
-export async function updateDatabase() {
+export async function updateDatabase(createNew = false) {
 	if (updateInProgress) return;
 	updateInProgress = true;
 
-	const lastUpdated = new Date().toISOString();
-	const createNew = !getPathInfo(config.databaseFile)?.isFile;
-	const afterDate = searchStats.lastUpdated;
 	logMessage(`${createNew ? 'building new' : 'updating'} database...`);
+	const oldLastUpdated = createNew ? '1970-01-01' : searchStats.lastUpdated;
+	const newLastUpdated = new Date().toISOString();
 
-	// Fetch and apply platforms
-	const platsRes = await fetchFromFpfss(`platforms?after=${afterDate}`);
+	// Fetch platforms and tags
+	logMessage('fetching platforms and tags...');
+	const [platsRes, tagsRes] = await Promise.all([
+		fetchFromFpfss(`platforms?after=${oldLastUpdated}`),
+		fetchFromFpfss(`tags?after=${oldLastUpdated}`),
+	]);
+
+	// Apply platforms
 	logMessage(`applying ${platsRes.length} platforms...`);
 	await fp.updateApplyPlatforms(platsRes.map(plat => propsToCamel(plat)));
 
-	// Fetch and apply tags and tag categories
-	const tagsRes = await fetchFromFpfss(`tags?after=${afterDate}`);
+	// Apply tags and tag categories
 	logMessage(`applying ${tagsRes.categories.length} categories...`);
 	await fp.updateApplyCategories(tagsRes.categories);
 	logMessage(`applying ${tagsRes.tags.length} tags...`);
 	await fp.updateApplyTags(tagsRes.tags.map(tag => propsToCamel(tag)));
 
-	// Fetch and apply pages of games until there are none left
-	let totalAppliedGames = 0;
+	// Fetch pages of games until there are none left
+	const gamesToApply = {
+		games: [],
+		addApps: [],
+		gameData: [],
+		tagRelations: [],
+		platformRelations: [],
+	};
 	let pageNum = 1;
 	let afterId;
 	while (true) {
-		const gamesRes = await fetchFromFpfss(`games?broad=true&after=${afterDate}` + (afterId ? `&afterId=${afterId}` : ''));
-		logMessage(`applying page ${pageNum} of games... (total: ${totalAppliedGames + gamesRes.games.length})`);
-		pageNum++;
+		logMessage(`fetching page ${pageNum} of games... (total: ${gamesToApply.games.length})`);
+		const gamesRes = await fetchFromFpfss(`games?broad=true&after=${oldLastUpdated}` + (afterId ? `&afterId=${afterId}` : ''));
 		if (gamesRes.games.length > 0) {
-			totalAppliedGames += gamesRes.games.length;
+			pageNum++;
 			afterId = gamesRes.games[gamesRes.games.length - 1].id;
-			await fp.updateApplyGames({
-				games: gamesRes.games.map(game => propsToCamel(game)),
-				addApps: gamesRes.add_apps.map(addApp => propsToCamel(addApp)),
-				gameData: gamesRes.game_data.map(gameData => propsToCamel(gameData)),
-				tagRelations: gamesRes.tag_relations,
-				platformRelations: gamesRes.platform_relations
-			}, 'flashpoint-archive');
+			gamesToApply.games.push(...gamesRes.games.map(game => propsToCamel(game)));
+			gamesToApply.addApps.push(...gamesRes.add_apps.map(addApp => propsToCamel(addApp)));
+			gamesToApply.gameData.push(...gamesRes.game_data.map(gameData => propsToCamel(gameData)));
+			gamesToApply.tagRelations.push(...gamesRes.tag_relations);
+			gamesToApply.platformRelations.push(...gamesRes.platform_relations);
 		}
 		else
 			break;
 	}
 
+	// Apply games
+	logMessage(`applying ${gamesToApply.games.length} games...`)
+	await fp.updateApplyGames(gamesToApply, 'flashpoint-archive');
+
 	if (!createNew) {
-		// Fetch and apply deleted games
-		const deletionsRes = await fetchFromFpfss(`games/deleted?after=${afterDate}`);
-		deletionsRes.games = deletionsRes.games.map(deletion => propsToCamel(deletion));
+		// Fetch deleted games and game redirects
+		logMessage('fetching deleted games and game redirects...');
+		const [deletionsRes, redirectsRes] = await Promise.all([
+			fetchFromFpfss(`games/deleted?after=${oldLastUpdated}`),
+			fetchFromFpfss('game-redirects'),
+		]);
+
+		// Apply deleted games
 		logMessage(`applying ${deletionsRes.games.length} game deletions...`);
+		deletionsRes.games = deletionsRes.games.map(deletion => propsToCamel(deletion));
 		await fp.updateDeleteGames(deletionsRes);
 
-		// Fetch and apply game redirects
-		const redirectsRes = await fetchFromFpfss(`game-redirects`);
+		// Apply games redirects
 		logMessage(`applying ${redirectsRes.length} game redirects...`);
 		await fp.updateApplyRedirects(redirectsRes.map(redirect => ({
 			sourceId: redirect.source_id,
@@ -249,10 +265,16 @@ export async function updateDatabase() {
 	logMessage('optimizing database...');
 	await fp.optimizeDatabase();
 
+	// Get platform and tag lists
+	const [platforms, tags] = await Promise.all([
+		fp.findAllPlatforms(),
+		fp.findAllTags(),
+	]);
+
 	// Build search info
 	logMessage('building search info...');
 	searchInfo.value.platforms = {};
-	for (const platform of await fp.findAllPlatforms())
+	for (const platform of platforms)
 		searchInfo.value.platforms[platform.name] = platform.name;
 
 	// Build search stats
@@ -261,40 +283,38 @@ export async function updateDatabase() {
 	const searchFilter = newSubfilter();
 	search.filter.subfilters.push(searchFilter);
 
-	// Get grand total
+	// Get grand total entries
+	logMessage('getting grand total entries...')
 	searchStats.total = await fp.countGames();
 
-	// Get total games
+	// Get total games and animations
+	logMessage('getting total games and animations...')
 	searchFilter.exactWhitelist.library = ['arcade'];
 	searchStats.games = await fp.searchGamesTotal(search);
+	searchStats.animations = searchStats.total - searchStats.games;
 
-	// Get total animations
-	searchFilter.exactWhitelist.library = ['theatre'];
-	searchStats.animations = await fp.searchGamesTotal(search);
-
-	// Get total GameZIP entries
+	// Get total GameZIP and Legacy entries
+	logMessage('getting total GameZIP and Legacy entries...')
 	searchFilter.exactWhitelist.library = undefined;
 	searchFilter.higherThan.gameData = 0;
 	searchStats.gameZip = await fp.searchGamesTotal(search);
-
-	// Get total Legacy entries
-	searchFilter.higherThan.gameData = undefined;
-	searchFilter.equalTo.gameData = 0;
-	searchStats.legacy = await fp.searchGamesTotal(search);
+	searchStats.legacy = searchStats.total - searchStats.gameZip;
 
 	// Get totals for each platform
+	logMessage('getting total entries for each platform...');
 	searchFilter.equalTo.gameData = undefined;
 	const platformTotals = [];
-	for (const platform of await fp.findAllPlatforms()) {
+	for (const platform of platforms) {
 		searchFilter.exactWhitelist.platforms = [platform.name];
 		platformTotals.push([platform.name, await fp.searchGamesTotal(search)]);
 	}
 	searchStats.platforms = platformTotals.toSorted((a, b) => b[1] - a[1]);
 
 	// Get totals for each tag (capped by tagStatsLimit)
+	logMessage('getting total entries for each tag...');
 	searchFilter.exactWhitelist.platforms = undefined;
 	const tagTotals = [];
-	for (const tag of await fp.findAllTags()) {
+	for (const tag of tags) {
 		if (filteredTags.extreme.includes(tag.name) || filteredTags.stats.includes(tag.name)) continue;
 		searchFilter.exactWhitelist.tags = [tag.name];
 		tagTotals.push([tag.name, await fp.searchGamesTotal(search)]);
@@ -302,10 +322,10 @@ export async function updateDatabase() {
 	searchStats.tags = tagTotals.toSorted((a, b) => b[1] - a[1]).slice(0, tagStatsLimit);
 
 	// Commit time of last update
-	searchStats.lastUpdated = lastUpdated;
+	searchStats.lastUpdated = newLastUpdated;
 
 	// Export search data
-	logMessage('exporting search data...');
+	logMessage('exporting search info and stats...');
 	Deno.writeTextFileSync('data/search.json', JSON.stringify(searchInfo, null, '\t'));
 	Deno.writeTextFileSync('data/stats.json', JSON.stringify(searchStats, null, '\t'));
 

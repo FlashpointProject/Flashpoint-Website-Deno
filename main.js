@@ -191,6 +191,7 @@ function initGlobals() {
 // Load/update/build Flashpoint database
 async function initDatabase() {
 	const firstRun = globalThis.fp === undefined;
+	const createNew = firstRun && !utils.getPathInfo(config.databaseFile)?.isFile;
 
 	// Load the database
 	globalThis.fp = new FlashpointArchive();
@@ -199,13 +200,13 @@ async function initDatabase() {
 	if (firstRun) {
 		if (flags['update']) {
 			// Update and exit if --update flag is passed
-			await utils.updateDatabase();
+			await utils.updateDatabase(createNew);
 			Deno.exit(0);
 		}
-		else if (!utils.getPathInfo(config.databaseFile)?.isFile) {
-			// If database doesn't exist, initiate database build alongside server
+		else if (createNew) {
+			// If database was just created, start database build alongside server
 			utils.logMessage('no database found, starting database build');
-			utils.updateDatabase();
+			utils.updateDatabase(createNew);
 		}
 		else if (config.updateOnLaunch)
 			utils.updateDatabase();
@@ -215,7 +216,7 @@ async function initDatabase() {
 
 	// Update the database on a set interval
 	if (config.updateFrequency > 0)
-		globalThis.updateInterval = setInterval(utils.updateDatabase, config.updateFrequency * 60 * 1000);
+		globalThis.updateInterval = setInterval(() => utils.updateDatabase(), config.updateFrequency * 60 * 1000);
 }
 
 // (Re)start the web server

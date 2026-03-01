@@ -194,10 +194,6 @@ export async function updateDatabase() {
 	const afterDate = searchStats.lastUpdated;
 	logMessage(`${createNew ? 'building new' : 'updating'} database...`);
 
-	// Initialize new database
-	const fp = new FlashpointArchive();
-	fp.loadDatabase(config.databaseFile);
-
 	// Fetch and apply platforms
 	const platsRes = await fetchFromFpfss(`platforms?after=${afterDate}`);
 	logMessage(`applying ${platsRes.length} platforms...`);

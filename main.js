@@ -190,7 +190,13 @@ function initGlobals() {
 
 // Load/update/build Flashpoint database
 async function initDatabase() {
-	if (globalThis.fp === undefined) {
+	const firstRun = globalThis.fp === undefined;
+
+	// Load the database
+	globalThis.fp = new FlashpointArchive();
+	fp.loadDatabase(config.databaseFile);
+
+	if (firstRun) {
 		if (flags['update']) {
 			// Update and exit if --update flag is passed
 			await utils.updateDatabase();
@@ -203,10 +209,6 @@ async function initDatabase() {
 		}
 		else if (config.updateOnLaunch)
 			utils.updateDatabase();
-
-		// Load the database
-		globalThis.fp = new FlashpointArchive();
-		fp.loadDatabase(config.databaseFile);
 	}
 	else if (globalThis.updateInterval !== undefined)
 		clearInterval(updateInterval);

@@ -12,6 +12,7 @@
 		"scripts": [],
 		"fragments": [
 			"index",
+			"index_categories",
 			"index_entry",
 			"entry",
 			"entry_codeblock",

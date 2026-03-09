@@ -202,22 +202,27 @@ export const namespaceFunctions = {
 
 			// Build header and navigation buttons
 			const getNewsButton = (path, def, clickable) => clickable ? `<a href="/news${path}">${defs[def]}</a>` : `<b>${defs[def]}</b>`;
-			let newsIndexEntriesHeader = defs['All_News'];
+			let entriesHeaderDef = 'All_News';
 			if (pathSegments.length == 2) {
 				switch (pathSegments[1]) {
-					case 'articles': newsIndexEntriesHeader = defs['All_Articles']; break;
-					case 'videos': newsIndexEntriesHeader = defs['All_Videos']; break;
-					case 'changelogs': newsIndexEntriesHeader = defs['All_Changelogs']; break;
+					case 'articles': entriesHeaderDef = 'All_Articles'; break;
+					case 'videos': entriesHeaderDef = 'All_Videos'; break;
+					case 'changelogs': entriesHeaderDef = 'All_Changelogs'; break;
 				}
 			}
 
-			// Build news index HTML
-			const newsIndexHtml = utils.buildHtml(templates['news'].index, Object.assign({}, defs, {
+			// Build news index categories HTML
+			const newsIndexCategoriesHtml = utils.buildHtml(templates['news'].index_categories, Object.assign({}, defs, {
 				allNewsButton: getNewsButton('', 'All_News', pathSegments.length > 1),
 				articlesButton: getNewsButton('/articles', 'Articles', pathSegments[1] != 'articles'),
 				videosButton: getNewsButton('/videos', 'Videos', pathSegments[1] != 'videos'),
 				changelogsButton: getNewsButton('/changelogs', 'Changelogs', pathSegments[1] != 'changelogs'),
-				indexEntriesHeader: newsIndexEntriesHeader,
+			}));
+
+			// Build news index HTML
+			const newsIndexHtml = utils.buildHtml(templates['news'].index, Object.assign({}, defs, {
+				categories: newsIndexCategoriesHtml,
+				entriesHeader: defs[entriesHeaderDef],
 				entries: newsIndexEntryArr.join('\n'),
 			}));
 			return { content: newsIndexHtml };

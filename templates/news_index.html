@@ -1,17 +1,11 @@
 <div class="fp-content-header">@{Header}</div>
 @{Index_Para1}
 <div class="fp-content-spacer"></div>
-<div class="fp-news-index-categories-container">
-	<div class="fp-news-index-categories">
-		<span class="fp-news-index-category">@{allNewsButton}</span>
-		<span class="fp-news-index-category">@{articlesButton}</span>
-		<span class="fp-news-index-category">@{videosButton}</span>
-		<span class="fp-news-index-category">@{changelogsButton}</span>
-		<span class="fp-news-index-category"><a href="/news/discord">@{Discord_Archive}</a></span>
-	</div>
-</div>
+@{categories}
 <div class="fp-content-spacer"></div>
 <div class="fp-news-index-entries">
-	<div class="fp-news-index-entries-header">@{indexEntriesHeader}</div>
+	<div class="fp-news-index-entries-header">@{entriesHeader}</div>
 	@{entries}
 </div>
+<div class="fp-content-spacer"></div>
+@{categories}

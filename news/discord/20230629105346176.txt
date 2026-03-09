@@ -1,0 +1,19 @@
+# @everyone
+
+It's been a hot minute since FP 11.1 released, but we're closing in on FP 12 pretty fast. There's a lot of changes so I'm going to keep them brief. If you want to take a look at FP 12 **(and the ~5,000 newly added games and animations)** you can find the preview release at the bottom of this post but be aware you may still come across some bugs!
+
+## 👥 Community
+- After a lot of discussion we're changing our name to **Flashpoint Archive**. It's been a while since BlueMaxima stepped down from an active role and we want to let the project stand proud on its own two feet. Long live BlueMaxima!
+- The help channels have been replaced with the Discord forum system. (#help) Individual posts should now make it easier for your questions to be answered as well as help people address the specifics of your problems.
+- The archived channels at the bottom of the server list have been reorganized and categorized for more convenient viewing and access. Historical notes are also in the process of being added to the archived channel descriptions. Feel free to browse through them if you're curious about the history of the project or just want to learn more trivia about the Flashpoint Discord server.
+
+## 📁 Content
+- We have an installer now. With the new Flashpoint Manager, you can pick and choose components you want and update FP and its components. No more downloading a whole new copy of Infinity, it's all done in the Manager now.
+- On-demand updates are finally live. Going forward you'll receive updates with new games and animations, fixes for existing games, and updates to game metadata all without having to wait for another release.
+- Core is deprecated, and curating is now all done in the new launcher. Content Patches are also done in the new launcher now, enable Editing in the Config menu to access the Curate menu and more. Core's utilities are included in the Manager in the "Extras" category.
+- The launcher now tracks your game playtime. This feature is not used for analytics and can be disabled and cleared on the Config page.  You're able to sort by Last Played and Playtime statistics and can use `has:played` and `not:played` in the Search bar to filter some out entirely.
+- Ultimate releases will take a short break and won't be available in FP 12 upon release. These releases have become quite large, around 2TB, and it takes weeks to prepare them. We're taking this time to reconsider how we'll handle them in the future, possibly moving to a twice-yearly release schedule in summer and winter.
+- We have slowly reduced the number of Legacy games to around 23,000. If you want to help us bring the rest to the new format, you can either zip them yourself following: https://flashpointarchive.org/datahub/Content_Patches or you can turn on the Analytics to provide us extra info to assist us in repacking them.
+
+## :flashpoint: FP 12 Installer (Preview)
+### https://github.com/FlashpointProject/FlashpointComponentTools/releases/download/1.0-rc8/FlashpointInstaller.exe

@@ -1,0 +1,13 @@
+Let's go over the new features of this release really quickly.
+
+\* Flashpoint Infinity has probably benefited the most from 5.3. It's leagues ahead in terms of being beginner friendly.
+\* We cut the size down several hundred megabytes by including low quality Flash logos by default. This is helped out massively by...
+\* Integrated support for downloading other tech and screenshots! No more 'download three zips and extract them on top of eachother' nonsense. Just go to the home tab in the launcher and click the Download buttons. Once they've downloaded and extracted, restart Flashpoint Launcher and everything will be in place.
+\* Support in the router for file streaming from supported servers. This will make files download part by part, instead of waiting for the whole thing, if you're on a supported server. Here's the cool part though: remember Flash loading bars? Guess what you can watch on Infinity now...(this also helps with reliability. You probably won't need to close and reopen a game while it's downloading.)
+\* There's also a couple more things, such as download progress being displayed in the Logs tab, and a fix for an annoying bug that's been bothering us for months.
+\* We have a new tech! 3D Groove GX is a plugin that previously only worked on Internet Explorer 6. Yes, SIX. It only has one game, but hey, we've built it.
+\* Unity, Shockwave, and Flash have been updated in several ways to improve their compatibility.
+\* Four new playlists! Three by me, one by nosamu.
+\* The usual set of updated games, fixes and updates to the database. You can see (most) of them in the changelog, as always.
+
+(One thing I forgot to mention: there's no Flashpoint Theatre, for this release. We're working on that. Stay tuned.)

@@ -384,6 +384,17 @@ export function trimSlashes(str) {
 	return str.replace(/^[/]+(.*?)[/]*$/, '$1').replace(/\/+/g, '/');
 }
 
+// Get a fancy localized date string from a generic one
+export function getFormattedDate(date, lang) {
+	if (!date || date.length < 10) return null;
+	return new Intl.DateTimeFormat(lang, {
+		dateStyle: 'long',
+		timeStyle: date.length > 10 ? 'long' : undefined,
+		timeZone: 'UTC',
+		hour12: false,
+	}).format(new Date(date));
+}
+
 // Run Deno.lstat without throwing error if path doesn't exist
 export function getPathInfo(path) {
 	try { return Deno.lstatSync(path); } catch {}

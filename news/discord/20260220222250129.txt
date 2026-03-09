@@ -1,0 +1,14 @@
+Hi everyone,
+
+If you've used 9o3o at all over the past couple weeks, you may have noticed that it has received a significant update. Here are the big changes:
+
+- **Shockwave support via DirPlayer**, bringing the total number of supported platforms to 4. But before anyone gets their hopes up, let me be clear that **the vast majority of Shockwave content does not work yet**. This is fine - DirPlayer is very early in development, and our hope is that adding support for it will bring in more testers and help it improve faster. You can find DirPlayer on GitHub here: https://github.com/igorlira/dirplayer-rs
+- **The built-in entry browser is back**, so you no longer have to rely on an out-of-sync external search tool. It features a similar interface to the launcher and supports all of the same advanced search parameters (ie. ⁨`developer:"Tom Fulp"`⁩). Unsupported entries are hidden by default, but can be unhidden by adding ⁨`?everything=true`⁩ to the URL.
+- **An info panel and file browser** has been added to the entry player, containing the entry's full metadata and zipped file contents. You can even use the file browser to emulate other supported files belonging to the entry, if they exist inside the zip.
+- **The database now auto-updates** every 24 hours, which means that 9o3o and its entry browser will always be in sync with the launcher. You can see the time of the last update in the newly-added footer bar.
+- **Compatibility ratings have been removed**. This was a very old system that was not very future-proof and has long passed the point where it was most useful. If you find an entry that is not being emulated correctly, I highly suggest opening an issue in the respective emulator's issue tracker.
+- **A whole lot of other small improvements** that are too long to fit in one message.
+
+Enjoy: https://ooooooooo.ooo/browse
+
+@9o3o @Notification Squad

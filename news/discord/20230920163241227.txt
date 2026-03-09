@@ -1,0 +1,7 @@
+^ just found out this works only on windows 11, because windows 10 does not have the `zstd` binary included by default, whoops
+
+On windows 10, you would have to download the windows release of zstd (zstd-v1.5.5-win64.zip) and add the `zstd.exe` file to your PATH or move it to a directory that's in your PATH already
+
+https://github.com/facebook/zstd/releases/tag/v1.5.5
+
+... or use the ultimate updater, that saves you the hassle with extracting the archive completely

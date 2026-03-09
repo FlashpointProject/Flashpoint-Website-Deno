@@ -1,0 +1,24 @@
+# 🗒️ Flashpoint Infinity 14 Changelog
+
+# New
+- **Games:**
+  - When launching a game, if there is existing game data and there has been new game data added via a metadata update, then the user is asked whether it should update to the new game data or stay on the existing one
+    - If the launch command has changed in the new game data, the user is warned that updating could cause existing save data to break
+  - Play / Download button now additional dropdown options for Flash games which will override Ruffle settings:
+    - `Run with Flash Player` - Force the game to use the default launch command
+    - `Run with Ruffle` - Force the game to use Ruffle. This will change to tell you if the game is not marked as Supported by Flashpoint.
+- **Playlists:**
+  - Playlists can now utilize all search features
+  - Playlist ordering can disabled to use the traditional ordering dropdowns inside them
+  - You can now create Playlists from the current Search Results. (Very large results views will cause significant lag when being created or viewed)
+- **Search:**
+  - Checkbox selections for - `Installed`, `Legacy Game`, `Use Playlist Order`
+  - Dropdowns selections for - `Library`, `Developer`, `Publisher`, `Series`, `Play Mode`, `Platform` and `Tags`
+    - Dropdown selections can include or exclude individual items, as well as toggle between `AND` / `OR` search operations
+  - New keybinds:
+    - `Ctrl+F` - Focus the search bar
+    - `Ctrl+D` - Clear the search text
+    - `Ctrl+Shift+D` - Clear the search text and filters
+- **Extensions:**
+   - `getAccessToken()` - Returns the FPFSS access token for the logged in user to allow extensions to perform actions on their behalf. User will be prompted to allow or deny when called. (@dot-mike)
+   - `DialogState` now contains an `mdx` boolean field and `textAlign` string field. Setting this to true will compile and run the message as MDX. (Markdown + JSX)

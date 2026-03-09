@@ -1,0 +1,5 @@
+**Minor Launcher Update:**
+- Usernames are now removed from Log Uploads. (@oblivioncth)
+- Game Data can now have application path and launch command changed via the Game Data Browser
+- Updated to use FPFSS scoped permissions. (If you have an app that could make use of FPFSS auth, you can now request to register your application for this. Ask staff)
+- Make protocol registration a user preference. (@oblivioncth)

@@ -5,4 +5,5 @@ data/flashpoint.sqlite-shm
 data/flashpoint.sqlite-wal
 data/search.json
 data/stats.json
+utilities/discord_message.json
 .vscode/

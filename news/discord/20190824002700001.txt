@@ -1,0 +1,7 @@
+This concept of Flash files being removed from the internet resulting in them being lost is what we're here to stop, and just because Ruffle might let people play Flash games in browsers after 2020 doesn't mean we're going to halt things here. Games are still at risk of going down even with Ruffle around. Hell, we have multiple games that don't exist in a complete form on the internet anymore, which I consider a great success on our part. Not to mention our support for other tech like Shockwave and Unity Web Player and Silverlight and what have you. Not even beginning to think of games that rely on external servers or have sitelocks or...
+
+With that said though, I wish the Ruffle project the best luck possible in making Flash preservation easier, and hopefully better than the official binaries; if they do end up with benefits over the official binaries I'd be happy to include them in Flashpoint as an alternative. I'm going to leave a link to the Ruffle Discord server below; if you have a good knowledge of Flash, Rust or both, please go and help out if you can. The faster a project like this is done, the better for all of Flash as a whole. If there's anyone that can make this happen, it's probably these guys.
+
+https://discord.gg/3rYN56c
+
+(And for those of you who are a little annoyed to be annoyed about a beep like this, well...if you have 300GB of space free, there's a present for you waiting in the bottom of #downloads.)

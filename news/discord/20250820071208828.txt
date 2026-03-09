@@ -1,0 +1,10 @@
+@Flashpoint Ultimate
+## Flashpoint Ultimate 14 Status Update
+
+Flashpoint Ultimate 14 is still planned to release by the end of the month. If you'd like to opt into testing, please see the pinned message in the #ultimate-feedback . Only a few GB may need to be redownloaded on release if we make any changes, the rest of the data will be identical from testing to release.
+
+14 is currently standing at 2.3 TB, a 600 GB increase from 13's 1.7 TB.
+
+14 will ship with an experimental launcher (optional). This will allow you to load Images and Game Data directly from the Ultimate packaged zips without having to extract them, meaning only the Base, Extras and Htdocs packages (around 300 GB) will need to be extracted.
+
+Whilst we may release an update package the size would be enormous, so we're still debating whether that's worth it right now. Doing so takes a few days just to generate in any case, so if we do, it may come after releasing the full package.

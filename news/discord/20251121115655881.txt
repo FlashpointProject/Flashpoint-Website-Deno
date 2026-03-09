@@ -1,0 +1,9 @@
+# 🛠️ Downtime
+
+FPFSS will be taking some downtime while we upgrade it for Logo and Screenshot update support.
+
+This is a breaking change, so if you aren't already up to date you'll need to update the launcher to 14.0.3 to continue receiving updates. (Some existing users may still see 14.0.2 despite being on 14.0.3)
+
+The database component and zipped copy will be updated shortly as well.
+
+**UPDATE:** Downtime is over, if you have issues please say in #help per usual.

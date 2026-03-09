@@ -177,7 +177,8 @@ function initGlobals() {
 	globalThis.endpoints = JSON.parse(Deno.readTextFileSync('data/endpoints.json'));
 	globalThis.locales = getLocales();
 	globalThis.templates = getTemplates();
-	globalThis.newsInfo = JSON.parse(Deno.readTextFileSync('data/news.json'));
+	globalThis.newsInfo = getNewsInfo();
+	globalThis.discordInfo = JSON.parse(Deno.readTextFileSync('data/discord.json')).toSorted((a, b) => a.id - b.id);
 	globalThis.searchInfo = JSON.parse(Deno.readTextFileSync(utils.getPathInfo('data/search.json')?.isFile ? 'data/search.json' : 'data/search_template.json'));
 	globalThis.searchStats = JSON.parse(Deno.readTextFileSync(utils.getPathInfo('data/stats.json')?.isFile ? 'data/stats.json' : 'data/stats_template.json'));
 	globalThis.viewInfo = JSON.parse(Deno.readTextFileSync('data/view.json'));
@@ -292,4 +293,27 @@ function getTemplates() {
 	};
 
 	return templates;
+}
+
+// Return news entry info
+function getNewsInfo() {
+	const newsInfo = JSON.parse(Deno.readTextFileSync('data/news.json'));
+	newsInfo.sort((a, b) => {
+		// Sort by date first
+		let compare = new Date(b.date).getTime() - new Date(a.date).getTime();
+		// If dates are equal, sort by type of news entry
+		if (compare == 0 && a.namespace != b.namespace) {
+			const priorityList = ['changelogs', 'articles', 'videos'];
+			const aIndex = priorityList.findIndex(namespace => namespace == a.namespace);
+			const bIndex = priorityList.findIndex(namespace => namespace == b.namespace);
+			compare = bIndex - aIndex;
+		}
+		// If both news entries have the same type, sort by ID
+		if (compare == 0)
+			compare = b.id - a.id;
+
+		return compare;
+	});
+
+	return newsInfo;
 }

@@ -1,0 +1,9 @@
+@Flashpoint Ultimate hey folks, there is an issue with the ultimate archive, if you launch any game, you will most likely be prompted to install the required components to run it, even though the components are present.
+
+You need to update the file `Manager/fpm.cfg`
+
+The first line it this file says `C:\Flashpoint` which breaks things if your ultimate is not on this path. You need to change the line to `..\` to make it work on any path.
+
+I'll make personally sure to triple-check the next release of Ultimate, but we have some issues in this one (to be honest, historically we have some small issues with almost every ultimate release lol)
+
+We'll also most likely switch back to 7z with the next one, the world is not ready for zstd yet 💀

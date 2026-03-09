@@ -1,0 +1,15 @@
+## ⌨️ Usability
+
+Most of the usability changes in the launcher itself are coming for the Curate page, but we've got bits and pieces elsewhere too.
+- Most pages now stay hidden instead of unmounting, retaining their state which makes swapping between tabs without losing what you were doing much better. (Editing games, browsing the manual, etc)
+  - This also makes it marginally faster to switch between most pages
+- Logs page no longer tanks performance when there's lots of logs
+- The zoom slider now works on both the Logs and Browse pages, with unique preferences for each
+- 404's in the logs page now have their own class name, allowing themes to color them differently
+- Curation loading no longer blocks startup, massively improving load times for people with lots of curations
+- Curation content is only fetched when you've first selected a curation on the Curate page
+- Curation content trees will no longer tank performance
+- Most time consuming actions now use a nice toast notification instead of tasks or nothing at all
+- FPFSS edits will now only sync tags once per launcher run
+
+We're also including a bespoke context menu component to standardize the behaviour across operating systems. This replaces the existing context menus and can be changed with themes. Quite happy with how this one turned out.

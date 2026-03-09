@@ -1,0 +1,7 @@
+I'm going to clarify that this will only impact at worst, 2.7% of the games we currently have.
+
+People still make a living off web games. People still have actively developed games with communities behind them. It would be inappropriate of us to block out their income and make their communities difficult to reach. This would only be worsened by how quick it is to get content included into Flashpoint now. These changes help us ensure that we aren't acting against the development of new web games and can signpost people to them directly.
+
+Once a game has been safely archived (Uploaded, tested, verified and imported) the metadata will remain visible but playing a game will open it in your browser instead. When a game goes down, passes the threshold or is otherwise exempt, we can toggle the switch and it'll start using the archived copy.
+
+As always, if you have more questions the general chat is open.

@@ -1,0 +1,1 @@
+(One more thing, there's a new version of the Flashpoint Cache Dumper that supports Windows 9x era machines. See #web-cache for more details on that, if you have an old PC that might have games for us on it.)

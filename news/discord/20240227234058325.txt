@@ -1,0 +1,21 @@
+Since it'll be a little while before Flashpoint 13 arrives, so I wanted to write about upcoming changes now rather than do it all in one big post on release. There'll probably be more of these later!
+
+Given I work on the software development side anything I post will likely focus on that. For today, I want to focus on how some Launcher functionality has been moved to its own library.
+
+# FPA Rust Library
+
+`flashpoint-archive` is a Rust crate that's been written from the ground up to provide all database operations (and a few other utilities) we use in the Flashpoint Launcher. It's easier to us to maintain, and having that logic separated from the Launcher makes it easier for third parties to use. `@fparchive/flashpoint-archive` is also available for Nodejs. Docs will come later.
+
+For this post, I'd like to focus on the search system.
+
+## Search Queries
+
+**The search system has been rewritten from scratch.** Queries have been restructured and support more complex searches with nested queries and fancier comparisons. The library also contains a parser function to turn a user's text input into a query object ready to pass to search functions.
+
+Searches will now also support:
+- **Exact matches** - `series="Sonic RPG"` - An equals sign can be used in place of the semi-colon to exactly match instead of fuzzy matching.
+- **Numerical comparisons** - `tags>5` - Greater than (`>`), less than (`<`) and equals (`=`) are valid for `tags`, `platforms`, `gameData`, and `addApps` to return results with a specific number of each.
+- **Date comparisons** - `dateAdded=2021` - Greater than (`>`), less than (`<`) and equals (`=`) are valid for `dateAdded`, `dateModified` and `releaseDate` to return results in a specific date range to the accuracy given in the format `YYYY-MM-DD`. Examples of valid dates: `2021`, `2021-02`, `2021-02-12`
+- **New Ordering Options** - **Platform** returns, and **Release Date** joins as a new one.
+
+I'll probably talk about performance gains in another post. 🙂

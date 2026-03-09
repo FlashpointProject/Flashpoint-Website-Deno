@@ -1,0 +1,10 @@
+@Flashpoint Ultimate
+Flashpoint Ultimate 14 should (fingers crossed) be ready in the next couple of weeks. It will follow the same style of 13's release with a collection of 50GB zips.
+
+In the meantime, we'd like feedback on 2 things we're looking into:
+- Would you use an optional update package for 13 -> 14? This would require manually running a script included, not just copying the contents.
+- Would you prefer incremental updates for future releases, or keep with the full repack for every release? These updates would apply automatically via the launcher after they're unpacked. 
+E.G Ultimate 16 = Ultimate 14 Base + Ultimate 15 Update + Ultimate 16 Update, vs a full set of zips for Ultimate 15 onwards?
+
+Please respond in the channel below. You can also use this for general feedback.
+#ultimate-feedback

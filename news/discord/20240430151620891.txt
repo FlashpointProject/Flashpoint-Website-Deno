@@ -1,0 +1,8 @@
+@Flashpoint Ultimate
+The Flashpoint Ultimate 13 torrent has been updated to support HTTPS connections from our own server.
+
+This should resolve the seeding issue. If you want to apply the changes to your existing torrent, add `https://ult.unstable.life` to your HTTP Sources / URL List for it.
+
+*If your torrent folder is* **Flashpoint Ultimate 13** *then grab a fresh download. It should be* **13_packed** 
+
+(Apologies for the double post, discord being whacky)

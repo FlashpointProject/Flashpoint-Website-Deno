@@ -1,0 +1,26 @@
+# :futurewave:  Flashpoint Ultimate 14 - Kingfisher
+
+**Total Size** - 2.28 TB
+
+Flashpoint Ultimate 14 is now available for download. Aside from bringing up to date with Infinity, we're including an experimental launcher (detailed below) to drastically reduce installation time at the cost of boot time and memory usage.
+
+As with 13, it is separated into a collection of roughly 50GB zips. These can be downloaded and unpacked in any order, though Base should be applied last.
+- **GameData** - Data for GameZipped games - *1.88 TB*
+- **Htdocs** - Data for Legacy games - *290 GB*
+- **Images** - All game logos and screenshots - *96 GB*
+- **Extras** - Unrelated game extras - *23 GB*
+- **Base** - Everything else (Launcher + Software) - *3.8 GB*
+
+**Experimental Launcher (Optional)**
+Separately we are including an experimental launcher which allows loading of images and gamezips directly out of Ultimate packaged zips. **Do not** extract your GameData and Images zips, and instead copy / symlink them into `Flashpoint Ultimate/Data/ArchiveData/` (e.g `Flashpoint Ultimate/Data/ArchiveData/GameData_1.zip`). This is available in `ExperimentalLauncher.7z` and must be extracted last. It requires Win 10 x64 or above. This will not load Ultimate 13 zips.
+
+**Download:**
+- Torrent - https://download.unstable.life/FlashpointUltimate14.torrent
+- Direct Download - https://download.unstable.life/ultimate-direct/
+ - We highly recommend to use a download manager like [Motrix](https://motrix.app/) or [FDM](https://www.freedownloadmanager.org/). Browser downloads are likely to corrupt.
+ - Please read the [README.txt](https://download.unstable.life/ultimate-direct/README.txt) for better instructions on how to install Ultimate Direct
+
+**Update:**
+We're skipping an update for 14. Future Ultimate releases will build incrementally on existing GameData and Image zips, meaning you'll be able to reuse old content when grabbing any future Ultimate releases.
+
+@Flashpoint Ultimate

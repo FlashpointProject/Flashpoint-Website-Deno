@@ -1,0 +1,3 @@
+After the LTT video, we gained 1500 additional daily users :Patrick:
+
+For those who don't know, these dashboards are public and available here: https://flashpoint-analytics.unstable.life/ and this is what you contribute to when you enable analytics in Flashpoint (also, you help us collect what files games request to catch missing files and to help with packing legacy non-zipped games) :cool_crab:

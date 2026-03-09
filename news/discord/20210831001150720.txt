@@ -1,0 +1,4 @@
+**Next version:** Still coming along fine. While there haven't been many new games added as of right now, there has been a few thousand metadata fixes merged in. Hopefully that'll make the browsing experience that much smoother. It's also worth noting that the game count is just, barely, under 100,000, but we do have enough games in the pipeline that by this time next month, that number will probably have broken 110k. The Upcoming Games and Animations sections of their respective Master Lists are always up to date, if you want to keep up to speed on that front.
+
+https://bluemaxima.org/flashpoint/datahub/Game_Master_List
+https://bluemaxima.org/flashpoint/datahub/Animation_Master_List

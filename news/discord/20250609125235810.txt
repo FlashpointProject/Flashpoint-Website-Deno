@@ -1,0 +1,9 @@
+# :newgrounds: Newgrounds Auditorium 2025 (Preview Download)
+
+We've got something a little different to show off today, a preview build for an extensive update to an existing project tailored to a massive collection of animation on Newgrounds. This is primarily for feedback and bug reports, so make sure you're comfortable with some rough edges.
+
+Newgrounds Auditorium was a collection of 130k animations from Newgrounds as of July 2018. This was put together with a very old version of the Flashpoint Launcher compared to Flashpoint Archive and lacked a lot of the searchability and detailed metadata that we can now support.
+
+This new version has roughly 135k animations with complete sets of metadata with things like detailed developer credits, view counts, user scores and frontpage / daily / weekly trophies, even some premade playlists based on the official Newgrounds collections, along with some very fancy new functionality to make the UI specially tailored to Newgrounds content. Hopefully the screenshot speaks for itself.
+
+The build available right now functions the same as Infinity, although there will be an Ultimate style when we've got something stable too. Please make sure to extract it to its own folder.

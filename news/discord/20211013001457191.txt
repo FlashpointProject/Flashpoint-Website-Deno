@@ -1,0 +1,9 @@
+We've fixed some more problems in 10.1. The main ones being 32-bit support, some Shockwave games not working, and some Neopets games not working. This'll be the last fix for a while.
+
+For Infinity, just download Flashpoint again. This'll be update 10.1.0.3.
+
+For Ultimate, we've collected all these previous fixes since 10.1's launch into one zip file. Download it below and extract it into your extracted 10.1 Ultimate folder, overwriting everything you're asked to. (This will overwrite your current preferences and playlists as it replaces both the database and the preferences file.)
+
+https://bluemaxima.org/flashpoint/Flashpoint%2010.1.0.3%20Ultimate%20patch.zip
+
+Sorry for the trouble once again.

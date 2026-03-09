@@ -1,0 +1,17 @@
+**It's been a while since we've had a progress focused post, got a technical things for you today.**
+
+## :flashpoint:  Flashpoint Game Server
+
+The QEMU GameZIP server has given us a lot of hassle since it was introduced. It was bulky, overengineered and generally refused to work for arbitrary reasons. Flashpoint Game Server is our home-grown replacement that's getting closer to stable release. It’s written in Go, should be pretty fast, less error prone and much easier to maintain. Reducing the server components file size from 220mb to 10mb is a nice bonus. Even if you don't know why this is a good thing, just believe me, anybody who has provided support in the help channels does! @Krum110487 put a lot of effort into getting this all to work.
+
+## :Ruffle: Ruffle
+
+Most of you will be aware of Ruffle already. It’s an open source Flash Player emulator that in the past few years especially has made enormous strides in game compatibility. We’ve had a Ruffle extension available for a while but it was pretty basic.  We’re going to be supporting Ruffle in a more complete fashion going forward, and in the future we'll likely be changing some games to use Ruffle by default.
+
+You’ll be able to deeply configure and use Ruffle on a per-game basis without your settings being overridden by a metadata update. Extensions will be able to benefit from all the changes made for this too. There’s a lot of technical details for how this works, but this post would be 4x as long if I kept going.
+
+## Testing
+
+We’d appreciate more testing and feedback on these changes especially. **If you want to help, then please create a new Flashpoint install first.**  To get development changes - Open the Flashpoint Manager, go to settings, swap to the development channel then press save and restart. Finally, go to the Update Components tab and let everything update.
+
+Details for how to use Ruffle on the development release channel will be posted later on.

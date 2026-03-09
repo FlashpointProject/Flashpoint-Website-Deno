@@ -1,0 +1,3 @@
+Expect some downtime on services as we undergo a migration.
+
+Disruption should be kept to a minimum, and which services are available at a given time may change.

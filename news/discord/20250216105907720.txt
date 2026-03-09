@@ -1,0 +1,4 @@
+## Known Issues
+- Launcher fails to open on Windows 7 machines - *unknown whether this can be fixed currently*
+
+Flashpoint Infinity 13 with the most recent database and software updates at the time of 14s release can be found here. Whilst you won't receive metadata updates, game downloads will continue to work for the forseeable future. Deleting the Manager folder should prevent the update prompts from showing: https://download.flashpointarchive.org/archive/infinity/

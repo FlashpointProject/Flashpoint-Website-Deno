@@ -1,0 +1,38 @@
+# :flashpoint: Flashpoint Infinity 13 - Dart Frog
+
+**Total Games Count** (2024-03-28) - **200,350**
+
+We passed 200k entries! 🎉  
+
+Flashpoint 13 has been focussed on building a better technical foundation. Whilst most of this is invisible, you'll still find improvements like much faster search times, more comprehensive search options and fancier results pages when ordering by Playtime or Last Played. There are plenty of small fixes and improvements elsewhere too.
+
+Ultimate 13 is planned to release during April.
+
+### Notable Changes
+
+* **Significantly faster search times**
+* Ordering by Last Played or Playtime now behaves like a history page by excluding games with no playtime from the search results.
+* Improved search capabilities
+  * Date comparisons for `dateAdded`, `dateModified`, `releaseDate` and `lastPlayed` (e.g `releaseDate=2009`)
+  * Numerical comparisons for `tags`, `platforms`, `addApps`, `gameData`, `playCount` and `playtime` (e.g `tags>3`)
+    * Date and Numerical comparisons support `>`, `<` and `=` comparators (`:` is equal to `=`)
+  * Numerical values support time values, e.g `playtime>1h30m` for **s**ecs, **m**ins, **h**ours, **d**ays, **w**eeks, **M**onths and **y**ears.
+* 3 new playlists:
+  * GOTD 2023, Kongregate Kongs and Gamehouse Games
+* Grid view is now the default, you can change back to List with the bottom right dropdown
+***Full patch notes available in post above***
+
+**Update:**
+Just use the bottom left Update button in the Launcher.
+
+**Download:**
+https://flashpointarchive.org/downloads
+
+**Want to support the project?**
+Curate 📁 : https://flashpointarchive.org/datahub/Curation_Tutorial
+Donate 🪙 : https://opencollective.com/flashpointarchive
+Translate 📖 : https://crowdin.com/project/flashpoint-launcher
+
+**Reminder:**
+Please regularly update your database to receive game updates. You can do so by hitting the Update button on the home page, in the top left corner.
+@everyone

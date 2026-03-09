@@ -1,0 +1,7 @@
+Two more things I feel the need to talk about:
+
+\* There's been news recently that Adobe has added a 'killswitch' into the latest versions of the Adobe Flash Player, which means they can stop Flash working in browsers and on PCs at will. We can't be sure if this has made its way into other Flash-related things on the web (think Newgrounds Player, or Supernova, etc.), but what we can guarantee is that Flashpoint is not and will not be affected by this killswitch. We're using versions older than the killswitch, and we won't be updating until we're sure we can either disable said killswitch, or if our methods don't contain the killswitch. Be calm and carry on.
+
+\* In relation to that, our logo, while a lovely beast of combining old and new Flash logos is great, considering the expanded scope of the project and the potential of someone breathing down our necks, we're open to suggestions for new Flashpoint logos. If you have an artistic drive and feel like you can come up with something that'll pass my ridiculously high barrier, please, feel free to send off a message on #logo-discussions.
+
+8.1 is available from #downloads now, with more mirrors coming as we can make them. Enjoy.

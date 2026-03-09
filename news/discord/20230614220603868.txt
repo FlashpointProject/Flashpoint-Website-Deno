@@ -1,0 +1,11 @@
+Hi, 
+
+Development of Flashpoint 12 keeps steady, with an experimental launcher available in #notification-squad's pinned posts. This is a major step as submissions will be available in the application as soon they are verified by staff, and metadata/content edits become integrated into the launcher. No expected release date as of now. Life gets in the way and stuff. But we're working hard on improving the gigantic complex machinery that is powering the development of Flashpoint in the background, whenever we have the time and energy to do so. Remember that our developers and game curators (and everyone else) are all doing this as a hobby and completely for free ❤️
+
+In other news, you may have noticed that r/FlashpointArchive has been recently gone private; this is due to a global protest prompted by changes in Reddit's API pricings. We do not have current plans to reactivate the subreddit, but general help can be still provided here.
+
+We also invite you to check our new social media presence at Lemmy and Fosstodon:
+https://lemmy.ml/c/flashpointarchive
+https://fosstodon.org/@flashpointarchive
+
+Until next time.

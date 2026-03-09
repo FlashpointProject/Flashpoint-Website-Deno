@@ -1,0 +1,6 @@
+If you have a bug that causes your Flashpoint window to disappear when you try to un-maximise the window, you can do the following:
+
+1) Open the preferences.json file with a text editor like Notepad, find the line that says "x": (number), and change the number to 0, save the file and open Flashpoint and the problem should be solved
+2) Redownload Flashpoint, it's been fixed there
+
+Sorry about that.

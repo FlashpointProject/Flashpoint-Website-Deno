@@ -1,0 +1,3 @@
+We're aware of an issue affecting the availability of `infinity.unstable.life`. This will affect on-demand image loading and roughly 10% of Infinity games which are still Legacy. Please be patient. :AngryFaic:
+
+**Things should be behaving again**

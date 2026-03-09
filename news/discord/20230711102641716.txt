@@ -1,0 +1,12 @@
+Bit of a follow up with a few technical issues we've been having with FP 12's release:
+
+**Windows Defender** - If the manager or installer is being flagged as a trojan, please make sure your Windows Defender virus definitions are up to date. They should be **1.393.34.0** if you're up to date as of writing. You can check this via **Windows Security** -> **Virus & threat protection** -> **Virus & threat protection updates**
+
+**Download Issues** -  The installer now available through the site should allow you to retry downloads of individual components. We're still not sure why some people are struggling so much, but we'll keep looking at ways to ease people with poor connections especially. We're also having some server issues that might be contributing so just be patient. **If you've been having issues please try now** - If it still isn't working, please use this https://download.unstable.life/static/fp1211072023.7z
+
+**HTML5 Games** - If you're struggling to get HTML5 games to run with a prompt to install the support pack, please do a software update via the bottom left button in the launcher then try again. If you used the default install options you will not have to download the HTML5 support pack again even though it says it will, it will just mark it as installed next time it tries, but you will still need to follow these steps. If you're still struggling please ping me.
+
+I'll be editing this post as necessary rather than posting a new one.
+
+# Yes, the server is struggling. If you keep dropping connection please try the alternate download link on the site, or in the paragraph above
+(It's not faster, but you might not disconnect as often as the installer at the moment)

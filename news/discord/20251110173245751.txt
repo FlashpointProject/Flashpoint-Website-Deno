@@ -1,0 +1,24 @@
+# :flashpoint:  Status Update - November 2025
+
+It's been almost a year since I last wrote a status update. The need for them has slowed over time, but we've got quite a bit in the works and I figured now felt about right for another.
+
+With 14.0.3 we already shipped the functionality for updates for Logos and Screenshots. By the end of the year the server side work will be done and you'll start seeing improved images for some games. (I'm aware the text still says 14.0.2, that'll get fixed later!)
+
+Looking forward to 14.1.0 (version name pending) there's a lot to look at.
+
+## Flashpoint Launcher
+
+I'm breaking this up into 3 sections
+- **Performance and Maintainability** - Changes to make the launcher faster and easier to maintain
+- **Usability** - Changes shipping with the launcher that most users should notice and benefit from
+- **Extensions** - A fairly comprehensive look at what's changing with extensions and why it'll benefit most users
+
+## 🛠️ Performance and Maintainability
+
+This has been a huge and frankly time consuming part of development for the past 6+ months. Whilst this matters much more if you're a developer, this all has a knock on effect to making everything else easier to work on.
+- Stripped out almost all manual memoization so we can use the new React Compiler for easier to read code and performance improvements
+- Added support for running in a browser during development for hot reloading of components and more modern dev tools without being restricted to an ancient version of Electron
+- Added context isolation and removed node integration from the renderer, which has been an ongoing job for years
+- Restructured most components to use the application store where possible instead of passing down props and avoid hard to diagnose re-renders
+- Rewrote most of the remaining class components into more friendly functional components
+- Shrunk the launcher by around 20% by bundling the backend, main and preload sections ahead of packaging

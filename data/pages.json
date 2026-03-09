@@ -13,14 +13,16 @@
 		"fragments": [
 			"index",
 			"index_entry",
-			"index_tag",
 			"entry",
 			"entry_image",
 			"entry_codeblock",
 			"entry_video",
 			"entry_youtube",
 			"article_imageset",
-			"article_twitter"
+			"article_twitter",
+			"discord",
+			"discord_message",
+			"discord_attachment"
 		],
 		"lenient": true
 	},

@@ -1,0 +1,8 @@
+Hello again!
+
+Here with a short mention of a long running issue being fixed with Flashpoint 13 that'll likely relate to a lot of you reading.
+## Game Duplicates
+
+If you've had games miraculously vanish from your Playlists (and you didn't forget to check your active tag filter groups) then you've probably had the ID of a deleted game in the list. The vast majority of deleted games are duplicates of others in the archive, and now we have live metadata it's become even easier to spot and remove them... but it also means these deleted IDs not loading from existing Playlists has become more frequent to see.
+
+Starting with FP 13, your database will contain a list of duplicate game IDs and their new game ID, **Game Redirects**, downloaded from FPFSS with each metadata update. Every time a duplicate game is deleted from the archive, it will leave a redirect to another, existing game. Anything using the old ID in places like Playlists will automatically substitute in the existing game that it was a duplicate of when required. For the most part this shouldn't be something you'll have to think about.

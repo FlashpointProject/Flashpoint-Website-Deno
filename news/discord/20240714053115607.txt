@@ -1,0 +1,11 @@
+Usually we wouldn't do this, but a little warning for everyone.
+
+The new discord scam going around to impersonate bot and Discord staff messages is very much real. They replace the clickable links in the text previously only available to Discord staff and bot messages to lead you to scam sites and steal login details.
+
+Luckily, when you click, it does give you a pop up and tells you where you're going, but please please be careful and don't click on untrusted hyperlinks from people you don't know!
+
+We've included an example below which leads to a youtube video.
+
+---
+
+:Thonk: Only you can see this • [Dismiss message](https://www.youtube.com/watch?v=dQw4w9WgXcQ)

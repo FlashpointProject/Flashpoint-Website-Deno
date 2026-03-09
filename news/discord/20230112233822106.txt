@@ -1,0 +1,15 @@
+@everyone ...we're actually on time. For once. Go figure.
+
+So. As promised in December, Flashpoint 11.1, "Operation Cherry Blossom", is now available. I wanted to try and have this out at this time, because we're just about to hit two years since Flash was forcibly executed at the hands of Adobe, not to mention the end of last year being the five year anniversary of me starting the project on a random Boxing Day by downloading a bunch of SWFs. It felt appropriate.
+
+Operation Cherry Blossom is an interim update. The goal was to fix as many broken things as possible; over 600 bigger fixes (alongside thousands of smaller ones) have been rolled out as part of this new version. Doesn't mean we didn't take time to add new stuff; 15,000 new entries join the database, bringing us to over 150,000 games.
+
+But after this, at least for me, it'll be the end. Operation Cherry Blossom (and its post-release patch) is the last time I'll be at the head of the Flashpoint project. It's been a ride, but it's time for me to step down and move onto other things. As a result, this may be the last major Flashpoint release for a while. I'll be hanging around the general chat channels for the next few days while we sort everything out. There's also some notes that I have here:
+
+\* Flashpoint as a project is not dead; the rest of the team is making the attempt to take over my role. I'm not promising any timetables or what not, this will be a generally difficult process.
+\* A second general chat channel has been opened temporarily as I imagine this news is quite a big deal and people may want more room to talk.
+\* We noticed a few extra problems while we were uploading 11.1, there will be a post release patch once we've sorted them out.
+\* The Mac and Linux versions have not been updated at this time due to a lack of maintainers.
+\* The project is always looking for help - ask for more info.
+
+#downloads and the site are updated. With all of that said...goodbye, and good luck in 2023.

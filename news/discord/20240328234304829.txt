@@ -1,0 +1,26 @@
+## 🛠️  Flashpoint 13 Infinity - Patch Notes
+
+* **Significantly faster search times**
+* Ordering by Last Played or Playtime now behaves like a history page by excluding games with no playtime from the search results.
+* Improved search capabilities
+  * Date comparisons for `dateAdded`, `dateModified`, `releaseDate` and `lastPlayed` (e.g `releaseDate=2009`)
+  * Numerical comparisons for `tags`, `platforms`, `addApps`, `gameData`, `playCount` and `playtime` (e.g `tags>3`)
+    * Date and Numerical comparisons support `>`, `<` and `=` comparators (`:` is equal to `=`)
+  * Numerical values support time values, e.g `playtime>1h30m` for **s**ecs, **m**ins, **h**ours, **d**ays, **w**eeks, **M**onths and **y**ears.
+* Search results can now also be ordered by `Release Date` and `Platform`
+* Improved log page visuals **(Theme authors will need to update)**
+* More information about the boot sequence is included in the logs page
+* Verbose logging (enabled via Config page) to display detailed database queries and launcher event execution time.
+* Game context menu buttons to:
+  * Show Logos / Screenshots in Explorer
+  * Delete individual game playtime tracking data
+* 3 new platforms since FP 12:
+  * WildTangent, Alice and Babyz Player
+* 3 new playlists:
+  * GOTD 2023, Kongregate Kongs and Gamehouse Games
+* Playlists now respect active Tag Filter Groups
+* Playtime tracking no longer modifies Date Modified
+* Grid view is now the default, you can change back to List with the bottom right dropdown
+* Simplified extension API interactions with tags and platforms **(Extension authors may need to update, consider using the @fparchive/flashpoint-archive npm package)**
+* Game configurations (middleware) are no longer supported. The functionality will be reintroduced at a later date.
+* Fixed tags / tag categories not being editable via their respective pages.

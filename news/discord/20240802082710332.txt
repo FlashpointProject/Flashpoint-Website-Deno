@@ -1,0 +1,15 @@
+# :flashpoint:  Status Update - August 2024
+
+The next major update is going to be focused on improvements for **Searching** and **Playlists**, this post covers the features we know we're including and wanted to show off. We don't have a time frame for release so please be patient but if you're feeling daring and don't mind potential breakages you can check out the ongoing changes on the development channel. *(Flashpoint Manager -> Settings)*
+
+## Search
+
+Aside from the gradual improvement in Search syntax, searching in Flashpoint has been largely untouched for a long time. We're making changes with focuses on making filtering accessible without needing to understand the syntax, and adding more options to personalise the search system to best match your needs.
+
+- New and easy to use search filters, there's a example attached but expect these to undergo changes before release.
+- **Ctrl + F** will focus the Search Bar
+- Config option - **Restore Search Results** *(default: on)* - Automatically saves and restores your search settings on each Search Page to persist between launches.
+- Config option - **Use Custom Views** *(default: off)* - You can replace the Library search pages (Games + Animations) with Custom Views. These will appear in the Header in the same way, but can have their own names and settings. You can also rename them and drag & drop to re-order them on the Header. Really useful in combination with Restore Search Results.
+- Config option - **Default Opening Page** *(default: Home Page)* - You can choose between the Home Page, or any existing Search Page to open when Flashpoint starts.
+
+*Part two below*

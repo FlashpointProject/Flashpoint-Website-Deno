@@ -1,0 +1,1 @@
+FP Ultimate updater should be live again - There's a new revision for 12, you should be prompted to upgrade. It'll re-validate any existing files, it won't redownload them all. Includes a few extra additions and the Extras folder which was missing last time.

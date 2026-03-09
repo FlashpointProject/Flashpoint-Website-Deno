@@ -1,0 +1,13 @@
+# :flashpoint: Flashpoint 12 Infinity - Axolotl
+
+Back for another post @everyone. As usual this release is much bigger and took much longer than we originally hoped for. Whilst a little lighter on games, this has arguably had the most complex technical changes to date. Whilst a lot of these changes are for curators, there's always a few new things for regular users to enjoy.
+
+You can find downloads on the main website here per usual, but please do read more below if you can: https://flashpointarchive.org/downloads
+
+If you have issues please use our new #help forum.
+
+*P.S. We'll have something a little later today we want to announce as well, hope you don't mind another ping later.* 😉 
+## :AngryFaic:  I just want to play games, what's changed for me?
+1) **Live Updates**. Flashpoint now serves updates for both the software it uses and the games you play straight out of the launcher. Whenever we add new games or update existing games you'll be able to get these immediately by pressing the big **Update** button in the top left. No waiting on a new release!
+
+2) **Playtime** and **Last Played** dates are now kept for games you play. These are *only kept locally* and inside the database. You can view this in the right sidebar when they're selected as well as order by either of them when using the search bar.

@@ -1,0 +1,2 @@
+We are aware of an(other) issue with the servers for Flashpoint Infinity. We're working on fixing the problem. Some games may not start/download correctly in the meantime.
+UPDATE: the problem may have disappeared on its own.

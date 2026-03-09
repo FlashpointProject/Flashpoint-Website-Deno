@@ -1,0 +1,7 @@
+@everyone Hello again. It's been almost a month since we started the fundraiser, so there should probably be an update.
+
+First off; we've raised over 3,000 euro from the fundraiser! (Technically it's a bit more than that, but PayPal is being a bit stingy, so it doesn't actually show on the page itself right now.) This is enough to backpay our man Dri0m for all the money he spent keeping the lights on around here over the past three years. With that said, the more we raise, the longer we can go on into the future. If you're unfamiliar with our fundraiser, here's a link to it again, or you can read above this message: https://gogetfunding.com/help-us-secure-funding-for-the-hosting-of-bluemaximas-flashpoint/
+
+And secondly, we've fixed the problems with the new build and replaced the old version of Infinity again - when you download Infinity from the site now, you'll get version 10.1.0.5. Just to go over the basics once more: **you don't have to upgrade if you don't want to, 10.1.0.3 still works**. Test as many games as you can in 10.1.0.5, and if any don't work, #bug-reports will always be your friend. We haven't made any other changes to .5 other than adding more zipped games, so games that were previously broken may still be broken - that's for bigger updates, sorry.
+
+That's it for now. See you next month.

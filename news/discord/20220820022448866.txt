@@ -1,0 +1,16 @@
+Hello, @everyone. We're about three weeks later than we hoped, but here we are: **Flashpoint 11**.
+
+Here's what's new:
+
+*What do I do with all these plugins?!*: We've added thirty-six new plugins. Yes, really. Hence 11's codename: *Oops, All Plugins!*
+*What do I do with this better launcher?!*: The newest version of the launcher has improved speed in searching and loading games, the manual as a tab in the launcher itself, and some very important bugfixes (we're hoping we got the preferences bug this time).
+*What do I do with Mac/Linux support?!*: We have official support for Mac and Linux now. The M/L versions support the biggest five platforms in FP - Flash, Shockwave, Unity, Java and HTML5 - which makes 98% of Flashpoint's library playable (with some exceptions).
+*What do I do with all these entries?!*: 40,000 new entries are in 11 - over 30,000 games and nearly 10,000 animations.
+
+There's also been a bunch of minor new additions: Updated languages, updated underlying software (enjoy a smaller Infinity, less RAM usage, and a rebranded browser), less duplicates, thousands of fixes, a new Animation Hall of Fame playlist...
+
+While all of these improvements and additions are available in Infinity right now, Ultimate is going to need a post-launch patch we'll be providing ASAP. Ultimate has approximately doubled in size this version, which has made it tricky to work with.
+
+Hopefully this will keep all of you satisfied while we work on the next release; we're going to be taking the time to change the way Flashpoint is worked on and it may take some time. We thank you for your patience.
+
+As always, downloads are available at the usual places - the website and #downloads.

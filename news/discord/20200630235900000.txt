@@ -1,0 +1,10 @@
+*LOOK SKYWARD AND REMEMBER,*
+*YOUR SPIRIT OF ADVENTURE CARRIES ON!*
+
+Hello @everyone, Flashpoint 8.1, "Spirit of Adventure" is now available! The last two months have brought plenty of updates to the table, and I want to take some time to talk about them in depth, because there's a few things you might want to know...
+
+First thing is new content count. Not as big as 8.0 by a long shot, but we still have 4,100 new games and 1,200 new animations. It's still a lot! Even with this being one of the smaller updates in the past few months, we still added a full Blu-Ray worth of size to Ultimate...and that's compressed.
+
+Second is that the launcher has received some massive updates. We've migrated to an SQLite database, for multiple reasons, mainly performance - the launcher should now be faster than ever, with limits imposed by those pesky XMLs gone. However, for the purpose of stress-testing, Infinity in particular has a new, somewhat exclusive feature...
+
+For those of you in the know, you'll know a while back that I and DarkMoe did a full scrape of Newgrounds, publishing it under the name Newgrounds Auditorium - it contained over 131,000 Flash animations from the site. Due to its overall size, however, it was impossible to integrate into Flashpoint proper, both filesize wise and with the ridiculous amount of entries it has. With Infinity and the new launcher version though, both problems are more or less solved, so for Infinity users only, we've integrated Auditorium into the launcher - you will find a new, third tab next to Games and Animations called NG Auditorium, that contains all 131,000 of these animations, ready to stream from the internet. (This can be duplicated in Ultimate; just ask if you want more details)

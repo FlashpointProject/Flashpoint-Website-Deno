@@ -1,0 +1,23 @@
+## :flashpoint:  Minor Launcher Update
+
+## New
+- AVG and Avast Antivirus users will see a one-time warning asking them to add a folder exception, with links to the wiki page and discord server.
+
+## Fixed
+
+- Search values containing special characters like `:` are correctly handled
+- Tag suggestion results on the Search bar and Curate page will only display the most recently requested suggestions
+- Tag suggestions will now be returned for `tag=` as well as `tag:`
+- Logs page `Copy Text` no longer returns a single monstrous line of text
+- Play counter is properly incremented (Fixes sort by playtime / last played)
+  - Existing games with playtime but no counter will have their counter set to 1
+- Updated tags will wipe all attached aliases before applying their changes
+- Curation imports via the Curate page are working again
+
+## Changed
+
+- Clicking a field in the sidebar will now search with `=` instead of `:`
+- Selected tag suggestions will now use `=` instead of `:`
+- Logs page `Copy Text` now returns in a format that is easier to read, and closer to the `launcher.log` file format.
+
+**Curators**: If you've curated games, it's recommended to reset your database to fix issues with tag aliases in loading submissions. (Delete database, open FP, then press update and wait ages)

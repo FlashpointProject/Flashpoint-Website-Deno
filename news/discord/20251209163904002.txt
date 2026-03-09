@@ -1,0 +1,14 @@
+# ⚠️ Anti-Virus Announcement
+
+There's been several reports of `services.swf` which is commonly used by Flash games using Mochiads being flagged by Windows Defender as `Trojan:JS/Redirector.ATKB!MTB`
+
+This is being flagged because of a use of the `window.location.replace()` Javascript function. The way it's used is not malicious, and is also never run in a context which can access the live internet. The full file contents has been listed below.
+
+Whilst we had submitted this as a false positive, Microsoft's security team (or the AI they've likely been replaced by these days) has upheld it. Since these detections hit the Windows network cache, there's not a realistic way for you to allow it through Defender.
+
+We'll post another update once we've figured out what we're doing to address this. This shouldn't prevent games from running, but if you spot one, please make a #help post.
+
+services.swf:
+```
+<html><head><title>Loading...</title></head><body><script type='text/javascript'>window.location.replace('http://www.mochiads.com/static/lib/services/services.swf?api_version=3.9.4%2Bas3&js=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJKb2tlbiIsImV4cCI6MTYzMDg4OTkyOCwiaWF0IjoxNjMwODgyNzI4LCJpc3MiOiJKb2tlbiIsImpzIjoxLCJqdGkiOiIycWgwdWNxdmJ1dWwwMDllY2MxZmtpYTciLCJuYmYiOjE2MzA4ODI3MjgsInRzIjoxNjMwODgyNzI4Mzc5MzQwfQ.9ri1i8ZxQXxXTao8JmDoIpk8mxsGGAM7eFh1mAZCykw&listenLC=__ms_1630882728156_24528&mochiad_options=undefined&sid=d47402e4-0e9c-11ec-89b2-2ef1843f6c10');</script></body></html>
+```

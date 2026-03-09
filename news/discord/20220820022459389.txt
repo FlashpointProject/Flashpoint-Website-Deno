@@ -1,0 +1,11 @@
+With that said, there's plenty more for us to announce as well:
+
+Our analytics have been - so far - for our eyes only, but we've finally made them public facing; you can see them by visiting this address: https://flashpoint-analytics.unstable.life/
+
+We want to help Ruffle develop as fast as we can, so we've set up a test page that plays a random Flashpoint entry via Ruffle for the purposes of quick fire testing: https://ooooooooo.ooo/
+
+We're also **looking for help** in many Flashpoint related ventures; if you have the time, please take a look at our Help Wanted List: https://bluemaxima.org/flashpoint/datahub/Help_Wanted_List
+
+#get-roles now exists for people who want to stay up to date with the Mac & Linux versions, and the Notification Squad.
+
+There's probably more we'll need to bring up, so watch this post!

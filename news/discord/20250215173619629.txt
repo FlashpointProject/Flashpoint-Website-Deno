@@ -1,0 +1,27 @@
+# Changed
+- Search Bar has been moved from the Header to the Browse page (Search Views)
+- Clear Search Button can now clear both text and filters if Shift is held while clicking it.
+- `Ctrl+Shift+R` to reload the window will now also reload all extensions (@dot-mike)
+- Linux:
+  - Wine installations bundled inside FPSoftware are now automatically added to PATH for launched games (@Maoijoon)
+- Importing games in the Curate tab now uses 7zip instead of Bluezip
+- Tags page now follows a custom sort order, starting with default.
+- All web request from the launcher use a consistent user agent (@dot-mike)
+
+# Fixed
+- Non-unicode characters inside preferences no longer prevent the Preferences file from saving
+- Search results are now correctly ordered with case insensitivity
+- Existing path values are no longer wiped from existing Game Data when a Game has a metadata update
+- Launching a game can now recover the path value when it is missing, preventing a launch error
+- 401 errors from Fpfss functions should now properly get the user to re-authenticate instead of throwing an error
+- Closing processes will work on new Windows distributions without WMIC installed
+- New platforms now correctly sort alphabetically on the Extras box of the Home page
+- Multiple blacklist conditions now properly use AND comparisons
+- Additional Apps now use the same proc launch function as Game with a randomized ID instead
+- Joint clauses (Application Path + Launch Command) now properly use inner ORs for blacklist conditions
+- `Open Flashpoint Manager` will now wait 2.5 seconds to fully open FPM before exiting the main process. Cheap, but effective.
+
+# Removed
+- Search bar no longer has `tag:` autocomplete. This may return in the future, the tags filter dropdown should be a reasonable replacement.
+- Playlists can no longer have multiple copies of the same game.
+- Bluezip is no longer included as an external tool

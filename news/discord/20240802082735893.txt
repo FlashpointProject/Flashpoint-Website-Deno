@@ -1,0 +1,9 @@
+## Playlists
+
+Playlists have been second class citizens for a while when it comes to interacting with everything else. These changes should bring them up to the standards we expect and give you a few new ways to make use of them.
+
+- **All** search functionality now works within Playlists
+- Playlist Ordering can be disabled to allow you to use the traditional order options
+- Drag & Drop re-ordering now also works in Grid view
+- You can now create a playlist from the current search results
+- Playlists are be downloadable via `flashpoint://playlist/add?url=https://path/to/playlist.json` links

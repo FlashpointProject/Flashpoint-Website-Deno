@@ -1,0 +1,1 @@
+For users on Windows 11 24H2, you may find that games occasionally do not fully close. This is something that will be addressed in future hotfix. It isn't something to worry about.

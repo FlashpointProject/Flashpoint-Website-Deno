@@ -1,0 +1,9 @@
+Another bugfix has been reported and fixed.
+
+Some of the metadata edits we made to the 10.1 database were found to be faulty, so we've reverted them and reuploaded Infinity.
+
+Ultimate is still affected by this problem, unfortunately; if you want to fix it, you may download the file here and replace flashpoint.sqlite in the Data folder: https://bluemaxima.org/flashpoint/flashpoint.sqlite
+
+Infinity users, as long as you don't mind your databases being wrong, you can leave it alone, otherwise, follow the above line's instructions or redownload Infinity.
+
+Sorry again.

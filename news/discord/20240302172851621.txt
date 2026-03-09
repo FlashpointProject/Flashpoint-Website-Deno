@@ -1,0 +1,9 @@
+Small 9o3o update
+
+If you're using https://ooooooooo.ooo/, then you might notice that the game browse page behind the [Browse] button has been replaced by https://flashpointproject.github.io/flashpoint-database/
+
+The reason is that the fancy game browser (which was literally web FP Launcher) was very difficult to maintain and some recent changes broke it, so away it goes forever. 9o3o is a side experiment so such things might happen once in a while.
+
+When you search for a game on our database search tool, there is a *Play at 9o3o* button in the top right corner which will redirect you to 9o3o, assuming the game is made in Flash.
+
+You might want to point out that there is no practical way to browse games in this search tool, and you would be correct. Eventually there will be something better.

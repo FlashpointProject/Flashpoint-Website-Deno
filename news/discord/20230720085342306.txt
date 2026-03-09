@@ -1,0 +1,11 @@
+Hey hi hello,
+
+As you may have noticed, some mysterious changes are being rolled into flashpoint over the last couple of days, such as that some games now redirect you to their original website instead of being playable in Flashpoint.
+
+We're changing our internal rules - content that's younger than 3 years (limit not final, exceptions apply) will now not be accessible through Flashpoint. That's all that changes for you as a user. You will still see the games and content in Flashpoint, but it will either direct you to the original page where you can play the game, or simply state that it's archived.
+
+This new rule is still a work in progress and the specific rules and exceptions are not finalized, so I can't answer your questions on what does this exactly apply to, but we're aiming to be reasonable about it.
+
+Submissions (curations) of such games are still accepted and will be stored until they fulfil the criteria to be released via Flashpoint.
+
+We're an archive first and foremost, and distributing a living, fresh content when it's still accessible by the original creators is not our goal (but archiving it is!). While we already respect all takedown requests, we're still implementing this rule mainly to minimize the risk of legal issues with the IP owners of all the content that we're distributing.

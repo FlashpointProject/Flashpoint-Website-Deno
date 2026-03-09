@@ -1,0 +1,3 @@
+Just pushed out a small update that should improve boot times and fixes the tags list being out of order in the sidebar.
+
+Expect another bug fix patch sometime next week.

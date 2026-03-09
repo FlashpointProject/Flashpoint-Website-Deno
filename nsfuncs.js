@@ -2,6 +2,7 @@ import { contentType } from 'jsr:@std/media-types@1.1.0';
 import { format } from 'jsr:@std/fmt@1.0.8/bytes';
 import { GameSearchSortable, GameSearchDirection, newSubfilter } from 'npm:@fparchive/flashpoint-archive';
 import { Marked } from 'npm:marked@17.0.1';
+import { markedEmoji } from 'npm:marked-emoji@2.0.2';
 
 import * as utils from './utils.js';
 
@@ -13,7 +14,7 @@ const idExp = /^[a-z\d]{8}-[a-z\d]{4}-[a-z\d]{4}-[a-z\d]{4}-[a-z\d]{12}$/;
 // Prevent language definitions from being consumed when parsing codeblocks
 const codeRenderer = token => {
 	const text = (token.lang != '' ? token.lang + '\n' : '') + token.text;
-	return utils.buildHtml(templates['news'].entry_codeblock, { text: articleMarked.parseInline(text) });
+	return utils.buildHtml(templates['news'].entry_codeblock, { text: utils.sanitizeInject(text) });
 };
 
 // Configure markdown parser for different types of news
@@ -27,19 +28,37 @@ const discordMarked = new Marked().use({
 			alt: token.text ? ` alt="${token.text}"` : '',
 		}),
 	},
-});
+}, markedEmoji({
+	emojis: {
+		AngryFaic: 'AngryFaic.png',
+		cool_crab: 'cool_crab.png',
+		flashpoint: 'flashpoint.png',
+		futurewave: 'futurewave.png',
+		K_Meleon: 'K_Meleon.png',
+		newgrounds: 'newgrounds.png',
+		Patrick: 'Patrick.png',
+		rip: 'rip.png',
+		Ruffle: 'Ruffle.png',
+		Squeak: 'Squeak.png',
+		SqueakpointLogoTransparentBG: 'SqueakpointLogoTransparentBG.png',
+		TankYeah: 'TankYeah.png',
+		Thonk: 'Thonk.png',
+		zuma: 'zuma.png',
+	},
+	renderer: token => `<img class="fp-news-discord-emoji" src="/images/news/discord/emojis/${token.emoji}" alt="${token.name}">`,
+}));
 const articleMarked = new Marked().use({
 	breaks: true,
 	renderer: {
 		image: token => {
 			// Create caption out of alt text
-			const caption = token.text != '' ? `<div class="fp-news-article-caption">${articleMarked.parseInline(token.text)}</div>` : '';
+			const caption = token.text != '' ? `<div class="fp-news-articles-caption">${articleMarked.parseInline(token.text)}</div>` : '';
 
 			// If the image URL is a video file, create a video embed
 			const videoMatch = token.href.match(videoExp);
 			if (videoMatch !== null)
 				return utils.buildHtml(templates['news'].entry_video, {
-					namespace: 'article',
+					namespace: 'articles',
 					file: token.href,
 					type: contentType(videoMatch[0]),
 				}) + '\n' + caption;
@@ -64,7 +83,7 @@ const articleMarked = new Marked().use({
 			// Otherwise, create an image or set of images
 			return utils.buildHtml(templates['news'].article_imageset, {
 				images: token.href.split('|').map(file => utils.buildHtml(templates['news'].entry_image, {
-					namespace: 'article',
+					namespace: 'articles',
 					file: file,
 					alt: '',
 				})).join('\n'),
@@ -99,50 +118,86 @@ export const namespaceFunctions = {
 	},
 	'news': (url, lang, defs) => {
 		const pathSegments = utils.trimSlashes(url.pathname).split('/').map(pathSegment => decodeURIComponent(pathSegment));
-		if (pathSegments.length == 1 || pathSegments.length == 3 && pathSegments[1] == 'tags') {
-			// Sort news entries from latest to oldest
-			const sortedNewsInfo = newsInfo.toSorted((a, b) => {
-				// Sort by date first
-				let compare = new Date(b.date).getTime() - new Date(a.date).getTime();
-				// If dates are equal, sort by type of news entry
-				if (compare == 0 && a.namespace != b.namespace) {
-					const priorityList = ['changelog', 'discord', 'article', 'video'];
-					const aIndex = priorityList.findIndex(namespace => namespace == a.namespace);
-					const bIndex = priorityList.findIndex(namespace => namespace == b.namespace);
-					compare = bIndex - aIndex;
-				}
-				// If both news entries have the same type, sort by ID
-				if (compare == 0)
-					compare = b.id - a.id;
-
-				return compare;
-			});
-
-			// Filter news entries by tag if one is specified in URL
-			const filteredNewsInfo = pathSegments.length == 3
-				? sortedNewsInfo.filter(newsEntry => newsEntry.tags.includes(pathSegments[2]))
-				: sortedNewsInfo;
-			if (filteredNewsInfo.length == 0)
+		if (pathSegments.length <= 3 && pathSegments[1] == 'discord') {
+			const years = [...new Set(discordInfo.map(discordEntry => discordEntry.posted.substring(0, 4)))].toSorted();
+			if (pathSegments.length == 3 && !years.includes(pathSegments[2]))
 				throw new utils.NotFoundError(url, lang);
 
-			// If filtering by tag, get a collection of the tags that will exist on the page
-			const validTags = new Set(pathSegments.length == 3 ? filteredNewsInfo.reduce((arr, cur) => arr.concat(cur.tags), []) : []);
+			// Build navigation buttons
+			const yearButtons = [pathSegments.length == 2 ? `<b>${defs['All_Posts']}</b>` : `<a href="/news/discord">${defs['All_Posts']}</a>`]
+				.concat(years.map(year => year == pathSegments[2] ? `<b>${year}</b>` : `<a href="/news/discord/${year}">${year}</a>`))
+				.map(yearButton => `<span class="fp-news-index-category">${yearButton}</span>`);
 
-			const newsIndexEntryArr = [];
-			const tagCounts = {};
-			for (const newsEntry of sortedNewsInfo) {
-				// Build tag totals
-				for (const tag of newsEntry.tags) {
-					if (validTags.size > 0 && !validTags.has(tag))
-						continue;
-					if (tagCounts[tag] !== undefined)
-						tagCounts[tag]++;
-					else
-						tagCounts[tag] = 1;
+			// Prepare Discord messages
+			const newsDiscordMessageArr = [];
+			for (const discordEntry of discordInfo) {
+				if (pathSegments.length == 3 && !discordEntry.posted.startsWith(pathSegments[2]))
+					continue;
+
+				// Build formatted date strings
+				const postedDate = utils.getFormattedDate(discordEntry.posted, lang) ?? defs['Unknown_Date'];
+				const editedDate = utils.getFormattedDate(discordEntry.edited, lang);
+
+				// Parse Discord message and build info strings
+				const content = discordMarked.parse(Deno.readTextFileSync(`news/discord/${discordEntry.id}.txt`)).trim();
+				const byline = utils.buildStringFromParams(
+					`${discordEntry.circa ? 'Discord_Byline2' : 'Discord_Byline1'},<b>,"${discordEntry.author}","${postedDate}"`, defs
+				);
+				const edited = editedDate === null ? '' : '<span class="fp-news-discord-edited">' + (
+					discordEntry.posted != discordEntry.edited
+						? utils.buildStringFromParams(`Discord_Edited2,"${editedDate}"`, defs)
+						: defs['Discord_Edited1']
+				) + '</span>';
+
+				// Prepare message attachments
+				const attachments = [];
+				for (const attachment of discordEntry.attachments) {
+					const fileExt = attachment.path && attachment.path.substring(attachment.path.lastIndexOf('.'));
+					let image = '';
+					let name = attachment.name ?? 'unknown' + (fileExt ?? '');
+					if (attachment.path !== null) {
+						if (['.png', '.jpg', '.gif'].some(ext => ext == fileExt))
+							image = `<img class="fp-news-discord-attachment-image" src="${attachment.path}">`;
+
+						name = `<a href="${attachment.path}">${name}</a>`;
+					}
+
+					// Build message attachment HTML
+					attachments.push(utils.buildHtml(templates['news'].discord_attachment, {
+						image: image,
+						name: name,
+						lost: attachment.path === null ? `<span class="fp-news-discord-attachment-lost">${defs['Missing']}</span>` : '',
+						size: attachment.size !== null ? format(attachment.size, { locale: lang }) : '??? kB',
+					}));
 				}
 
-				// Don't build HTML for entry if it is filtered
-				if (!filteredNewsInfo.includes(newsEntry))
+				// Build Discord message HTML
+				newsDiscordMessageArr.push(utils.buildHtml(templates['news'].discord_message, Object.assign({}, defs, {
+					id: discordEntry.id,
+					byline: byline,
+					content: content,
+					attachments: attachments.join('\n'),
+					edited: edited,
+					original: discordEntry.original,
+				})));
+			}
+
+			// Build Discord archive HTML
+			const newsDiscordHtml = utils.buildHtml(templates['news'].discord, Object.assign({}, defs, {
+				yearButtons: yearButtons.join('\n'),
+				messages: newsDiscordMessageArr.join('\n'),
+			}));
+			return { content: newsDiscordHtml };
+		}
+		else if (pathSegments.length < 3) {
+			// Filter news entries if necessary
+			if (pathSegments.length == 2 && !['articles', 'videos', 'changelogs'].includes(pathSegments[1]))
+				throw new utils.NotFoundError(url, lang);
+
+			// Prepare news index entries
+			const newsIndexEntryArr = [];
+			for (const newsEntry of newsInfo) {
+				if (pathSegments.length == 2 && newsEntry.namespace != pathSegments[1])
 					continue;
 
 				// Build news index entry HTML
@@ -151,33 +206,29 @@ export const namespaceFunctions = {
 					id: newsEntry.id,
 					title: newsEntry.title,
 					author: newsEntry.author,
-					tags: newsEntry.tags
-						.toSorted((a, b) => a.localeCompare(b, { sensitivity: 'base' }))
-						.map(tag => `<a class="fp-news-index-entry-tag" href="/news/tags/${tag}">${tag}</a>`)
-						.join(''),
 					date: newsEntry.date.length < 10 ? '' : new Date(newsEntry.date).toLocaleDateString(lang, { timeZone: 'UTC' }),
 				})));
 			}
 
-			// Sort tag totals from most to least, then alphabetically
-			const tagCountsArr = Object.entries(tagCounts).toSorted((a, b) => {
-				const compare = b[1] - a[1];
-				return compare == 0 ? a[0].localeCompare(b[0], { sensitivity: 'base' }) : compare;
-			});
-
-			// Build news index tag HTML
-			const newsIndexTagHtml = tagCountsArr.map(tagCount => utils.buildHtml(templates['news'].index_tag, {
-				name: tagCount[0],
-				count: tagCount[1],
-			})).join('\n');
+			// Build header and navigation buttons
+			const getNewsButton = (path, def, clickable) => clickable ? `<a href="/news${path}">${defs[def]}</a>` : `<b>${defs[def]}</b>`;
+			let newsIndexEntriesHeader = defs['All_News'];
+			if (pathSegments.length == 2) {
+				switch (pathSegments[1]) {
+					case 'articles': newsIndexEntriesHeader = defs['All_Articles']; break;
+					case 'videos': newsIndexEntriesHeader = defs['All_Videos']; break;
+					case 'changelogs': newsIndexEntriesHeader = defs['All_Changelogs']; break;
+				}
+			}
 
 			// Build news index HTML
 			const newsIndexHtml = utils.buildHtml(templates['news'].index, Object.assign({}, defs, {
-				indexNews: pathSegments.length == 3
-					? utils.buildStringFromParams(`Index_News_Tag,"${pathSegments[2]}"`, defs)
-					: defs['Index_News'],
+				allNewsButton: getNewsButton('', 'All_News', pathSegments.length > 1),
+				articlesButton: getNewsButton('/articles', 'Articles', pathSegments[1] != 'articles'),
+				videosButton: getNewsButton('/videos', 'Videos', pathSegments[1] != 'videos'),
+				changelogsButton: getNewsButton('/changelogs', 'Changelogs', pathSegments[1] != 'changelogs'),
+				indexEntriesHeader: newsIndexEntriesHeader,
 				entries: newsIndexEntryArr.join('\n'),
-				tags: newsIndexTagHtml,
 			}));
 			return { content: newsIndexHtml };
 		}
@@ -196,32 +247,19 @@ export const namespaceFunctions = {
 			// Get text of news entry and sanitize if not an article
 			const newsEntryPath = `news/${newsEntry.namespace}/${newsEntry.id}.txt`;
 			let rawText = utils.getPathInfo(newsEntryPath)?.isFile
-				? Deno.readTextFileSync(`news/${newsEntry.namespace}/${newsEntry.id}.txt`)
+				? Deno.readTextFileSync(newsEntryPath)
 				: '';
-			if (newsEntry.namespace != 'article')
+			if (newsEntry.namespace != 'articles')
 				rawText = utils.sanitizeInject(rawText, { '&': '&amp;' });
-
-			// Build date string
-			let formattedDate = defs['Unknown_Date'];
-			if (newsEntry.date.length >= 10)
-				formattedDate = new Intl.DateTimeFormat(lang, {
-					dateStyle: 'long',
-					timeZone: 'UTC',
-					hour12: false,
-				}).format(new Date(newsEntry.date));
 
 			// Parse text of news entry based on its type
 			let content = '';
 			switch (newsEntry.namespace) {
-				case 'article': {
+				case 'articles': {
 					content = articleMarked.parse(rawText).trim();
 					break;
 				}
-				case 'discord': {
-					content = discordMarked.parse(rawText).trim();
-					break;
-				}
-				case 'changelog': {
+				case 'changelogs': {
 					content = utils.sanitizeInject(rawText).replace(/(?:^ +| {2,}|\n+|\t+)/gm, match => {
 						const char = match[0];
 						if (char == ' ')
@@ -233,7 +271,7 @@ export const namespaceFunctions = {
 					});
 					break;
 				}
-				case 'video': {
+				case 'videos': {
 					if (newsEntry.source === null) {
 						const videoMatch = newsEntry.link.match(videoExp);
 						if (videoMatch !== null)
@@ -274,12 +312,8 @@ export const namespaceFunctions = {
 				byline: utils.buildStringFromParams(bylineParams, {
 					byline: defs[bylineSource],
 					author: newsEntry.author,
-					date: formattedDate,
+					date: utils.getFormattedDate(newsEntry.date, lang) ?? defs['Unknown_Date'],
 				}),
-				tags: newsEntry.tags
-					.toSorted((a, b) => a.localeCompare(b, { sensitivity: 'base' }))
-					.map(tag => `<a class="fp-news-tag" href="/news/tags/${tag}">${tag}</a>`)
-					.join(''),
 				namespace: newsEntry.namespace,
 				content: content,
 			}));
@@ -513,16 +547,8 @@ export const namespaceFunctions = {
 				totalTags: tagStatsLimit.toLocaleString(lang),
 			}));
 
-		// Display time of last update in header
-		const lastUpdate = new Intl.DateTimeFormat(lang, {
-			dateStyle: 'long',
-			timeStyle: 'long',
-			timeZone: 'UTC',
-			hour12: false,
-		}).format(new Date(searchStats.lastUpdated));
-
 		return {
-			lastUpdate: lastUpdate,
+			lastUpdate: utils.getFormattedDate(searchStats.lastUpdated, lang),
 			searchInterface: searchInterface,
 			searchContent: searchContent,
 		};

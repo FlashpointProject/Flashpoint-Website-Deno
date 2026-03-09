@@ -1,0 +1,38 @@
+@everyone
+
+# :flashpoint: Flashpoint Infinity 12.1 - Salamander
+
+**Total Games Count** (2023-10-27):  **191,150**
+
+It's been a few months since we have launched 12, the first version to have deep FPFSS integration with the launcher. Since then, we have imported thousands of games, patches, and metadata edits, allowing for an everchanging database. 
+
+Today, we are focusing less on launcher updates and more on our network stack. Flashpoint Game Server has been written from scratch to give us more control over how GameZIPs are served. It provides faster game loading on most titles, better reliability, less confusing errors and a whole lot of flexibility we've been missing. In the future this should completely remove the Apache and PHP servers that we rely on for legacy games and certain zipped games. Credit to @Krum110487 for bringing this to life.
+
+We've tested as much as we can, but if you run into any issues please first make sure you're up to date, and if the issue persists then use #help. Be sure to include the name and platform of the game, any logs and a brief description of how to get the problem to occur where possible.
+
+**Notable changes:**
+- QEMU has been replaced with Flashpoint Game Server. Faster game loading, more reliable.
+- 'Uninstall Game Data' now works without having to restart the Flashpoint Launcher
+- Playlists can now be ordered (drag and drop in list view)
+- Preview of the Game Configuration system
+  - Game Configurations will not be served by the update system yet. You will need to create your own to use them.
+  - Currently supports using Ruffle Web and Ruffle Standalone with existing Flash titles.
+- You can override files inside zips by placing them at their full path in `./Legacy/middleware_overrides/`. This system is also used by Game Configurations.
+
+**Notable fixes:**
+- Background processes should now close more reliably when the Flashpoint Launcher exits
+- Selecting a playlist will now properly behave when switching between the Games and Animations view
+
+**Update:**
+Just use the bottom left Update button in the Launcher.
+
+**Download:**
+https://flashpointarchive.org/downloads
+
+**Want to support the project?**
+Curate 📁 : https://flashpointarchive.org/datahub/Curation_Tutorial
+Donate 🪙 : https://opencollective.com/flashpointarchive
+Translate 📖 : https://crowdin.com/project/flashpoint-launcher
+
+**Reminder:**
+Please regularly update your database to receive game updates. You can do so by hitting the Update button on the home page, in the top left corner.

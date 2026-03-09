@@ -1,0 +1,7 @@
+It seems like the above bugfix has caused yet another problem. Here is a new, *actually fixed* version of the database: https://bluepload.unstable.life/flashpointdb.7z
+
+To fix your copy of Flashpoint, download this file and unzip it using 7-Zip. Then replace the flashpoint.sqlite file in Flashpoint's Data folder with this one. But be sure to back up your playlists first! https://bluemaxima.org/flashpoint/datahub/Extended_FAQ#TransferPlaylists
+
+We will let you know when a fixed Infinity build is up on bluemaxima.org.
+
+Apologies for all of the problems with this release! We are working on tools and processes to improve the quality of Flashpoint releases going forward.

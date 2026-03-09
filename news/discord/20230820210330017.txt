@@ -1,0 +1,19 @@
+**Flashpoint Ultimate 12 is now available for download via the Updater application. This can download a fresh copy or upgrade one in place.**
+Torrent and Direct Download links will come soon™️.
+
+Current plans remain to be bi-annual releases in the Summer and Winter.
+
+You can find a link here for Windows: https://github.com/FlashpointProject/FlashpointUltimateUpdater/releases/latest
+Mac and Linux users will have to build from source currently. (Version is still Windows, but the updater is multi-platform)
+
+**There's been limited opportunity for testing so make sure to report any bugs you find.**
+
+Most of the features should be self explanatory:
+- Resumable install state
+- Speed limiter
+- Pause and start downloader
+- Scan and repair existing files
+- Resume partial file downloads
+- Install information fetched from remote server
+- Upgrade existing install to new version
+- Forced upgrade when version no longer available on remote server

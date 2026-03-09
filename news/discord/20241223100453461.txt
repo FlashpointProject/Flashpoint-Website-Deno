@@ -1,0 +1,17 @@
+# :flashpoint:  Status Update - December 2024
+
+We'd been hoping to get an update out before the end of the year, but that's not looking very likely at the moment. Expect something in January (hopefully). There isn't a whole lot to expand on there right now. There's still a few things worth going over in the meantime though!
+
+## Why won't games close properly anymore?
+Due to Windows removing the `wmic.exe` utility by default, one of the dependencies we use to end game processes no longer works. Once it has updated, expect a hotfix. If you are technically able, you can add WMIC back under Optional Features in the Windows settings.
+
+## Game Data Index (Curators + Developers)
+The Game Data Index is now available to download as an sqlite database at https://download.unstable.life/hashes.7z (2.7gb unpacked) which contains data up until November 2024. This details every file path, size, their hashes (md5 / crc32 / sha1 / sha256), associated game id and associated game zip date from the combined collection of all game zips. I'm sure some of you might find a use for this. Most fields are byte arrays and not strings, so keep that in mind when using SELECT or WHERE.
+
+Trial Curators and Staff can also obtain real-time data given a files **hash** (md5 / crc32 / sha1 / sha256) or **path prefix** (e.g https://newgrounds.com/) from the Game Data Index FPFSS api. You can find details of this at https://fpfss.unstable.life/swagger/index.html, extensions will also be able to take advantage of this with the next release. As usual, if you wish to make an oauth'd application involving authenticated FPFSS api routes, please DM me.
+
+There are plans to include in-launcher tools to support searching and downloading files / zips from this index in the future.
+
+## Flashpoint Survey Update
+Lastly, thanks to everyone who filled out the survey. 🎉 
+We got a whopping **700** responses, and we'll try and compile something from them in the new year.

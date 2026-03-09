@@ -1,0 +1,7 @@
+Two more things: @nosamu wrote an article about how he (and others) managed to add the ShiVa technology into Flashpoint. Have a look: https://medium.com/bluemaximas-flashpoint/shiva3d-web-games-what-they-are-and-how-we-saved-them-20c2a2f486ec
+
+We also have some server restructures going on, because of course we do. Hopefully they'll be self-explanatory once they're done.
+
+And as always, please learn how to curate if you have the time. There's still a ton of work to do before Flash is gone.
+
+.-.. --- -. --. / .-.. .. ...- . / ..-. .-.. .- ... ....

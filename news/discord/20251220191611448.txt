@@ -1,0 +1,11 @@
+# 🛠️ Hotfix (Game Server Component)
+
+You can update this component via the bottom left button as you would the launcher.
+
+This should prevent the false positives from Windows Defender in the previous post when a game accesses `http://www.mochiads.com/static/lib/services/services.swf`.
+
+If the file is smaller than 10kb, then it will assume it's the redirect html and return an intentionally empty file instead. This should not affect any games that intentionally zip the proper `services.swf` file.
+
+I normally wouldn't ping for a hotfix, but hopefully it stops a trickle of reports from outdated components for the next month. As usual, if you have issues then use #help
+
+@everyone

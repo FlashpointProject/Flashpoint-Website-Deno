@@ -1,0 +1,23 @@
+@Flashpoint Ultimate Some of you have issues with extracting ultimate, let me clarify how to do it and why did we change the format from 7z:
+
+`.tar.zst` is a tar stream compressed with zstd. This is similar to tar.gz or tar.xz that you might have seen around. If you don't know zstd, it's a fairly new compression algorithm from facebook, it's comparable in strength to zip/gzip but bajillion times faster.
+
+We switched to this format because of two reasons:
+1. it's ultra fast, you're bottlenecked by disk speed pretty much, both on compression and decompression, before compression with 7z took a week and decompression maybe days.
+2. it's streamable, you can decompress-as-you-download if you know how (wget URL > pipe to tar > output is decompressed, for example)
+
+Now how to extract it:
+
+Colin suggested this 7z fork because it has graphical user interface, so we expected it's user-friendly enough for people to use. But if you have issues, this is how you can do it (this command works both on windows and linux). Command line is not scary, especially here where it is only one command.
+
+1. open powerhsell/terminal
+2. navigate to the directory where your ultimate.tar.zst is 
+3. run this command: `tar --zstd -xvf .\ultimate-file.tar.zst`
+
+This will extract the ultimate to the current directory. Yes, it will decompress the tar and unpack the tar in one step, that's the magic of streamable files for you.
+
+If you want to extract it to another location, specify with `tar --zstd -xvf .\ultimate-file.tar.zst -C D:\path\to\destination\`
+
+If your windows doesn't have `tar`, then that's weird because it's included with Windows since Windows 10. But let us know if you have any issues in #Major issues getting a hold of Ultimate
+
+This command will print the name of every single extracted file into the terminal, which serves as an indicator that it's running. remove the `v` (as in verbose) from the `-xvf` part of the command to disable the printing.

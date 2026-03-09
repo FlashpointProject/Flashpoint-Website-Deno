@@ -1,0 +1,26 @@
+# :futurewave:  Flashpoint Ultimate 13
+
+**Total Size** - 1.68 TB
+
+Flashpoint Ultimate 13 is now available for download.  The format has changed slightly this time around, but should make it much easier and faster for people to download and install.
+
+Ultimate is now made up of a collection of 35 zips each roughly 50 GB in size and containing a unique set of files. They can be downloaded and extracted independently and in any order to create a complete install, and have been categorised into 5 groups:
+- **GameData** - Data for GameZipped games - *1.26 TB*
+- **Htdocs** - Data for Legacy games - *290 GB*
+- **Images** - All game logos and screenshots - *91 GB*
+- **Extras** - Unrelated game extras - *23 GB*
+- **Base** - Everything else (Launcher + Software) - *4 GB*
+
+These zip files are uncompressed and should be much faster to extract than before. Our testing brought us to around 8 hours on Windows writing to a secondary drive. 
+
+**Download:**
+- Torrent - https://download.unstable.life/FlashpointUltimate13.torrent
+- Direct Download - https://download.unstable.life/ultimate-direct/
+ - We highly recommend to use a download manager like [Motrix](https://motrix.app/) or [FDM](https://www.freedownloadmanager.org/). Browser downloads are likely to corrupt.
+ - Please read the [README.txt](https://download.unstable.life/ultimate-direct/README.txt) for better instructions on how to install Ultimate via Direct Download
+
+**Update:**
+The Ultimate Updater is available to use, just point it at your existing installation or an empty folder. It will verify any existing files as it goes and download any missing ones: https://github.com/FlashpointProject/FlashpointUltimateUpdater/releases/download/1.0/Flashpoint_Ultimate_Updater.exe
+**DISCLAIMER** - Ultimate Updater has been known to have issues with some people's machines. Installing fresh is still recommended.
+
+@Flashpoint Ultimate

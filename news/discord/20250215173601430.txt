@@ -1,0 +1,13 @@
+- **Misc:**
+  - About Page now has viewable launcher changelogs
+  - DNS over HTTPS via Cloudflare is now supported for all Launcher web requests. This should fix some connectivity issues in countries with overly aggressive censorship such as the Philippines.
+- **Config Options:**
+  - `Restore Search Results` - (default: **on**) - Saves and restore a copy of each search page (text, filters, selected game and playlist) whenever you open the application.
+  - `Restore Search View Text` - (default: **on**) - Restores the text field of a search view when restarting the launcher.
+  - `Enable Custom Search Views` - (default: **off**) - Replaces the Library search tabs with custom named search tabs and adds a Library option to the advanced filters.
+  - `Default Opening Page` - (default: **Home**) - Default page to open to, either the Home Page or a chosen Search Page
+  - `Hide New View Button` - (default: **off**) - When using custom views, hide the new view (+) button in the header. You can instead press 'Create New Search View' under the context menu for tabs.
+  - `Auto-Clear WinINet Cache` - (default: **off**) - Automatically clear the Windows web cache when running a curation from the Curate tab.
+  - `Clear WinINet Cache` - (button) - Clears Windows web cache, which may help resolve loading issues in curations and other rare cases.
+  - Ruffle - `Enable (Supported Games)` - (default: **off**) - Enable Ruffle for games that have been marked as properly supported.
+  - Ruffle - `Enable (Unsupported Games)` - (default: **off**) - Enable Ruffle Standalone for all games regardless of whether they have been checked as supported. Results my vary.

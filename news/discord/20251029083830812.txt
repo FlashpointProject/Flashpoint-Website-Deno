@@ -1,0 +1,12 @@
+# :futurewave:  Flashpoint Infinity 14.0.3
+
+Small release to support updating Logos and Screenshots in the future. Metadata updates will continue to work on 14.0.2 until the necessary server side changes are complete.
+
+## Changed
+- Logo and Screenshots now store their relative path inside the metadata
+
+## Fixed
+- Games imported via the Curate tab are no longer missing tags
+- Prevent rare cases where write operations can collide causing SQLITE_BUSY crashes
+
+As usual, if you spot any issues please open a help thread.

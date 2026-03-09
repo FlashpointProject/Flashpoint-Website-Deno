@@ -1,0 +1,9 @@
+@everyone
+
+Hello, and welcome to the pre-Christmas Flashpoint update. We have three important topics to mention today.
+
+The first is that, if you didn't see it before, there's a preview of my Flash book now available and a channel to give feedback, both of which are available in the post above this one, so I won't spend time on it, feel free to read the previous post if you're interested.
+
+~~The second is that we've been working on a way to automatically convert games from their legacy form in htdocs into zips to make it more convienient to keep and host FP. Part of this process has involved zipping over 40,000 games automatically and putting them into a test build of Flashpoint. ~~
+
+~~We can't test this all on our own, so we've updated Flashpoint Infinity in order to give you, the community, an opportunity to help us. The new version is available now at the same link as always, and all you need to do is redownload and try games on the new version, which we've marked 10.1.0.4. If any games don't work that do on the older version, let us know. You don't need to update Flashpoint if you don't want to, the old version will still work, and if you need the old version for whatever reason, it will be available on the site.~~

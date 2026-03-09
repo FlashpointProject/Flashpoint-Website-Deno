@@ -1,0 +1,6 @@
+**Launcher Update:**
+For those of you with slower drives, you can now enable database precaching to speed up searches significantly. This comes at the cost of adding around 400mb of extra memory usage and a few extra seconds to the launch time. (This also works on faster drives, but improvements will be much less noticeable)
+
+This is off by default on new installs but that behaviour may change in the future.
+
+Find it on the Config Page at the bottom of the Preferences section. Remember to restart the launcher to apply the change:

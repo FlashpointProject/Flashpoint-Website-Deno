@@ -1,0 +1,1 @@
+### If you're having issues with the Launcher not working after the last update, please go into the **Manager** folder to update manually.

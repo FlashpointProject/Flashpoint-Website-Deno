@@ -1,0 +1,14 @@
+# 🛠️ Hotfix 14.0.1
+
+This should address most of the issues we've seen. Unfortunately Windows 7 support is still proving to be an ongoing issue, so it's recommended that any user still running it use Flashpoint Infinity 13 instead from https://download.flashpointarchive.org/archive/. You can delete the Manager folder to prevent the bottom left update prompt. You won't receive metadata updates but game downloads will continue to work. Windows 8.1 is now our minimum supported version unless something changes in the future.
+## New
+- Search Dropdown Filter - `Ruffle Support` - Filter whether games are ruffled supported.
+- Ruffle Config Options - `Graphics Mode` - Swap between different graphics modes for use running content in Ruffle.
+## Fixed
+- Flash content should work in FPNavigator
+- Games can be removed from playlists
+- Playlist notes show and can be edited
+- Disabled DNS over HTTPS because of difficult to solve issues with some users
+- Prevent the dropdowns failing to load before the database is ready in rare circumstances
+- Legacy Game Dropdowns now show for Ruffle possible games
+- Ruffle properly executes on Linux machines

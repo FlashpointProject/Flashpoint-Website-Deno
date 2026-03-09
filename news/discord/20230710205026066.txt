@@ -1,0 +1,13 @@
+## Donations
+(@everyone) Flashpoint has and continues to operate as a non-profit. After consideration of our budget we’ve decided to open up ongoing donations with the aim of making sure Flashpoint remains sustainable. We know this is a big change so we’ve prepared a mini FAQ to explain why we’re encouraging you to donate and why this is a little different to what other sites might be doing.
+### Donate Here (Open Collective): https://opencollective.com/flashpointarchive 
+*(Note: Tips go to Open Collective, not us)*
+
+### Why should I trust you?
+Our finances are handled by Open Collective Europe, a registered non-profit based in Belgium who act as a fiscal host for charitable causes and open source communities. By terms of our agreement we ***must*** spend funds solely on the goal of furthering efforts in archival and accessibility of games, animations and digital interactive experiences on the web. All income and expenditure is transparent and available on our Open Collective page. Labour remains unpaid volunteer work.
+### Why donate, where do donations go?
+The various services and monstrous amount of storage and bandwidth that make Flashpoint Archive able to work is quite expensive. Everything we use to make live updates possible for this recent update has just pushed us closer to the edge of what we can do with the budget we have. Any donation helps and no special treatment will be given to large donations. (Send proof of donation to a staff member to get a snazzy little Donator role badge. €2 minimum).
+### What if I can’t / don’t want to donate?
+Monetary donations are only one way of contributing to Flashpoint Archive and you should only donate what you’re comfortably able to. We wouldn’t be here without the efforts from our curators, hackers, developers, mechanics, moderators etc so there’s plenty of other ways you can contribute in those areas if you’d like!
+### I have another question!
+Feel free to ask in #flashpoint-chat and we'll answer you best we can.

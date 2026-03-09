@@ -1,0 +1,7 @@
+We're aware of an issue relating to required software not running on Windows 7.
+
+There will likely be a fix deployed later today.
+
+This is a reminder that it's now 4 years past end of life, and that support for Windows 7 will be dropped once the inconvience of remaining to support it becomes too much of a burden. The absolute earliest this would be is August, but as usual we hope to go longer.
+
+ - **Update is live, should allow Windows 7 to behave again**

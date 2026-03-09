@@ -1,0 +1,20 @@
+**Search Tips:**
+- You cannot search by the individual role (Artist, Executive Producer, Animator etc) of a developer. This may or may not be possible, leaning towards no for technical reasons.
+- `score`, `trophies`, `views`, `faves`, `width`, `height` are numerical comparators. (e.g `score>4` in the search bar)
+- `frontpage`, `daily`, `monthly` and `reviewCrew` are string comparators for the date they were awarded each trophy in the form `Jan 1, 2000`. (e.g `frontpage:2005`) Filtering by year is easy, but month and day is not yet.
+- Ratings are also available as tags, a default Adult tag filter is included in the preferences
+
+**Known issues:**
+- Author Comments sometimes fail to render, this isn't always consistent
+- Very long initial load times from tag fetching on slower drives
+- Sorting by extension data can result in slow search times *(This may not be fixable)*
+- The search headers, categories and ordering may visually change in front of you if you swap to the Games tab too early
+- Entries use the 'arcade' library instead of 'auditorium', hence why it says Games
+
+
+**Ask for help in:** #help **(Make sure to add the NG Auditorium tag)**
+
+**Post feedback to:**  #nga-2025-feedback
+
+**Download link:** https://download.flashpointarchive.org/NGA_wip.7z
+*224mb download,  1.1gb install*

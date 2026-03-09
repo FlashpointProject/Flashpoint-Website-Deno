@@ -1,0 +1,9 @@
+@everyone
+
+Hello. We've got a new version of Infinity for you today. The main (and only) change is a new build of our Launcher, which fixes a handful of bugs and changes some behind-the-scenes stuff, that we need some help testing, so if you have time, please download this new version and give it a shot. (It's the same URL as always, #downloads website etc.) You'll know you're running it as the titlebar will say "11.0.1" as the version number. Report any problems in #launcher.
+
+There is a benefit on your end too - we have a new Game of the Day system on the home tab with personalized recommendations from staff members every day. The entire month of December will have a bunch of new games for you to try, and hopefully further beyond once we know it's working as intended.
+
+One more thing: we're hoping to have the next major version out by mid-late January. We all know how those sorts of deadlines work out around here though...
+
+That's it for now. See you in two months (tm).

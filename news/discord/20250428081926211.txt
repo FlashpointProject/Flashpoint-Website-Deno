@@ -1,0 +1,11 @@
+# 🛠️ Hotfix 14.0.2
+
+## New
+- All games in a playlist can be downloaded at once via the right click menu. (Legacy games excluded)
+- The verification uri is copied to the clipboard when authenticating with FPFSS, useful in case automatic opening in the browser fails
+## Fixed
+- Fix wrong tag being removed when selected in the meta editor
+- Prevent inconsistent scroll behaviour for Dropdowns on screens with different sizes
+- Make button placement of Ok and Cancel consistent in dialogs
+- Game data zips should be manually importable
+- Fix an issue where file permissions for the ruffle executable failed to change on Linux (@Maoijoon)

@@ -1,0 +1,17 @@
+Hey folks,
+
+remember that little experiment of mine that allows you to play "any" game from infinity in browser via ruffle?
+
+Initially i envisioned this as a "play a random mystery game" type of site, but something something Vox Populi Vox Dei.
+
+https://ooooooooo.ooo got a pretty big update, now you can browse games in a web-based Flashpoint Launcher right on the site, thanks to @Colin 's fantastic work.
+
+https://ooooooooo.ooo/static/browse/
+
+Just FYI:
+- 9o3o only works with flash games at this time. Non-flash games are completely filtered out from 9o3o.
+- Not all games work, you might get hit with an error that ruffle can't find/start the game. The site is using a very simple JS-based redirector and it does not bypass all sitelocks. It also does not work with gamezips, but we have a workaround for that so most games should work. It also does not run games that don't have a `.swf` file as their launch command, there is a couple of flash games like that in Flashpoint, these are filtered out completely from 9o3o.
+- Ruffle is not finished and cannot run all games at the moment.
+- **this is not a replacement of Flashpoint, download infinity or ultimate for the full experience** 
+
+You can always vote if the game works at the bottom of the main page.

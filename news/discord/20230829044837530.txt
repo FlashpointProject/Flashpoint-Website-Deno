@@ -1,0 +1,2 @@
+Rule 6 has been added to #rules:
+> 6. Do **not** DM or mention staff for troubleshooting issues with Flashpoint. Please read #faq if you have questions, use #help, or contact a member with the @Helper role.

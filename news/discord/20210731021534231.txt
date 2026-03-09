@@ -1,0 +1,4 @@
+**Next version**: Coming along fine. 4300 games, 3300 animations. Way more in the pipeline, especially on the game side. The Game and Animation Master Lists are both up to date if you want to see the new additions so far. Hopefully, the new curation backend we've introduced should help speed that number along, too.
+
+https://bluemaxima.org/flashpoint/datahub/Game_Master_List
+https://bluemaxima.org/flashpoint/datahub/Animation_Master_List

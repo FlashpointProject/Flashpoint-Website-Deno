@@ -1,0 +1,19 @@
+@everyone
+
+No tricks. No faffing about. No magical girls. Just downloads.
+
+Flashpoint 10, codenamed 'Absence', is available now at the usual places (#downloads).
+
+\* 20,000 new games and 2,000 new animations, with 13 new plugins.
+\* GameZips now work with Infinity, with the absolute majority of new games being zips.
+\* Tag Filters for more precise control over what you want to see.
+\* The Super Hall of Fame playlist for a massive, one stop shop of high quality games.
+\* Thousands of metadata updates, dozens of game fixes, and general polish.
+
+We've taken a decent amount of time testing this new release, but as always, if you have problems, be sure to put them in #flashpoint-help.
+
+Flashpoint Core 10 for curators is currently not available, but it will be within the next couple of days. We'll send out new messages in *this channel* with updates.
+
+Please remember that there's over 20,000 people on this server now; if you're having trouble downloading a copy of Infinity, give it a little while. We tend to get swamped.
+
+Absence: https://youtu.be/Dpk9rkBjjD8?t=1348

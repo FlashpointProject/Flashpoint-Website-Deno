@@ -1,0 +1,12 @@
+By this point you should have gotten the update already. The earliest you'll see another minor update will be with Ultimate this month, if there is one at all.
+
+**Minor Launcher Update:**
+**Fixed**:
+- Primary platform not causing a meta.yaml update
+- Starting a search by clicking on a right sidebar field incorrectly retains the search result count of the previous query
+- Race condition causing service info to not be synced correctly introduced in the last update
+- Tags / platforms not being added to a curation when entering their alias
+- Platforms not being added to a curation where the platform exists but has zero associated game entries
+
+**Changed**:
+- Tags and Platforms blacklists are treated as an OR despite the rest of the query being treated as an AND. This should make it easier to exclude several tags at once

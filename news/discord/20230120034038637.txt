@@ -1,0 +1,18 @@
+The post-launch patch promised last week has been released. Redownload Infinity if any of the below affect you, Ultimate can be downloaded at the URL below (extract to Ultimate's folder and overwrite files when prompted). You can check the "And everyone else" in the credits; it now mentions "five years" in its text as part of this patch.
+
+Ultimate link: https://bluemaxima.org/flashpoint/FP-PLP.zip
+
+And have a changelog:
+
+```
+* Added the ability to swap server types when playing individual games (hopefully fixes Big Fat Awesome House Party for Infinity)
+* Fixed Thingviewer not working when run as admin
+* Fixed Burster not working
+* Fixed bugs in the Discord and Analytics extensions
+* Fixed entering fullscreen having a strange animation on Windows 7
+* Fixed ActiveX Imports do not work correctly if the ActiveX Control has dependencies (such as IKEA 2020 Player for later)
+* Fixed Fusionfall in Ultimate only
+* Fixed some Hypercosm and Java updates that didn't make it into the final build
+* Fixed La Linea Interactive and A Heavy's 2fort Adventure
+* Fixed some issues with the credits
+```

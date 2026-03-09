@@ -1,0 +1,10 @@
+#off-topic has now been ~~executed~~ archived.
+Please use the new channels in the off topic category for further off topic discussion:
+- #games
+- #tv-and-movies
+- #tech-and-science
+- #music
+- #art-and-photography
+- #animals
+
+If you do not have access or cannot see the new channels use #Channels & Roles to enable them.

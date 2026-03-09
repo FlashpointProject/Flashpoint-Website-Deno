@@ -1,0 +1,9 @@
+Flashpoint Ultimate 12 now has direct download and torrent links available via the website.
+
+https://flashpointarchive.org/downloads
+
+We've moved to zstd compression which should (fingies crossed) support significantly faster decompression times, at the cost of the overall compression ratio being a little worse. **If you're on Windows, you'll also need a program capable of extracting this new format.** You can find a link to one below:
+
+https://github.com/mcmilk/7-Zip-zstd/releases/latest
+
+**NOTE:** We're having issues getting seeding to behave, you'll see another update once it's resolved

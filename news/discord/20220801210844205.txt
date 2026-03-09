@@ -1,0 +1,1 @@
+We're aware of a server issue causing some games to fail to download in Infinity, showing a "No working sources are available for this GameData" error. We've found the cause and will post an update when the problem is fixed.

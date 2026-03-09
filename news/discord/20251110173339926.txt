@@ -1,0 +1,24 @@
+## 🏗️ Extensions
+
+Extensions are getting some enormous improvements, primarily in the frontend. Previously they've been limiting to things like context buttons and dialogs, both of which couldn't be influenced past the arguments they took. We're expanding this to let them to define entirely new components themselves.
+
+### Backend
+
+For extensions running in the backend they're mostly unchanged. They however are now given the Database object to perform complex searches rather than being restricted by the launcher api.
+
+### Frontend Components
+
+Through module federation, extensions can now define their own React components which the launcher will have available to use. The places they can appear are limited to pre-defined areas, but they can render exactly what they want, how they want.
+
+Extension components have a wide array of tools to let them do almost anything a component native the launcher can do via easy to use (runtime fulfilled) imports. This includes things like:
+- Registering their own page routes
+- Reading the application's state and modifying it via dispatched actions and a selection of hooks
+  - e.g. Executing searches, changing preferences, navigating pages, modifying curations
+- Using common launcher components like SimpleButton, CheckBox and HomePageBox
+- Opening their own context menus
+- Using backend functions via `runCommand` and their backend registered commands
+- Providing their own stylesheets
+- Adding and removing sidebar components, home page boxes, search bar options and search result columns
+
+For a practical example, here's a peek of an in-progress extension.
+This registers a new Manager page which will likely ship by default in the next release. You can turn extensions on/off, delete them, and install new ones from online repositories. It uses the LeftSidebar, SimpleButton and CheckBox components that already exist in the launcher and reads the loaded extensions from the application state.

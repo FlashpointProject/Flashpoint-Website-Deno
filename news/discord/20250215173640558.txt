@@ -1,0 +1,31 @@
+# :flashpoint: Flashpoint Infinity 14 - Kingfisher
+
+**Total Games Count** (2025-02-15) - **207,077**
+
+Flashpoint Infinity 14 had a heavy focus on searches and discoverability of content in the archive and fixing up some long term issues we've had. Playlist filtering and the Search interface are two things that have been a bit neglected over time and hopefully Flashpoint 14's improvements make them feel a lot more up to date. We'll let the notable changes below cover it, but please do check the big changelog posted above this for some more detail.
+
+Flashpoint Ultimate as usual will come at a slightly later date. We don't want to commit to timeframe just yet.
+
+### Notable Changes:
+- Playlists now work with search options
+- Search bar overhauled with easy to use filters
+- Ability to create your own search tabs that show up in the header
+- Search state is now saved when restarting the launcher
+- Basic Ruffle support via the Play button dropdown or enabling it for supported games in Config.
+
+**Note for themes:** Flashpoint 14 made significant changes that will require themes to be updated. Please revert to Flat Metal (the default theme) is you're having issues.
+
+**Update:**
+Use the button in the bottom left of the launcher. If this doesn't work, try running it manually from the **Manager** folder or reinstalling. This is a known issue that has been fixed in 14. (Backup your favorites playlist if you reinstall!)
+
+**Download:**
+https://flashpointarchive.org/downloads
+
+**Want to support the project?**
+Curate 📁 : https://flashpointarchive.org/datahub/Curation_Tutorial
+Donate 🪙 : https://opencollective.com/flashpointarchive
+Translate 📖 : https://crowdin.com/project/flashpoint-launcher
+
+**Reminder:**
+Please regularly update your database to receive game updates. You can do so by hitting the Update button on the home page, in the top left corner.
+@everyone

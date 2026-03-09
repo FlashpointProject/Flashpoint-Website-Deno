@@ -20,14 +20,7 @@ const codeRenderer = token => {
 // Configure markdown parser for different types of news
 const discordMarked = new Marked().use({
 	breaks: true,
-	renderer: {
-		code: codeRenderer,
-		image: token => utils.buildHtml(templates['news'].entry_image, {
-			namespace: 'discord',
-			file: token.href,
-			alt: token.text ? ` alt="${token.text}"` : '',
-		}),
-	},
+	renderer: { code: codeRenderer },
 }, markedEmoji({
 	emojis: {
 		AngryFaic: 'AngryFaic.png',
@@ -82,11 +75,7 @@ const articleMarked = new Marked().use({
 
 			// Otherwise, create an image or set of images
 			return utils.buildHtml(templates['news'].article_imageset, {
-				images: token.href.split('|').map(file => utils.buildHtml(templates['news'].entry_image, {
-					namespace: 'articles',
-					file: file,
-					alt: '',
-				})).join('\n'),
+				images: token.href.split('|').map(file => utils.buildHtml(templates['news'].article_image, { file: file })).join('\n'),
 				caption: caption,
 			});
 		},
@@ -156,6 +145,7 @@ export const namespaceFunctions = {
 					let image = '';
 					let name = attachment.name ?? 'unknown' + (fileExt ?? '');
 					if (attachment.path !== null) {
+						// If attachment is an image, display it
 						if (['.png', '.jpg', '.gif'].some(ext => ext == fileExt))
 							image = `<img class="fp-news-discord-attachment-image" src="${attachment.path}">`;
 

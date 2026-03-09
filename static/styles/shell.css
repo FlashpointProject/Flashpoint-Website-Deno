@@ -454,10 +454,10 @@ body {
 	height: 1.5rem;
 }
 .fp-content-divider {
-	height: 0.15rem;
 	margin: 1rem 0;
 
 	background-color: var(--fp-background-color-4);
+	border-bottom: 0.15rem solid var(--fp-background-color-4);
 }
 
 /* Page elements */
@@ -556,9 +556,7 @@ code {
 	display: inline-block;
 	vertical-align: top;
 
-	border-width: 0.15rem;
-	border-style: solid;
-	border-color: var(--fp-background-color-4);
+	border: 0.15rem solid var(--fp-background-color-4);
 	border-radius: 0.25rem;
 	content: '';
 }

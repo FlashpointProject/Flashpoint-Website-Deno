@@ -167,11 +167,11 @@
 .fp-news-articles-container hr {
 	all: unset;
 	width: 25%;
-	height: 0.15rem;
 	margin: 2rem auto;
 	display: block;
 
 	background-color: var(--fp-background-color-4);
+	border-bottom: 0.15rem solid var(--fp-background-color-4);
 }
 
 .fp-news-articles-container ol,
@@ -288,11 +288,11 @@
 
 .fp-news-discord-container hr {
 	all: unset;
-	height: 0.15rem;
 	margin: 1rem 0;
 	display: block;
 
 	background-color: var(--fp-background-color-4);
+	border-bottom: 0.15rem solid var(--fp-background-color-4);
 }
 
 .fp-news-discord-container ol,
@@ -322,11 +322,11 @@
 
 	border: 0.15rem solid var(--fp-background-color-4);
 	border-radius: 0.5rem;
-	line-height: 1;
 }
 .fp-news-discord-attachment-image {
 	width: 100%;
 	max-height: 20rem;
+	display: block;
 
 	background-color: var(--fp-background-color-3);
 	border-bottom: 0.15rem solid var(--fp-background-color-4);

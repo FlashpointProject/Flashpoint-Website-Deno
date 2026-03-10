@@ -389,7 +389,7 @@ export function getFormattedDate(date, lang) {
 	if (!date || date.length < 10) return null;
 	return new Intl.DateTimeFormat(lang, {
 		dateStyle: 'long',
-		timeStyle: date.length > 10 ? 'long' : undefined,
+		timeStyle: date.includes('T') ? 'long' : undefined,
 		timeZone: 'UTC',
 		hour12: false,
 	}).format(new Date(date));

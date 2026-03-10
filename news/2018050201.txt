@@ -1,4 +1,4 @@
-![The oldest game you can play on Newgrounds today, originally uploaded to the site in 2000.](2018050200_00.png)
+![The oldest game you can play on Newgrounds today, originally uploaded to the site in 2000.](2018050201_00.png)
 
 Adobe Flash (previously Macromedia Flash) is arguably the largest treasure trove of unpreserved gaming history today. Spanning literal tens of thousands of games over a period of twenty years, the library of Flash games, breadth and depth, outlives any other game console on the market. And in two years it might all go away.
 
@@ -14,7 +14,7 @@ I was in school around ten years ago. I wasn’t in the most affluent family; I 
 
 Enter the magnificent Flash portal.
 
-![NotDoppler as of May 2018. Not a site I used in my youth but one I imagine a lot did.](2018050200_01.png)
+![NotDoppler as of May 2018. Not a site I used in my youth but one I imagine a lot did.](2018050201_01.png)
 
 Flash portals were like bugs to administrators of workplaces, schoolhouses and general areas of productivity. There were hundreds of them, each containing a huge selection of games to pick from, everyone had the mainstay of TANKS, but a lot of sites would have their own unique games. And with every one an IT admin would squish underfoot, the populace would immediately spread around two more in its place.
 
@@ -26,7 +26,7 @@ As everyone does I eventually grew up, and along with my rising age came the gen
 
 Let’s try not to forget those who got their start in Flash though. To name the most notable examples, Edmund McMillen (of The Binding of Isaac and Super Meat Boy fame) originally got his start on the platform. Cellar Door Games, known for Rogue Legacy, originally made Don’t Sh*t Your Pants on Flash. And the Flash technology has actually been used inside of a lot of high-budget games.
 
-![You have Flash to thank for this absolutely horrifying image.](2018050200_02.jpg)
+![You have Flash to thank for this absolutely horrifying image.](2018050201_02.jpg)
 
 And we don’t even count the list of games that have passed into the public consciousness for simply being great games. The list is so big that I’d be wasting hours typing them all up here when all you really need to do is go and sort Newgrounds’ games by their rating, and play anything you see, while you still can.
 
@@ -40,7 +40,7 @@ The main problem with Flash is that it’s known for being a massive security ho
 
 And with the invention of mobile devices (and the infamous protests of Steve Jobs’ on how the platform was not fit for the Apple ecosystem), many developers moved away from Flash, and with them went the majority of the casual gaming market, and over the years that market has taken over. The mobile stores of today almost resemble Flash portals of back in the day.
 
-![See the resemblance?](2018050200_03.png)
+![See the resemblance?](2018050201_03.png)
 
 With the invent of HTML5 technology for more universal functionality along the lines of Flash, the countdown to midnight for Flash was well underway. And as of 2020, Flash will no longer be supported by Adobe, with no new updates or security fixes. Eventually more holes will open in the keel, which will prompt browser manufacturers to remove Flash from their browsers entirely; Firefox has pledged to disable Flash by default for all users by next year, with Chrome pledging to remove the plugin entirely by the end of 2020.
 
@@ -48,7 +48,7 @@ Look back up at that screenshot two paragraphs ago, specifically the right side,
 
 ---
 
-![Not to put too fine a point on it, but…](2018050200_04.png)
+![Not to put too fine a point on it, but…](2018050201_04.png)
 
 The short answer is, more or less, that nobody knows. These businesses — Armor Games, Kongregate, Newgrounds, NotDoppler, and every other Flash portal — have no public game plan. Some may survive (with every site above accepting non-Flash material, such as Unity or HTML5) but with the disappearance of 90% of their game libraries simply due to the idea that no-one can run them.
 
@@ -56,23 +56,23 @@ When no-one can run these games anymore, why would these copies even be wanted o
 
 Of course, some of these games can be saved to the local hard drive. In the majority of these cases (over 90% of them, by my personal and completely unreliable educated guess) the games themselves may still be playable in something like the standalone Adobe Flash projector at the click of a button. But what about games that aren’t?
 
-![This will work, for now, for most games.](2018050200_05.png)
+![This will work, for now, for most games.](2018050201_05.png)
 
 There are definitely exceptions that most people won’t be able to circumvent on their own, or at least, without technical effort. The major example is sitelocking; a large amount of games have been designed with DRM that will simply not allow you to play these games off the proper servers.
 
-![In the case of Cube Escape: The Cave here, you’ll never be able to get past this screen without extra effort.](2018050200_06.png)
+![In the case of Cube Escape: The Cave here, you’ll never be able to get past this screen without extra effort.](2018050201_06.png)
 
 And of course we can’t forget games that are always online, whether they be via online multiplayer or just simple cloud saving; you aren’t playing Pokemon Tower Defense for very long if you can’t talk to the server to save your progress.
 
 Combine that with games that require a lot of offsite resources and you have trouble. Many Flash games often loaded titles piecemeal (again, it was big in the age of dial-up, where a simple megabyte could take an hour if you were lucky). If you don’t have all of those files with your local copy, you are so, so screwed.
 
-![Compare the pair: on the left, a copy of Gateway II without it’s externally loaded files. On the right, one with.](2018050200_07.png)
+![Compare the pair: on the left, a copy of Gateway II without it’s externally loaded files. On the right, one with.](2018050201_07.png)
 
 Allow me to summarize. In less than two years from the time of this article, hundreds of thousands of games are likely to disappear from the internet, forever. Simply no longer playable. Hundreds of millions of views, likes, 5-star reviews, 1-star reviews…all gone. The companies who helped bring these games to life don’t seem concerned. The people who made these games aren’t exactly talking about it, to my knowledge.
 
 “But someone will surely want to save these games! We haven’t lost any for good yet! There’s still time!”
 
-![Feast your eyes on a dead game.](2018050200_08.jpg)
+![Feast your eyes on a dead game.](2018050201_08.jpg)
 
 La Insula de Sancho is a Flash-based adventure game trilogy created around the year 2005. They were very popular for the time in their native language, with hundreds of articles, screenshots and even walkthroughs for the entire series available on the internet. But their website has expired, and due to the way the game was programmed to get its external resources from said server, the game is now unplayable in pretty much any form. Even after a good search on my part, I simply cannot find a full copy of the game that is playable.
 
@@ -86,13 +86,13 @@ Here’s the thing though: **just what is being done to preserve this almost unm
 
 Introducing BlueMaxima’s Flashpoint.
 
-![As of version 1.3.1.](2018050200_09.png)
+![As of version 1.3.1.](2018050201_09.png)
 
 Combining the interface of LaunchBox and the web server capabilities of Apache, Flashpoint is a Flash game preservation project, museum, and one-click-to-play collection in one box. All you need to do is double-click any game in the list and they will open from a local copy on the hard drive, and be ready to play as-is.
 
 Games that have sitelocks? Games that have server requirements? Games that have external files? All taken care of, either via hacking the games (may the creator of JPEXS Free Flash Decompiler live a long and successful life) or using said Apache web server to make the games think they’re where they need to be, edit free.
 
-![Elephant Quest is one of the games that requires the web server to even get to the title screen.](2018050200_10.png)
+![Elephant Quest is one of the games that requires the web server to even get to the title screen.](2018050201_10.png)
 
 There’s eventually going to be one question on the lips of everyone involved, though: *is this legal*? And the only real answer is *nobody knows and really, nobody should care*. Games that more or less have a ticking clock until they die need to be saved now, as fast as possible. And as far as I’m aware, I’m really the only one trying.
 
@@ -102,7 +102,7 @@ What about the rest, though? What about the thousands upon thousands of games th
 
 Oh boy, am I glad you asked.
 
-![Portals, portals, get your portals! Big, small, we’ve got them all!](2018050200_11.png)
+![Portals, portals, get your portals! Big, small, we’ve got them all!](2018050201_11.png)
 
 This whole thing originally started as me trying to back up as many portals as I could get to, and the end result of those efforts thanks to myself and one other major contributor that I won’t name here just to be safe, has ended up with the name “Flashfreeze”. Over two dozen portals’ SWF files, backed up and saved into a Google Drive directory (which has been nabbed by a few people who like to get this sort of thing already).
 

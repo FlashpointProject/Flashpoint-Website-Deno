@@ -45,13 +45,12 @@ const articleMarked = new Marked().use({
 	renderer: {
 		image: token => {
 			// Create caption out of alt text
-			const caption = token.text != '' ? `<div class="fp-news-articles-caption">${articleMarked.parseInline(token.text)}</div>` : '';
+			const caption = token.text != '' ? `<div class="fp-news-article-caption">${articleMarked.parseInline(token.text)}</div>` : '';
 
 			// If the image URL is a video file, create a video embed
 			const videoMatch = token.href.match(videoExp);
 			if (videoMatch !== null)
 				return utils.buildHtml(templates['news'].entry_video, {
-					namespace: 'articles',
 					file: token.href,
 					type: contentType(videoMatch[0]),
 				}) + '\n' + caption;
@@ -106,21 +105,69 @@ export const namespaceFunctions = {
 		};
 	},
 	'news': (url, lang, defs) => {
-		const pathSegments = utils.trimSlashes(url.pathname).split('/').map(pathSegment => decodeURIComponent(pathSegment));
-		if (pathSegments.length <= 3 && pathSegments[1] == 'discord') {
+		const subpage = utils.trimSlashes(url.pathname).substring(5);
+		if (subpage == '') {
+			let filter = url.searchParams.get('filter');
+			if (filter !== null && !['article', 'video', 'changelog'].some(validFilter => filter == validFilter))
+				filter = null;
+
+			// Prepare news index entries
+			const newsIndexEntryArr = [];
+			for (const newsEntry of newsInfo) {
+				if (filter !== null && newsEntry.type != filter)
+					continue;
+
+				// Build news index entry HTML
+				newsIndexEntryArr.push(utils.buildHtml(templates['news'].index_entry, Object.assign({}, defs, {
+					id: newsEntry.id,
+					title: newsEntry.title,
+					author: newsEntry.author,
+					date: newsEntry.date?.length >= 10 ? new Date(newsEntry.date).toLocaleDateString(lang, { timeZone: 'UTC' }) : '',
+				})));
+			}
+
+			// Get news index header text
+			let entriesHeaderDef = 'All_News';
+			if (filter !== null) {
+				switch (filter) {
+					case 'article': entriesHeaderDef = 'All_Articles'; break;
+					case 'video': entriesHeaderDef = 'All_Videos'; break;
+					case 'changelog': entriesHeaderDef = 'All_Changelogs'; break;
+				}
+			}
+
+			// Build news index categories HTML
+			const getNewsButton = (type, def) => filter !== type ? `<a href="/news${type ? '?filter=' + type : ''}">${defs[def]}</a>` : `<b>${defs[def]}</b>`;
+			const newsIndexCategoriesHtml = utils.buildHtml(templates['news'].index_categories, Object.assign({}, defs, {
+				allNewsButton: getNewsButton(null, 'All_News'),
+				articlesButton: getNewsButton('article', 'Articles'),
+				videosButton: getNewsButton('video', 'Videos'),
+				changelogsButton: getNewsButton('changelog', 'Changelogs'),
+			}));
+
+			// Build news index HTML
+			const newsIndexHtml = utils.buildHtml(templates['news'].index, Object.assign({}, defs, {
+				categories: newsIndexCategoriesHtml,
+				entriesHeader: defs[entriesHeaderDef],
+				entries: newsIndexEntryArr.join('\n'),
+			}));
+			return { content: newsIndexHtml };
+		}
+		else if (subpage == 'discord') {
 			const years = [...new Set(discordInfo.map(discordEntry => discordEntry.posted.substring(0, 4)))].toSorted();
-			if (pathSegments.length == 3 && !years.includes(pathSegments[2]))
-				throw new utils.NotFoundError(url, lang);
+			let filter = url.searchParams.get('filter');
+			if (!years.includes(filter))
+				filter = null;
 
 			// Build navigation buttons
-			const yearButtons = [pathSegments.length == 2 ? `<b>${defs['All_Posts']}</b>` : `<a href="/news/discord">${defs['All_Posts']}</a>`]
-				.concat(years.map(year => year == pathSegments[2] ? `<b>${year}</b>` : `<a href="/news/discord/${year}">${year}</a>`))
+			const yearButtons = [filter === null ? `<b>${defs['All_Posts']}</b>` : `<a href="/news/discord">${defs['All_Posts']}</a>`]
+				.concat(years.map(year => year == filter ? `<b>${year}</b>` : `<a href="/news/discord?filter=${year}">${year}</a>`))
 				.map(yearButton => `<span class="fp-news-index-category">${yearButton}</span>`);
 
 			// Prepare Discord messages
 			const newsDiscordMessageArr = [];
 			for (const discordEntry of discordInfo) {
-				if (pathSegments.length == 3 && !discordEntry.posted.startsWith(pathSegments[2]))
+				if (filter !== null && !discordEntry.posted.startsWith(filter))
 					continue;
 
 				// Build formatted date strings
@@ -179,99 +226,31 @@ export const namespaceFunctions = {
 			}));
 			return { content: newsDiscordHtml };
 		}
-		else if (pathSegments.length < 3) {
-			// Filter news entries if necessary
-			if (pathSegments.length == 2 && !['articles', 'videos', 'changelogs'].includes(pathSegments[1]))
-				throw new utils.NotFoundError(url, lang);
-
-			// Prepare news index entries
-			const newsIndexEntryArr = [];
-			for (const newsEntry of newsInfo) {
-				if (pathSegments.length == 2 && newsEntry.namespace != pathSegments[1])
-					continue;
-
-				// Build news index entry HTML
-				newsIndexEntryArr.push(utils.buildHtml(templates['news'].index_entry, Object.assign({}, defs, {
-					namespace: newsEntry.namespace,
-					id: newsEntry.id,
-					title: newsEntry.title,
-					author: newsEntry.author,
-					date: newsEntry.date.length < 10 ? '' : new Date(newsEntry.date).toLocaleDateString(lang, { timeZone: 'UTC' }),
-				})));
-			}
-
-			// Build header and navigation buttons
-			const getNewsButton = (path, def, clickable) => clickable ? `<a href="/news${path}">${defs[def]}</a>` : `<b>${defs[def]}</b>`;
-			let entriesHeaderDef = 'All_News';
-			if (pathSegments.length == 2) {
-				switch (pathSegments[1]) {
-					case 'articles': entriesHeaderDef = 'All_Articles'; break;
-					case 'videos': entriesHeaderDef = 'All_Videos'; break;
-					case 'changelogs': entriesHeaderDef = 'All_Changelogs'; break;
-				}
-			}
-
-			// Build news index categories HTML
-			const newsIndexCategoriesHtml = utils.buildHtml(templates['news'].index_categories, Object.assign({}, defs, {
-				allNewsButton: getNewsButton('', 'All_News', pathSegments.length > 1),
-				articlesButton: getNewsButton('/articles', 'Articles', pathSegments[1] != 'articles'),
-				videosButton: getNewsButton('/videos', 'Videos', pathSegments[1] != 'videos'),
-				changelogsButton: getNewsButton('/changelogs', 'Changelogs', pathSegments[1] != 'changelogs'),
-			}));
-
-			// Build news index HTML
-			const newsIndexHtml = utils.buildHtml(templates['news'].index, Object.assign({}, defs, {
-				categories: newsIndexCategoriesHtml,
-				entriesHeader: defs[entriesHeaderDef],
-				entries: newsIndexEntryArr.join('\n'),
-			}));
-			return { content: newsIndexHtml };
-		}
-		else if (pathSegments.length == 3) {
-			// Get namespace and ID from URL path
-			const namespace = pathSegments[1];
-			const id = parseInt(pathSegments[2], 10);
-
-			// Find desired news entry
-			let newsEntry;
-			if (!isNaN(id))
-				newsEntry = newsInfo.find(newsEntry => newsEntry.namespace == namespace && newsEntry.id == id);
-			if (newsEntry === undefined)
-				throw new utils.NotFoundError(url, lang);
+		else {
+			// Find news entry
+			const newsEntry = newsInfo.find(newsEntry => subpage == newsEntry.id);
+			if (!newsEntry) throw new utils.NotFoundError(url, lang);
 
 			// Get text of news entry and sanitize if not an article
-			const newsEntryPath = `news/${newsEntry.namespace}/${newsEntry.id}.txt`;
+			const newsEntryPath = `news/${newsEntry.id}.txt`;
 			let rawText = utils.getPathInfo(newsEntryPath)?.isFile
 				? Deno.readTextFileSync(newsEntryPath)
 				: '';
-			if (newsEntry.namespace != 'articles')
+			if (newsEntry.type != 'article')
 				rawText = utils.sanitizeInject(rawText, { '&': '&amp;' });
 
 			// Parse text of news entry based on its type
 			let content = '';
-			switch (newsEntry.namespace) {
-				case 'articles': {
+			switch (newsEntry.type) {
+				case 'article': {
 					content = articleMarked.parse(rawText).trim();
 					break;
 				}
-				case 'changelogs': {
-					content = utils.sanitizeInject(rawText).replace(/(?:^ +| {2,}|\n+|\t+)/gm, match => {
-						const char = match[0];
-						if (char == ' ')
-							return '&nbsp;'.repeat(match.length);
-						if (char == '\n')
-							return '<br>'.repeat(match.length);
-						if (char == '\t')
-							return '&nbsp;'.repeat(match.length * 4);
-					});
-					break;
-				}
-				case 'videos': {
+				case 'video': {
 					if (newsEntry.source === null) {
 						const videoMatch = newsEntry.link.match(videoExp);
 						if (videoMatch !== null)
 							content = utils.buildHtml(templates['news'].entry_video, {
-								namespace: newsEntry.namespace,
 								file: newsEntry.link,
 								type: contentType(videoMatch[0]),
 							});
@@ -284,6 +263,19 @@ export const namespaceFunctions = {
 								listId: youtubeMatch[2] !== undefined ? `?list=${youtubeMatch[2]}` : '',
 							});
 					}
+					break;
+				}
+				case 'changelog': {
+					content = utils.sanitizeInject(rawText).replace(/(?:^ +| {2,}|\n+|\t+)/gm, match => {
+						const char = match[0];
+						if (char == ' ')
+							return '&nbsp;'.repeat(match.length);
+						if (char == '\n')
+							return '<br>'.repeat(match.length);
+						if (char == '\t')
+							return '&nbsp;'.repeat(match.length * 4);
+					});
+					break;
 				}
 			}
 
@@ -309,7 +301,7 @@ export const namespaceFunctions = {
 					author: newsEntry.author,
 					date: utils.getFormattedDate(newsEntry.date, lang) ?? defs['Unknown_Date'],
 				}),
-				namespace: newsEntry.namespace,
+				type: newsEntry.type,
 				content: content,
 			}));
 			return {
@@ -318,8 +310,6 @@ export const namespaceFunctions = {
 				content: newsEntryHtml
 			};
 		}
-		else
-			throw new utils.NotFoundError(url, lang);
 	},
 	'faq': (_, lang) => ({
 		grandTotal: searchStats.total.toLocaleString(lang),

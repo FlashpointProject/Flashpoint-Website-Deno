@@ -6,15 +6,15 @@ Work has continued on in the tailwind of the spotlight and Flashpoint 3.0 is off
 
 Gamasutra were the first to notice Flashpoint, and did a nearly full-on copy paste job of what I wrote to their website, but it worked. Before I knew it, that URL was being linked on several places on Reddit. /r/Games, /r/emulation and /r/pcgaming had tons of views on each of them. It even showed up on Tumblr at one point, and I don’t know what ‘notes’ are, but damn if there wasn’t several thousand of them. This isn’t even counting the thousands of views and claps on the Medium article.
 
-![If that isn’t getting eyes on the problem, I don’t know what is.](2018053000_00.png)
+![If that isn’t getting eyes on the problem, I don’t know what is.](2018053001_00.png)
 
 The biggest notable change was on our Discord server. We went from barely breaking 30 to breaking one thousand people today, with over 200 of them online at any one time. It became so unmanageable I had to hand moderation powers to anyone I even remotely trusted.
 
-![This could not be any more insane.](2018053000_01.png)
+![This could not be any more insane.](2018053001_01.png)
 
 I ended up making a ‘curation’ process for the Discord so that anyone who wanted to add a game, could…and we got so many entries in that I had to close the channel while I caught up. The game requests channel also got so full that we have enough work to last us weeks. We have a dedicated team of over a dozen people working to add new games to the project.
 
-![This is just part of it. The scrolling in the requests goes on for days.](2018053000_02.png)
+![This is just part of it. The scrolling in the requests goes on for days.](2018053001_02.png)
 
 Special mentions need to go out to DarkMoe, who’s basically my second in command at this point. He whipped up a new autocurator which can basically take these files and add them to Flashpoint’s database without me having to do much work other than test that they got it right. I can (and have) added over 50 games in under an hour with this.
 
@@ -54,4 +54,4 @@ I’m pretty sure I can safely call this ‘**mission accomplished**’.
 
 Join our Discord at https://discord.gg/S9uJ794 to help us preserve history, or just to grab the new release. There’s still a lot to do, but we’re in the best possible place to do it.
 
-![](2018053000_03.jpg)
+![](2018053001_03.jpg)

@@ -1,12 +1,3 @@
-// HOW TO USE:
-// 1. Install Vencord and enable the "ViewRaw" extension
-// 2. Hover over the message you want to import and click the "<>" button
-// 3. Click "Copy Message JSON"
-// 4. Create a file named discord_message.json in this directory, if you haven't yet
-// 5. Open discord_message.json, paste and save
-// 6. Open the terminal and run "deno run -A import_discord_message.js"
-// 7. Make any changes if necessary
-
 const json = JSON.parse(Deno.readTextFileSync('../data/discord.json'));
 const input = JSON.parse(Deno.readTextFileSync('discord_message.json'));
 

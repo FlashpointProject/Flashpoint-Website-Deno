@@ -49,7 +49,7 @@ While the Markdown format used to write articles is mostly the standard flair, t
   - If the link is a Twitter tweet, then an embed of the specified tweet will be displayed.
   - If the link consists solely of the name of an image file, then the respective image under `/static/images/news` will be displayed.
   - If the link consists solely of the name of a video file, then the respective video under `/static/videos/news` will be displayed.
-  - Otherwise, the link is expected to consist solely of the name of a file located under `/static/images/news/`.
+  - Otherwise, the link is expected to consist solely of the name of a file located under `/static/images/news`.
 - Images can be displayed next to each other with the same caption by separating their filenames with`|`.
 - Multi-line code blocks ignore language declarations and instead display them as regular text.
 

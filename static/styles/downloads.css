@@ -94,6 +94,9 @@
 	height: 1.3rem;
 	margin-right: 0.5rem;
 }
+.fp-downloads-tab-selector-text {
+	white-space: nowrap;
+}
 
 .fp-downloads-tabs {
 	padding: 1.5rem;

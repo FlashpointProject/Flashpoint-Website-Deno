@@ -224,7 +224,10 @@ export const namespaceFunctions = {
 				yearButtons: yearButtons.join('\n'),
 				messages: newsDiscordMessageArr.join('\n'),
 			}));
-			return { content: newsDiscordHtml };
+			return {
+				Title: defs['Discord_Archive'],
+				content: newsDiscordHtml
+			};
 		}
 		else {
 			// Find news entry

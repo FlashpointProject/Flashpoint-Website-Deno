@@ -13,8 +13,6 @@
 	"databaseFile": "data/flashpoint.sqlite",
 	"fpfssUrl": "https://fpfss.unstable.life",
 	"imageServer": "https://infinity.unstable.life/images",
-	"zipServer": "https://download.unstable.life/gib-roms/Games",
-	"legacyServer": "https://infinity.unstable.life/Flashpoint/Legacy/htdocs",
 	"pageSize": 100,
 	"updateFrequency": 1440,
 	"updateOnLaunch": true,

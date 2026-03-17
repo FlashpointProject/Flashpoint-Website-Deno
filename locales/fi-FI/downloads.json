@@ -1,0 +1,20 @@
+{
+  "Downloads_Avast": "AVASTIN KÄYTTÄJÄT: LUE {THIS} ENNEN LATAAMISTA!",
+  "Downloads_Title": "Lataukset",
+  "Downloads_Description": "Flashpointin lataaminen on ilmaista, helppoa ja siinä hyödynnetään {{powered by open-source software}} (paitsi lisäosat itsessään, jotka ovat suurimmaksi osaksi hylättyjä ohjelmia, \"abandonware\"). Jos sinulla on kysymyksiä tai mietteitä, katso {FAQ} tai kysy kysymys {Discord}.",
+  "Downloads_Infinity_Title": "Flashpoint {} Infinity",
+  "Downloads_Infinity_Size": "{Size:} {} ladattuna, {} asennettuna",
+  "Downloads_Infinity_Para1": "Sisältö ladataan palvelimilta sitä mukaa, kun pelaat sitä. Ihanteellinen tavallisille käyttäjille, jotka haluavat kevyen version.",
+  "Downloads_Infinity_Para2": "Kokonaiskoko riippuu valituista komponenteista ja kasvaa sitä mukaa kun lataat sisältöä.",
+  "Downloads_Infinity_Link": "Lataa Asentaja",
+  "Downloads_Infinity_Link2": "Pakattu kopio (zip, jos asennusohjelma ei toimi)",
+  "Downloads_Ultimate_Title": "Flashpoint {} Ultimate",
+  "Downloads_Ultimate_Size": "{Size:} {} ladattuna, {} purettuna",
+  "Downloads_Ultimate_Para1": "Kaikki sisältö on saatavilla offline-tilassa heti. Ihanteellinen arkistoijille ja datakeräilijöille.",
+  "Downloads_Ultimate_Para2": "Vaatii torrent-ohjelmiston, kuten {qBittorrent} lataamista varten ja {7-Zip} purkamista varten.",
+  "Downloads_Ultimate_Link": "Lataa torrent",
+  "Downloads_Ultimate_Link2": "Suora Lataus (Archive.org)",
+  "Downloads_Requirements": "{System Requirements:} Vähintään Windows 7 SP1 tai uudempi. (Rajoitettu {Mac} ja {Linux} tuki on myös olemassa)",
+  "Downloads_Prerequisites": "{Prerequisites:} Tarvitset myös {Visual C++ 2015 Redistributable (x86)}, {Microsoft .NET Framework 4.7} tai uudempi",
+  "Downloads_Footer": "Jos haluat tietoja ja päivitystietoja, jotka liittyvät vanhempiin julkaisuihin, käy {News} sivulla."
+}

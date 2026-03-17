@@ -1,9 +1,11 @@
 {
-  "Branding_Title": "Bränding",
-  "Branding_Para1": "Kõige lihtsamalt võttes on Flashpoint'i logoks projekti esitähed, mis on pööratud üksteisega vastamisi. Tähtede vahele jääv tühi ruum moodustab noole kuju, mida võib tõlgendada kui mängimisnuppu või allalaadimise sümbolit. See tuletab meile meelde harjunud protsessidest, et meie lemmikmängudele ligi pääseda. Logo juurde käivad sõnad kasutavad Tahoma kirjastiili.",
-  "Branding_Para2": "Flashpoint'i logo kuulub {Creative Commons Attribution 4.0} litsentsi alla, mis tähendab, et seda võib vabalt kohandada ja levitada senikaua, kui Seirade (logo kujundaja) või Flashpoint saab selle eest tunnustust.",
-  "Branding_Para3": "Kaust vektorlogodega erinevates stiilides on allalaetav {siit}.",
-  "Wallpapers_Title": "Taustapildid",
-  "Wallpapers_Desc": "Järgnevad taustapildid jõuavad teieni tänu Rain'ile:",
-  "Banners_Title": "Veebibännerid"
+	"Title": "Bränding",
+	"Header": "Bränding",
+	"Branding_Para1": "Flashpoint's logo was designed in 2020 by project contributor Seirade. It is licensed under $1{Creative Commons Attribution 4.0}, which means it can be freely modified and distributed as long as Seirade and/or Flashpoint receive credit.",
+	"Branding_Para2": "The logo is an abstraction of the initials \"FP\", with the blank space featuring an arrow shape that can be interpreted as a play button or download symbol. It is usually imposed on top of a gradient travelling downward and to the right from $1{#e81c24} to $2{#7c1315}, although this gradient can also be used to color the logo itself. The wordmark uses the Tahoma font.",
+	"Assets": "Assets",
+	"Wallpapers": "Taustapildid",
+	"Banners": "88x31 Banners",
+	"Download": "Lae Alla",
+	"By_Author": "by $1"
 }

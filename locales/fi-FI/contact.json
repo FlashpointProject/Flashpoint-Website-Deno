@@ -1,6 +1,7 @@
 {
-  "Contact_Title": "Yhteystiedot",
-  "Contact_Para1": "Jos haluat ottaa yhteyttä projektiin suoraan, lähetä sähköpostia osoitteeseen {flashpoint (at) bluemaxima (piste) org.}",
-  "Contact_Disclaimer1": "Flashpoint ei tarjoa palveluita Flash-yhteensopivan sisällön käyttöön selaimessa vuoden 2020 jälkeen. Tutustu projekteihin kuten {Ruffle} sen sijaan.",
-  "Contact_Disclaimer2": "Arkistointipyyntöjä ei kuulu tehdä sähköpostilla, katso {follow this guide}. Ongelmanratkaisuun liittyvät sähköpostit ovat sallituja, mutta ole hyvä ja lue {manual} ensin."
+	"Title": "Yhteystiedot",
+	"Header": "Yhteystiedot",
+	"Contact_Para1": "If you need to contact the project directly, send an e-mail to $1{flashpoint (at) bluemaxima (dot) org}.",
+	"Contact_Para2": "Flashpoint does not offer services for making Flash-enabled content available in the browser after 2020. Please refer to projects such as $1{Ruffle} instead.",
+	"Contact_Para3": "Archival requests should not be done via email; $1{follow this guide} instead. Troubleshooting emails are accepted, but please read the $2{FAQ} first."
 }

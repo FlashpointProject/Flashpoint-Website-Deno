@@ -1,6 +1,7 @@
 {
-  "Contact_Title": "İletişim",
-  "Contact_Para1": "Eğer proje ile direk iletişime geçmen gerekiyorsa, {flashpoint (et) bluemaxima (nokta) org} adresine bir e-mail gönder.",
-  "Contact_Disclaimer1": "Flashpoint, 2020'den sonra tarayıcıda Flash destekli içerik sunmak için hizmet sunmuyor. Lütfen bunun yerine {Ruffle} gibi projelere bakın.",
-  "Contact_Disclaimer2": "Arşivleme talepleri e-posta yoluyla yapılmamalıdır; bunun yerine {bu kılavuzu izleyin}. Sorun giderme e-postaları kabul edilmektedir, ancak lütfen önce {kılavuzu} okuyun."
+	"Title": "İletişim",
+	"Header": "İletişim",
+	"Contact_Para1": "If you need to contact the project directly, send an e-mail to $1{flashpoint (at) bluemaxima (dot) org}.",
+	"Contact_Para2": "Flashpoint does not offer services for making Flash-enabled content available in the browser after 2020. Please refer to projects such as $1{Ruffle} instead.",
+	"Contact_Para3": "Archival requests should not be done via email; $1{follow this guide} instead. Troubleshooting emails are accepted, but please read the $2{FAQ} first."
 }

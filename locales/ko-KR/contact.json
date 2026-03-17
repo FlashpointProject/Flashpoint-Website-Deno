@@ -1,6 +1,7 @@
 {
-  "Contact_Title": "문의하기",
-  "Contact_Para1": "프로젝트에 직접적인 연락이 필요하신 분은 {flashpoint (at) bluemaxima (dot) org.} 으로 이메일을 보내주시기 바랍니다.",
-  "Contact_Disclaimer1": "플래시포인트는 2020년 이후로 만들어진 플래시 기반의 컨텐츠들을 지원하지 않습니다. 해당 컨텐츠들은 {Ruffle} 과 같은 다른 프로젝트들을 확인해 주십시오.",
-  "Contact_Disclaimer2": "아카이브와 관련한 문의는 이메일로 보내주시면 안됩니다; {follow this guide} 이 가이드를 참조해 주십시오. 문제가 있을 경우 이메일을 보내주셔도 되지만 가능하면 {manual} 을 먼저 참조해 주세요."
+	"Title": "문의하기",
+	"Header": "문의하기",
+	"Contact_Para1": "If you need to contact the project directly, send an e-mail to $1{flashpoint (at) bluemaxima (dot) org}.",
+	"Contact_Para2": "Flashpoint does not offer services for making Flash-enabled content available in the browser after 2020. Please refer to projects such as $1{Ruffle} instead.",
+	"Contact_Para3": "Archival requests should not be done via email; $1{follow this guide} instead. Troubleshooting emails are accepted, but please read the $2{FAQ} first."
 }

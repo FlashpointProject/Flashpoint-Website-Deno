@@ -1,6 +1,7 @@
 {
-  "Contact_Title": "צרו קשר",
-  "Contact_Para1": "אם אתם צריכים לפנות למנהלי הפרויקט באופן אישי, אנא שלחו אימייל ל{flashpoint@bluemaxima.org}",
-  "Contact_Disclaimer1": "Flashpoint אינו מציע שירות עבור הפעלת תכני פלאש בדפדפן לאחר 2020. אנא עיינו בפרוייקטים כמו למשל {Ruffle} במקום.",
-  "Contact_Disclaimer2": "בקשות ארכון אינן אמורות להתבצע באמצעות האימייל; {עקבו אחר מדריך זה} במקום. אימיילים הקשורים בנושאי פתרון בעיות יאושרו, אך אנא ממכם קראו את ה{מדריך} ראשית."
+	"Title": "צרו קשר",
+	"Header": "צרו קשר",
+	"Contact_Para1": "If you need to contact the project directly, send an e-mail to $1{flashpoint (at) bluemaxima (dot) org}.",
+	"Contact_Para2": "Flashpoint does not offer services for making Flash-enabled content available in the browser after 2020. Please refer to projects such as $1{Ruffle} instead.",
+	"Contact_Para3": "Archival requests should not be done via email; $1{follow this guide} instead. Troubleshooting emails are accepted, but please read the $2{FAQ} first."
 }

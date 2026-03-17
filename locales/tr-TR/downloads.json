@@ -1,0 +1,20 @@
+{
+  "Downloads_Avast": "AVAST KULLANICILARI: İNDİRMEDEN ÖNCE LÜTFEN {BUNU} OKUYUN!",
+  "Downloads_Title": "İndirmeler",
+  "Downloads_Description": "Flashpoint'in indirmeleri ücretsiz, taşınabilir ve {{açık kaynaklı yazılımlarla desteklenmektedir}} (çoğu terk edilmiş yazılımlardan olan eklentiler hariç). Herhangi bir sorunuz veya endişeniz varsa, {SSS} bölümüne bakın veya {Discord}'da sorun.",
+  "Downloads_Infinity_Title": "Flashpoint {} Infinity",
+  "Downloads_Infinity_Size": "{Boyut:} {} indir, {} kurulduğunda",
+  "Downloads_Infinity_Para1": "Oynadığınızda girişler sunucularımızdan indirilir. Sıradan kullanıcılar için idealdir.",
+  "Downloads_Infinity_Para2": "Toplam boyut seçilen bileşenlere bağlıdır ve girdileri indirdikçe artar.",
+  "Downloads_Infinity_Link": "Yükleyiciyi İndirin",
+  "Downloads_Infinity_Link2": "Sıkıştırılmış Kopya (eğer yükleyici çalışmazsa)",
+  "Downloads_Ultimate_Title": "Flashpoint {} Ultimate",
+  "Downloads_Ultimate_Size": "{Boyut:} indirildiğinde {}, çıkartıldığında {}",
+  "Downloads_Ultimate_Para1": "Tüm girdiler en başından itibaren çevrim dışı olarak kullanılabilir. Arşivciler ve veri biriktiricileri için idealdir.",
+  "Downloads_Ultimate_Para2": "İndirmek için {qBittorrent} gibi bir torrent istemcisine ve çıkarmak için {7-Zip} programına ihtiyaç vardır.",
+  "Downloads_Ultimate_Link": "Torrent İndir",
+  "Downloads_Ultimate_Link2": "Direkt İndir (Archive.org)",
+  "Downloads_Requirements": "{Sistem Gereksinimleri:} Windows 7 SP1 veya üzeri (sınırlı {Mac} ve {Linux} desteği de mevcuttur)",
+  "Downloads_Prerequisites": "{Ön Koşullar:} {Visual C++ 2015 Yeniden Dağıtılabilir (x86)}, {Microsoft .NET Framework 4.7} veya üzeri",
+  "Downloads_Footer": "Daha eski sürümlere ilişkin bilgi ve değişiklik günlükleri için lütfen {Haberler} sayfasını ziyaret edin."
+}

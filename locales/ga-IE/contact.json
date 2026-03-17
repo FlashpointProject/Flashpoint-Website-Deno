@@ -1,6 +1,7 @@
 {
-  "Contact_Title": "Teagmháil",
-  "Contact_Para1": "Más gá duit teagmháil dhíreach a dhéanamh leis an tionscadal, seol r-phost chuig {flashpoint (ag) bluemaxima (pointe) org.}",
-  "Contact_Disclaimer1": "Ní thairgeann Flashpoint seirbhísí chun ábhar atá cumasaithe do Flash a chur ar fáil sa bhrabhsálaí tar éis 2020. Déan tagairt do thionscadail ar nós {Ruffle} ina ionad sin.",
-  "Contact_Disclaimer2": "Níor cheart iarratais chartlainne a dhéanamh trí ríomhphost; {follow this guide} ina ionad sin. Glactar le r-phoist chun fadhbanna a réiteach, ach léigh an {manual} ar dtús."
+	"Title": "Teagmháil",
+	"Header": "Teagmháil",
+	"Contact_Para1": "If you need to contact the project directly, send an e-mail to $1{flashpoint (at) bluemaxima (dot) org}.",
+	"Contact_Para2": "Flashpoint does not offer services for making Flash-enabled content available in the browser after 2020. Please refer to projects such as $1{Ruffle} instead.",
+	"Contact_Para3": "Archival requests should not be done via email; $1{follow this guide} instead. Troubleshooting emails are accepted, but please read the $2{FAQ} first."
 }

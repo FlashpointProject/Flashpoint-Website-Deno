@@ -1,0 +1,20 @@
+{
+  "Downloads_Avast": "UŻYTKOWNICY PROGRAMU AVAST: ZAPOZNAJ SIĘ Z {TYM} PRZED POBRANIEM!",
+  "Downloads_Title": "Pobieranie",
+  "Downloads_Description": "Aplikacja Flashpoint dostarczana jest bezpłatnie, w formacie przenośnym oraz {{działa dzięki oprogramowaniu o otwartym źródle}} (z wyłączeniem wtyczek, które stanowią w większości porzucone oprogramowanie). Jeśli masz jakiekolwiek pytania lub obawy, zapoznaj się z {Częstymi pytaniami} lub zapytaj na {Discordzie}.",
+  "Downloads_Infinity_Title": "Flashpoint {} Infinity",
+  "Downloads_Infinity_Size": "{Rozmiar:} {} do pobrania, {} po instalacji",
+  "Downloads_Infinity_Para1": "Poszczególne pozycje są pobierane z naszych serwerów po uruchomieniu. Idealne dla zwyczajnych użytkowników.",
+  "Downloads_Infinity_Para2": "Całkowity rozmiar zależy od wybranych komponentów i zwiększa się wraz z pobieraniem pozycji.",
+  "Downloads_Infinity_Link": "Pobierz instalator",
+  "Downloads_Infinity_Link2": "Spakowana kopia (jeśli instalator nie działa)",
+  "Downloads_Ultimate_Title": "Flashpoint {} Ultimate",
+  "Downloads_Ultimate_Size": "{Rozmiar:} {} do pobrania, {} po wypakowaniu",
+  "Downloads_Ultimate_Para1": "Wszystkie pozycje są dostępne od razu i bez dostępu do Internetu. Idealne dla archiwistów lub zbieraczy danych.",
+  "Downloads_Ultimate_Para2": "Do pobrania wymagany klient torrent taki jak {qBittorrent} oraz {7-Zip} do wypakowania.",
+  "Downloads_Ultimate_Link": "Pobierz Torrent",
+  "Downloads_Ultimate_Link2": "Bezpośrednie pobieranie (Archive.org)",
+  "Downloads_Requirements": "{Wymagania systemowe:} Windows 8.1 lub nowszy (częściowo obsługiwane są również {Mac} oraz {Linux})",
+  "Downloads_Prerequisites": "{Wymagania wstępne:} {Pakiet redystrybucyjny Visual C++ 2015 (x86)}, {Microsoft .NET Framework 4.7} lub nowszy",
+  "Downloads_Footer": "Informacje i listę zmian związane ze starszymi wersjami możesz uzyskać na stronie {Aktualności}."
+}

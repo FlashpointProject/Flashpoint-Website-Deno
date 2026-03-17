@@ -1,9 +1,11 @@
 {
-  "Branding_Title": "品牌",
-  "Branding_Para1": "回归到最简单的形式来看，Flashpoint 的图标是项目名称缩写的两个字母 FP，其中 F 被反转，与 P 相背。中间空白处形成箭头形状，可以被解释为播放按钮或下载符号，代表我们在玩喜欢的游戏时曾经习惯的操作过程。图标旁边的文本通常使用 Tahoma 字体。",
-  "Branding_Para2": "Flashpoint 的图标以 {Creative Commons Attribution 4.0} 许可证发布，这意味着只要说明他们来自 Seirade（图标设计师）或 Flashpoint 项目，就可以自由修改和分发。",
-  "Branding_Para3": "各种风格的矢量图标资源包可以在{此处}下载。",
-  "Wallpapers_Title": "壁纸",
-  "Wallpapers_Desc": "以下壁纸由 Rain 提供：",
-  "Banners_Title": "Web 横幅"
+	"Title": "品牌",
+	"Header": "品牌",
+	"Branding_Para1": "Flashpoint's logo was designed in 2020 by project contributor Seirade. It is licensed under $1{Creative Commons Attribution 4.0}, which means it can be freely modified and distributed as long as Seirade and/or Flashpoint receive credit.",
+	"Branding_Para2": "The logo is an abstraction of the initials \"FP\", with the blank space featuring an arrow shape that can be interpreted as a play button or download symbol. It is usually imposed on top of a gradient travelling downward and to the right from $1{#e81c24} to $2{#7c1315}, although this gradient can also be used to color the logo itself. The wordmark uses the Tahoma font.",
+	"Assets": "Assets",
+	"Wallpapers": "壁纸",
+	"Banners": "88x31 Banners",
+	"Download": "下载",
+	"By_Author": "by $1"
 }

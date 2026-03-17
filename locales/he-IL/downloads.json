@@ -1,0 +1,20 @@
+{
+  "Downloads_Avast": "משתמשי AVAST: אנא קראו {את זה} לפני ההורדה!",
+  "Downloads_Title": "הורדות",
+  "Downloads_Description": "תכני ההורדה של Flashpoint הם חינמיים, ניידים, ו{פועלים תחת תוכנת קוד פתוח} (חוץ מהתוספים עצמם, שהם ברובם תוכנות נטושות). אם יש לכם תהיות או שאלות כלשהן, עיינו ב{שאלות ותשובות} או שתשאלו ב{Discord}.",
+  "Downloads_Infinity_Title": "Flashpoint {} אינסוף",
+  "Downloads_Infinity_Size": "{גודל:} {} הורדה, {} כאשר מותקן",
+  "Downloads_Infinity_Para1": "התכנים מורדים מהשרתים שלנו כאשר אתם משחקים בהם. אידיאלי עבור משתמשים רגילים.",
+  "Downloads_Infinity_Para2": "גודל ההורדה הכולל מתבסס על פי הרכיבים שנבחרו, וגדל ככל שמורדים יותר תכנים.",
+  "Downloads_Infinity_Link": "הורדת אשף התקנה",
+  "Downloads_Infinity_Link2": "העתק דחוס (במקרה ואשף ההתקנה לא פועל)",
+  "Downloads_Ultimate_Title": "Flashpoint {} Ultimate",
+  "Downloads_Ultimate_Size": "{גודל:} {} הורדה, {} כאשר מחולץ",
+  "Downloads_Ultimate_Para1": "כל התכנים זמינים ללא חיבור רשת מההתחלה. אידיאלי עבור ארכיונרים ואוגרי נתונים.",
+  "Downloads_Ultimate_Para2": "מצריך תוכנת לקוח Torrent כמו למשל {qBittorrent} על מנת להוריד ו{7-Zip} על מנת לחלץ.",
+  "Downloads_Ultimate_Link": "הורדת Torrent",
+  "Downloads_Ultimate_Link2": "הורדה ישירה (Archive.org)",
+  "Downloads_Requirements": "{דרישות מערכת:} Windows 7 SP1 ומעלה (תמיכה מוגבלת ב{Mac} ו{Linux} זמינה גם כן)",
+  "Downloads_Prerequisites": "{דרישות מוקדמות:} {Visual C++ 2015 Redistributable (x86)}, {Microsoft .NET Framework 4.7} ומעלה",
+  "Downloads_Footer": "עבור מידע ויומני שינוי הנוגעים לגרסאות ישנות יותר, אנא בקרו בעמוד ה{חדשות}."
+}

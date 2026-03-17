@@ -1,9 +1,11 @@
 {
-  "Branding_Title": "Εταιρική ταυτότητα",
-  "Branding_Para1": "Φτιαγμένο στην απλούστερη μορφή του, το λογότυπο του Flashpoint είναι τα αρχικά του έργου που αντιπαραβάλλονται το ένα με το άλλο. Ο κενός χώρος σχηματίζει ένα σχήμα βέλους που μπορεί να ερμηνευτεί ως κουμπί αναπαραγωγής ή σύμβολο λήψης, μια υπενθύμιση των διαδικασιών που έχουμε συνηθίσει κατά την πρόσβαση στα αγαπημένα μας παιχνίδια. Το κείμενο που συνήθως φαίνεται παράλληλα με το λογότυπο χρησιμοποιεί τη γραμματοσειρά Tahoma.",
-  "Branding_Para2": "Φτιαγμένο στην απλούστερη μορφή του, το λογότυπο του Flashpoint είναι τα αρχικά του έργου που αντιπαραβάλλονται το ένα με το άλλο. Ο κενός χώρος σχηματίζει ένα σχήμα βέλους που μπορεί να ερμηνευτεί ως κουμπί αναπαραγωγής ή σύμβολο λήψης, μια υπενθύμιση των διαδικασιών που έχουμε συνηθίσει κατά την πρόσβαση στα αγαπημένα μας παιχνίδια. Το κείμενο που συνήθως φαίνεται παράλληλα με το λογότυπο χρησιμοποιεί τη γραμματοσειρά Tahoma.",
-  "Branding_Para3": "Ένα πακέτο που περιέχει το διανυσματικό λογότυπο σε διάφορα στυλ μπορεί να μεταφορτωθεί {here}.",
-  "Wallpapers_Title": "Ταπετσαρίες",
-  "Wallpapers_Desc": "Οι ακόλουθες ταπετσαρίες είναι ευγενική προσφορά του Rain:",
-  "Banners_Title": "Διαφημιστικά Μπάνερ"
+	"Title": "Εταιρική ταυτότητα",
+	"Header": "Εταιρική ταυτότητα",
+	"Branding_Para1": "Flashpoint's logo was designed in 2020 by project contributor Seirade. It is licensed under $1{Creative Commons Attribution 4.0}, which means it can be freely modified and distributed as long as Seirade and/or Flashpoint receive credit.",
+	"Branding_Para2": "The logo is an abstraction of the initials \"FP\", with the blank space featuring an arrow shape that can be interpreted as a play button or download symbol. It is usually imposed on top of a gradient travelling downward and to the right from $1{#e81c24} to $2{#7c1315}, although this gradient can also be used to color the logo itself. The wordmark uses the Tahoma font.",
+	"Assets": "Assets",
+	"Wallpapers": "Ταπετσαρίες",
+	"Banners": "88x31 Banners",
+	"Download": "Λήψη",
+	"By_Author": "by $1"
 }

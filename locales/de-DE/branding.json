@@ -1,9 +1,11 @@
 {
-  "Branding_Title": "Branding",
-  "Branding_Para1": "Das Flashpoint-Logo besteht aus den ineinandergelegten Initialen des Projektnames. Der Leerraum bildet einen Pfeil, der als Play- oder Download-Symbol interpretiert werden kann, eine Anlehnung an die Vorgehensweise, an die wir uns gewöhnt haben, wenn wir auf unsere Lieblingsspiele zugreifen. Die Worte, die normalerweise neben dem Logo zu sehen sind, verwenden die Tahoma-Schriftart.",
-  "Branding_Para2": "Das Flashpoint-Logo fällt unter die {Creative Commons Attribution 4.0}-Lizenz. Das bedeutet, dass es frei modifiziert und weiterverteilt werden kann, solange Seirade (Designer des Logos) oder Flashpoint erwähnt werden.",
-  "Branding_Para3": "Ein Paket, das das vektorisierte Logo in verschiedenen Stilen enthält, kann hier heruntergeladen werden: {here}.",
-  "Wallpapers_Title": "Hintergrundbilder",
-  "Wallpapers_Desc": "Die folgenden Hintergrundbilder sind von Rain:",
-  "Banners_Title": "Webbanner"
+	"Title": "Branding",
+	"Header": "Branding",
+	"Branding_Para1": "Flashpoint's logo was designed in 2020 by project contributor Seirade. It is licensed under $1{Creative Commons Attribution 4.0}, which means it can be freely modified and distributed as long as Seirade and/or Flashpoint receive credit.",
+	"Branding_Para2": "The logo is an abstraction of the initials \"FP\", with the blank space featuring an arrow shape that can be interpreted as a play button or download symbol. It is usually imposed on top of a gradient travelling downward and to the right from $1{#e81c24} to $2{#7c1315}, although this gradient can also be used to color the logo itself. The wordmark uses the Tahoma font.",
+	"Assets": "Assets",
+	"Wallpapers": "Hintergrundbilder",
+	"Banners": "88x31 Banners",
+	"Download": "Herunterladen",
+	"By_Author": "by $1"
 }

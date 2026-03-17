@@ -1,0 +1,20 @@
+{
+  "Downloads_Avast": "ΧΡΗΣΤΕΣ AVAST: ΠΑΡΑΚΑΛΩ ΔΙΑΒΑΣΤΕ ΑΥΤΟ {THIS} ΠΡΙΝ ΤΗ ΛΗΨΗ!",
+  "Downloads_Title": "Λήψεις",
+  "Downloads_Description": "Οι λήψεις του Flashpoint είναι δωρεάν, φορητές και {{powered by open-source software}} (εξαιρουμένων των ίδιων των προσθηκών, που είναι ως επί το πλείστον εγκαταλειμμένο λογισμικό). Εάν έχετε οποιεσδήποτε ερωτήσεις ή ανησυχίες, συμβουλευτείτε το {FAQ} ή ρωτήστε στο {Discord}.",
+  "Downloads_Infinity_Title": "Flashpoint {} Infinity",
+  "Downloads_Infinity_Size": "{Size:} {} λήψη, {} όταν εγκατασταθεί",
+  "Downloads_Infinity_Para1": "Οι καταχωρήσεις λαμβάνονται από τους διακομιστές μας όταν τα παίζετε. Ιδανικό για χαλαρούς χρήστες.",
+  "Downloads_Infinity_Para2": "Το συνολικό μέγεθος εξαρτάται από επιλεγμένα στοιχεία και αυξάνεται καθώς κατεβάζετε καταχωρήσεις.",
+  "Downloads_Infinity_Link": "Λήψη Εγκαταστάτη",
+  "Downloads_Infinity_Link2": "Αντιγραφή σε μορφή Zip (αν ο εγκαταστάτης δεν λειτουργεί)",
+  "Downloads_Ultimate_Title": "Flashpoint {} Ultimate",
+  "Downloads_Ultimate_Size": "{Size:} {} λήψη, {} όταν εξαχθεί",
+  "Downloads_Ultimate_Para1": "Όλες οι καταχωρήσεις είναι διαθέσιμες εκτός σύνδεσης από το get-go. Ιδανικό για αρχειοθέτες και συλλέκτες δεδομένων.",
+  "Downloads_Ultimate_Para2": "Απαιτεί ένα torrent client όπως ο {qBittorrent} για να κατεβάσετε και το {7-Zip} για να εξαγάγετε.",
+  "Downloads_Ultimate_Link": "Κατεβάστε το torrent",
+  "Downloads_Ultimate_Link2": "Άμεση Λήψη (Archive.org)",
+  "Downloads_Requirements": "{System Requirements:} Windows 8.1 ή νεότερη (περιορισμένη υποστήριξη {Mac} και {Linux} όπου είναι επίσης διαθέσιμη)",
+  "Downloads_Prerequisites": "Προαπαιτούμενα {Prerequisites:} {Visual C++ 2015 Redistributable (x86)}, {Microsoft .NET Framework 4.7} ή νεότερη",
+  "Downloads_Footer": "Για πληροφορίες και αρχεία καταγραφής αλλαγών που σχετίζονται με παλαιότερες εκδόσεις, επισκεφτείτε τη σελίδα {News}."
+}

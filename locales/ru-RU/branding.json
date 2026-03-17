@@ -1,9 +1,11 @@
 {
-  "Branding_Title": "Оформление",
-  "Branding_Para1": "В самом простом виде логотип Flashpoint представляет собой инициалы проекта, наложенные друг на друга. Пустое пространство образует стрелку, которую можно интерпретировать как кнопку воспроизведения или символ загрузки — напоминание о процессах, к которым мы привыкли при доступе к любимым играм. В надписи, обычно встречающейся рядом с логотипом, используется шрифт Tahoma.",
-  "Branding_Para2": "Логотип Flashpoint находится под лицензией {Creative Commons Attribution 4.0}, что означает, что его можно свободно изменять и распространять при условии, что вы укажете авторство Seirade (дизайнера логотипа) или Flashpoint.",
-  "Branding_Para3": "Пакет с векторным логотипом в различных стилях можно загрузить {здесь}.",
-  "Wallpapers_Title": "Обои",
-  "Wallpapers_Desc": "Следующие обои любезно предоставлены Rain:",
-  "Banners_Title": "Веб-баннеры"
+	"Title": "Оформление",
+	"Header": "Оформление",
+	"Branding_Para1": "Flashpoint's logo was designed in 2020 by project contributor Seirade. It is licensed under $1{Creative Commons Attribution 4.0}, which means it can be freely modified and distributed as long as Seirade and/or Flashpoint receive credit.",
+	"Branding_Para2": "The logo is an abstraction of the initials \"FP\", with the blank space featuring an arrow shape that can be interpreted as a play button or download symbol. It is usually imposed on top of a gradient travelling downward and to the right from $1{#e81c24} to $2{#7c1315}, although this gradient can also be used to color the logo itself. The wordmark uses the Tahoma font.",
+	"Assets": "Assets",
+	"Wallpapers": "Обои",
+	"Banners": "88x31 Banners",
+	"Download": "Скачать",
+	"By_Author": "by $1"
 }

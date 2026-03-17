@@ -1,6 +1,7 @@
 {
-  "Contact_Title": "Kapcsolat",
-  "Contact_Para1": "Ha szükséged van felvenni a kapcsolatot a projekt tulajdonosával, kérlek küldj egy emailt a flashpoint@bluemaxima. org email címre",
-  "Contact_Disclaimer1": "A Flashpoint nem ad szolgáltatásokat, ami a Flash tartalmat elérhetővé változtatja 2020 után. Kérlek néz inkább olyan projekteket, mint a {Ruffle}.",
-  "Contact_Disclaimer2": "Az archiválási kéréseket nem email-en keresztül kell csinálni; helyette {follow this guide}. Hibaelhárítási emaileket elfogadunk, de kérlek először olvasd el a {manual}."
+	"Title": "Kapcsolat",
+	"Header": "Kapcsolat",
+	"Contact_Para1": "If you need to contact the project directly, send an e-mail to $1{flashpoint (at) bluemaxima (dot) org}.",
+	"Contact_Para2": "Flashpoint does not offer services for making Flash-enabled content available in the browser after 2020. Please refer to projects such as $1{Ruffle} instead.",
+	"Contact_Para3": "Archival requests should not be done via email; $1{follow this guide} instead. Troubleshooting emails are accepted, but please read the $2{FAQ} first."
 }

@@ -1,0 +1,20 @@
+{
+  "Downloads_Avast": "AVAST FELHASZNÁLOK: KÉRLEK OLVASD EL {THIS}, MIELŐTT LETÖLTŐD!",
+  "Downloads_Title": "Letöltések",
+  "Downloads_Description": "A Flashpoint letöltései ingyenesek, hordozhatóak, és {{powered by open-source software}} (a bővitmények önmaguk nem számítanak bele, mivel a legtöbb elhagyatott). Ha van bármilyen kérdésed vagy érdeklődésed, nézd meg a {FAQ} vagy kérdezd a {Discord}.",
+  "Downloads_Infinity_Title": "Flashpoint {} Infinity",
+  "Downloads_Infinity_Size": "{Size:} {} letöltés, {} amikor telepítve",
+  "Downloads_Infinity_Para1": "A játékok indítást követően kerülnek letöltésre. Ideális alkalmi felhasználóknak.",
+  "Downloads_Infinity_Para2": "A teljes méret a kiválasztott komponensektől függ és megnő, ahogy letöltesz játékokat.",
+  "Downloads_Infinity_Link": "Telepítő Letöltése",
+  "Downloads_Infinity_Link2": "Zipped Copy (if installer doesn't work)",
+  "Downloads_Ultimate_Title": "Flashpoint {} Ultimate",
+  "Downloads_Ultimate_Size": "{Size:} {} letöltés, {} amikor kibontva",
+  "Downloads_Ultimate_Para1": "All entries are available offline from the get-go. Ideal for archivists and data hoarders.",
+  "Downloads_Ultimate_Para2": "Requires a torrent client such as {qBittorrent} to download and {7-Zip} to extract.",
+  "Downloads_Ultimate_Link": "Torrent Letöltése",
+  "Downloads_Ultimate_Link2": "Direct Download (Archive.org)",
+  "Downloads_Requirements": "{System Requirements:} Windows 7 SP1 vagy jobb (korlátozott {Mac} és {Linux} támogatás is elérhető)",
+  "Downloads_Prerequisites": "{Prerequisites:} {Visual C++ 2015 Redistributable (x86)}, {Microsoft .NET Framework 4.7} vagy újabb",
+  "Downloads_Footer": "Olyan információkért és váltózáslistákért, amik az öregebb verziókról szól, látogasd meg a {News} oldalt."
+}

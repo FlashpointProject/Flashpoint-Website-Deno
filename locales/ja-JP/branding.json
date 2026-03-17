@@ -1,9 +1,11 @@
 {
-  "Branding_Title": "ブランディング",
-  "Branding_Para1": "簡単に言うと、ロゴはFlashpointの「F」と「P」を逆さにして組み合わせたものです。その中の矢印のような余白は、プレイのボタンとかダウンロードのアイコンと解釈ことができ、好きなゲームをアクセスすることを思い出されるポイントです。ロゴと一緒に使われるテキストは、Tahomaのフォントで書かれています。",
-  "Branding_Para2": "Flashpointのロゴは、{Creative Commons Attribution 4.0}ライセンスの素材なので、Seiradeさん（ロゴのアーティスト）かFlashpointのクレジットを表示するなら、改変したり、再配布したりすることが自由です。",
-  "Branding_Para3": "ベクター化されたロゴが入ったパッケージのダウンロードは{こちら}。",
-  "Wallpapers_Title": "壁紙",
-  "Wallpapers_Desc": "この壁紙はRainさんに作られたものです。",
-  "Banners_Title": "ウェブサイトのバナー"
+	"Title": "ブランディング",
+	"Header": "ブランディング",
+	"Branding_Para1": "Flashpoint's logo was designed in 2020 by project contributor Seirade. It is licensed under $1{Creative Commons Attribution 4.0}, which means it can be freely modified and distributed as long as Seirade and/or Flashpoint receive credit.",
+	"Branding_Para2": "The logo is an abstraction of the initials \"FP\", with the blank space featuring an arrow shape that can be interpreted as a play button or download symbol. It is usually imposed on top of a gradient travelling downward and to the right from $1{#e81c24} to $2{#7c1315}, although this gradient can also be used to color the logo itself. The wordmark uses the Tahoma font.",
+	"Assets": "Assets",
+	"Wallpapers": "壁紙",
+	"Banners": "88x31 Banners",
+	"Download": "ダウンロード",
+	"By_Author": "by $1"
 }

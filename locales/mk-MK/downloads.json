@@ -1,0 +1,20 @@
+{
+  "Downloads_Avast": "КОРИСНИЦИ НА AVAST: ВЕ МОЛИМЕ ПРОЧИТАЈТЕ ГО {THIS} ПРЕД ПРЕЗЕМАЊЕ!",
+  "Downloads_Title": "Превземањa",
+  "Downloads_Description": "Преземањата на Flashpoint се бесплатни, преносливи и {{powered by open-source software}} (со исклучок на самите приклучоци, кои главно се напуштени). Ако имате какви било прашања или грижи, консултирајте се со {FAQ} или прашајте во {Discord}.",
+  "Downloads_Infinity_Title": "Flashpoint {} Infinity",
+  "Downloads_Infinity_Size": "{Size:} {} спуштање, {} кога е инсталирано",
+  "Downloads_Infinity_Para1": "Записите се преземаат од нашите сервери кога ги репродуцирате. Идеален за опуштени корисници.",
+  "Downloads_Infinity_Para2": "Вкупната големина зависи од избраните компоненти и се зголемува како што преземате записи.",
+  "Downloads_Infinity_Link": "Преземете го инсталаторот",
+  "Downloads_Infinity_Link2": "Zipped Копија (ако инсталаторот не работи)",
+  "Downloads_Ultimate_Title": "Flashpoint {} Ultimate",
+  "Downloads_Ultimate_Size": "{Size:} {} преземање, {} кога екстрактирано",
+  "Downloads_Ultimate_Para1": "Сите записи се достапни офлајн од самиот почеток. Идеален за архивисти и собирачи на податоци.",
+  "Downloads_Ultimate_Para2": "Потребен е торент клиент, како што е {qBittorrent} за преземање и {7-Zip} за екстракција.",
+  "Downloads_Ultimate_Link": "Спушти Торрент",
+  "Downloads_Ultimate_Link2": "Директно Преземање (Archive.org)",
+  "Downloads_Requirements": "{System Requirements:} Windows 7 SP1 или подобро (ограничено {Mac} и {Linux} поддршка е исто така достапна)",
+  "Downloads_Prerequisites": "{Prerequisites:} {Visual C++ 2015 Redistributable (x86)}, {Microsoft .NET Framework 4.7} или подобро",
+  "Downloads_Footer": "За информации и дневници за промени во врска со постарите изданија, посетете ја страницата News}."
+}

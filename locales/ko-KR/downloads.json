@@ -1,0 +1,20 @@
+{
+  "Downloads_Avast": "아바스트 유저들은: 다운로드 하기 전에 {THIS} 이것을 먼저 읽으시기 바랍니다.",
+  "Downloads_Title": "다운로드",
+  "Downloads_Description": "플래쉬포인트의 다운로드는 무료이며 이동 가능하고 {{powered by open-source software}} 입니다. (하지만 플러그인은 예외입니다. 플러그인들은 대다수가 방치된 소프트웨어들입니다). 질문이나 의견이 있으신 분들은 {FAQ} 를 참조하시거나 {Discord} 를 통해 문의하시기 바랍니다.",
+  "Downloads_Infinity_Title": "플래시포인트 {} 인피니티",
+  "Downloads_Infinity_Size": "{Size:} {} 다운로드, {} 설치시",
+  "Downloads_Infinity_Para1": "게임이나 애니메이션들은 사용자가 실행할때 다운로드 됩니다. 일반적인 유저들에게 권장됩니다.",
+  "Downloads_Infinity_Para2": "전체 용량은 선택사항에 따라 달라집니다. 많은 항목들을 다운로드할수록 증가할수 있습니다.",
+  "Downloads_Infinity_Link": "인스톨러 다운받기",
+  "Downloads_Infinity_Link2": "압축파일 다운 받기 (인스톨러가 작동하지 않을시)",
+  "Downloads_Ultimate_Title": "플래시포인트 {} 얼티밋",
+  "Downloads_Ultimate_Size": "{Size:} {} 다운로드, {} 압축해제시",
+  "Downloads_Ultimate_Para1": "모든 게임과 애니메이션이 오프라인에서 작동합니다. 데이터 보존을 원하는 수집가들에게 적합합니다.",
+  "Downloads_Ultimate_Para2": "{qBittorrent} 같은 토렌트 클라이언트와 압축을 해제하기 위한 {7-Zip} 이 필요합니다.",
+  "Downloads_Ultimate_Link": "토렌트 다운받기",
+  "Downloads_Ultimate_Link2": "직접 다운 받기 (Archive.org)",
+  "Downloads_Requirements": "{System Requirements:} Windows 7 SP1 이상, ({Mac} 이나 {Linux} 도 제한적으로 지원됩니다)",
+  "Downloads_Prerequisites": "{Prerequisites:} {Visual C++ 2015 Redistributable (x86)}, {Microsoft .NET Framework 4.7} 이상",
+  "Downloads_Footer": "구 릴리즈 버전 변경이력이나 추가 정보를 원하시면, {News} 페이지를 방문하시기 바랍니다."
+}

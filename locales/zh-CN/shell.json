@@ -1,6 +1,6 @@
 {
-	"Toggle_Sidebar": "Toggle Sidebar",
-	"Logo": "Logo",
+	"Toggle_Sidebar": "切换边栏",
+	"Logo": "图标",
 	"Home": "主页",
 	"News": "新闻",
 	"FAQ": "常见问题",
@@ -11,6 +11,6 @@
 	"Search": "Search",
 	"Wiki": "Wiki",
 	"Donate": "捐赠",
-	"Select_Language": "Select Language",
-	"Change_Theme": "Change Theme"
+	"Select_Language": "选择语言",
+	"Change_Theme": "更改主题"
 }

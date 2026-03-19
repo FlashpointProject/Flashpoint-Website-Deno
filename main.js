@@ -251,11 +251,24 @@ async function initServer() {
 
 // Return all available locales and their text definitions
 function getLocales() {
-	const namespaces = Object.values(pages).map(page => page.namespace);
-	const locales = JSON.parse(Deno.readTextFileSync('data/locales.json'));
+	// Get language display names
+	const langs = Array.from(Deno.readDirSync('locales')).map(dir => dir.name).toSorted();
+	const locales = {};
+	for (const lang of langs) {
+		const langSegments = lang.split('-');
+		const briefLang = config.defaultLang == lang || langs.filter(filterLang => filterLang.split('-')[0] == langSegments[0]).length <= 1
+			? langSegments[0] : lang;
+		const langName = new Intl.DisplayNames([lang], { type: 'language', languageDisplay: 'standard' })
+			.of(briefLang).split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+		locales[lang] = { name: langName };
+	}
+
+	// Load translations
+	const namespaces = Object.values(pages).map(page => page.namespace).concat(['shell', 'error']);
 	for (const lang in locales) {
 		const translations = {};
-		for (const namespace of namespaces.concat(['shell', 'error'])) {
+		for (const namespace of namespaces) {
 			const translationPath = `locales/${lang}/${namespace}.json`;
 			if (utils.getPathInfo(translationPath)?.isFile) {
 				translations[namespace] = JSON.parse(Deno.readTextFileSync(translationPath));

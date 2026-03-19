@@ -1,13 +1,13 @@
 {
 	"Header": "欢迎",
-	"Home_Para1": "Flashpoint Archive is the world's largest effort to preserve web-based games, animations, and interactive experiences.",
-	"Home_Para2": "The internet and the ways we interact with it are constantly evolving; the web of today might look nothing like it does tomorrow. The death of Adobe Flash put large swathes of internet history and culture at risk of disappearing forever. Since its inception in December 2017, Flashpoint has saved $1{over 200,000 of these experiences} across more than a hundred modern and legacy web technologies including Flash, Shockwave, and HTML5, thanks to the work of community contributors from around the world.",
-	"Home_Para3": "We provide a highly flexible software package for interacting with the archive, including $1{a fully-featured launcher}, $2{a proxy} that tricks games into thinking they're running on the live internet, and $3{a sandbox} that enables secure playback of plugin-enabled content - $4{all of which are open-source software}.",
+	"Home_Para1": "Flashpoint 档案馆世界上最大的保存 Web 游戏、动画和互动体验的行动。",
+	"Home_Para2": "互联网和我们与之互动的方式正在持续演变；Web 体验日新月异。Adobe Flash 的消亡导致大量互联网的历史与文化有永远消失的风险。在全球社区贡献者的努力下，自 2017 年 12 月成立以来，Flashpoint 已保存了$1{超过 20 万个作品}，横跨超过 100 种新旧 Web 技术，包括 Flash、Shockwave 和 HTML5。",
+	"Home_Para3": "我们提供了一组非常灵活的软件包，用于和收录的档案互动，包括$1{一个全功能启动器}、使游戏认为它们仍在真实互联网中运行的$2{代理服务器}以及安全播放插件内容的$3{沙箱系统}——$4{所有的一切都是开放源代码软件}。",
 	"Home_Para4": "Flashpoint operates as a non-profit through Open Collective Europe, with 100% of proceeds being used to cover our infrastructure costs. If you would like to support us or find out more about who funds us and how exactly these funds are spent, then please visit $1{our Open Collective page}.",
-	"Search_Line1": "Search the",
+	"Search_Line1": "搜索",
 	"Search_Line2": "数据库",
 	"Download_Line1": "下载",
 	"Download_Line2": "Flashpoint",
-	"Discord_Line1": "Join the",
-	"Discord_Line2": "Community"
+	"Discord_Line1": "加入",
+	"Discord_Line2": "社区"
 }

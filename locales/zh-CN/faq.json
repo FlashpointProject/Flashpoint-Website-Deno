@@ -1,9 +1,9 @@
 {
 	"Title": "常见问题",
 	"Header": "常见问题",
-	"FAQ_Para1": "If you have a question that isn't answered here, $1{email us} or ask in $2{our Discord}.",
-	"Flash_Shutdown_Questions_Header": "Flash Shutdown Questions",
-	"December_2020_Question": "Didn't all Flash games disappear after December 2020?",
+	"FAQ_Para1": "如果您有这里尚未回答的问题，请发送$1{电子邮件}或在 $2{Discord} 询问。",
+	"Flash_Shutdown_Questions_Header": "Flash 关停问题",
+	"December_2020_Question": "不是所有 Flash 游戏在 2020 年 12 月后就消失了吗？",
 	"December_2020_Answer_Para1": "Flash games don't disappear by themselves. However, since Flash support was $1{removed} from browsers, most people aren't able to play Flash content unless they downgrade their browser and Flash versions to one that does not contain the kill switch. While $2{Ruffle} has emerged as a viable solution for keeping Flash content online, it had major compatibility issues at the time of the shutdown and was not nearly as well-known. Because of this, many sites that hosted Flash games have decided to remove them. As we cannot rely on the assumption that these games will stay up, we're working hard to grab as many of them as possible while they're still here.",
 	"Projector_Question": "Can't I just play Flash games using the standalone Flash Player projector?",
 	"Projector_Answer_Para1": "Many web games have what is known as a $1{sitelock}, which means that they will not work unless they are being played on the original site they were hosted on. Since the projector is not connected to the internet and cannot identify those sites, those games will refuse to load on it. Moreover, web games are commonly spread across multiple files rather than just one; these are called $1{multi-asset} games, and often try to load other files through web URLs such that they are unlikely to run on their own with just the projector.",

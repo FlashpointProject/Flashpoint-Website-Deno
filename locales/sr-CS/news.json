@@ -9,7 +9,7 @@
 	"Articles": "Članci",
 	"Videos": "Video zapisi",
 	"Changelogs": "Spisak promena",
-	"By_Author": "by $1",
+	"By_Author": "od strane $1",
 	"Entry_Byline1": "Postavljeno od strane $1 {$2} na $3",
 	"Entry_Byline2": "Objavljeno na $1 od strane $2{$3} na $4",
 	"Entry_Byline3": "$1 {Objavljeno na $2} od strane $3{$4} na $5",

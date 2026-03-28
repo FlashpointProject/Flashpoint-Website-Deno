@@ -1,10 +1,10 @@
 {
-	"Logo": "Logo",
+	"Logo": "Logotip",
 	"Screenshot": "Slika ekrana",
-	"Entry_Info": "Entry Information",
+	"Entry_Info": "Unos Informacija",
 	"Add_Apps": "Dodatne aplikacije",
-	"Game_Data": "Game Data",
-	"Old_Game_Data": "View Outdated Game Data",
-	"Launching_Flashpoint": "Launching Flashpoint...",
-	"Install_Flashpoint": "If Flashpoint isn't installed, $1{get it now}."
+	"Game_Data": "Podaci Igre",
+	"Old_Game_Data": "Pogledajte Zastarene Podatke Igre",
+	"Launching_Flashpoint": "Pokretanje Flashpointa...",
+	"Install_Flashpoint": "Ako Flashpoint nije instaliran, $1 {preuzmi ga sad}."
 }

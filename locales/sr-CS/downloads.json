@@ -12,7 +12,7 @@
 	"Windows_Ultimate_Para1": "The entire archive in one enormous package. Internet connection is not required.",
 	"Windows_Ultimate_Para2": "Read $1{this article} for information about downloading, extracting, and updating Ultimate.",
 	"Windows_Ultimate_Main_Download": "Preuzmi Torrent",
-	"Windows_Ultimate_Alt_Download": "Direct Download",
+	"Windows_Ultimate_Alt_Download": "Direktno Preuzimanje",
 	"Windows_System_Requirements": "$1 or higher",
 	"Windows_Prerequisites": "$1{$2}, $3{$4} or higher",
 	"MacOS_Infinity_Para1": "See the $1{Mac Support} page for more information, including known issues and differences from the Windows version.",
@@ -42,7 +42,7 @@
 	"Released_Upper": "Released $1",
 	"Released_Lower": "released $1",
 	"Download": "Preuzmi",
-	"Torrent": "Torrent",
+	"Torrent": "Torent",
 	"Currently_Lost": "currently lost",
 	"Hashes_For": "Hashes for $1{$2}:"
 }

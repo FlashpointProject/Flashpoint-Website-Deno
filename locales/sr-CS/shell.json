@@ -1,6 +1,6 @@
 {
 	"Toggle_Sidebar": "Toggle Sidebar",
-	"Logo": "Logo",
+	"Logo": "Logotip",
 	"Home": "Početak",
 	"News": "Novosti",
 	"FAQ": "Često postavljena pitanja",
@@ -8,9 +8,9 @@
 	"Source_Code": "Izvorni kod",
 	"Branding": "Brend",
 	"Contact": "Kontakt",
-	"Search": "Search",
+	"Search": "Pretraga",
 	"Wiki": "Vikipedija",
 	"Donate": "Donirajte",
-	"Select_Language": "Select Language",
-	"Change_Theme": "Change Theme"
+	"Select_Language": "Odaberite Jezik",
+	"Change_Theme": "Promenite Temu"
 }

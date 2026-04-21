@@ -3,7 +3,7 @@
 	"Header": "源代码",
 	"Source_Para1": "Flashpoint 由自由和开放源代码软件驱动。您可以在下面找到由 Flashpoint 贡献者开发的项目列表，更多可以在我们的 $1{GitHub 团队页面}找到。",
 	"CLIFp_Description": "一个全功能的 Flashpoint 命令行启动器。",
-	"Rust_Library_Description": "与 Flashpoint 数据库交互的库，用于驱动启动器和在线搜索工具。Node.js 的绑定可以在${这里}找到。",
+	"Rust_Library_Description": "与 Flashpoint 数据库交互的库，用于驱动启动器和在线搜索工具。Node.js 的绑定可以在$1{这里}找到。",
 	"Game_Server_Description": "一个代理服务器，让 Flashpoint 条目认为自身在真实互联网上运行。",
 	"Installer_Description": "Flashpoint Infinity 安装程序。",
 	"Launcher_Description": "一个可扩展的、基于 Electron 的启动器，作为档案馆的主要前端。",

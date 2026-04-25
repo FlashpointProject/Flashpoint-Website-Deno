@@ -403,7 +403,6 @@ body {
 	bottom: 0;
 
 	color: var(--fp-text-color);
-	word-break: break-word;
 }
 .fp-content::after {
 	display: block;
@@ -433,6 +432,7 @@ body {
 	align-items: flex-end;
 
 	font-family: var(--fp-header-font);
+	word-break: break-word;
 	border-bottom: 0.15rem solid var(--fp-background-color-4);
 }
 .fp-content-header {

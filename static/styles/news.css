@@ -69,6 +69,9 @@
 	margin-top: 1rem;
 }
 
+.fp-news-container {
+	word-break: break-word;
+}
 .fp-news-container h1 {
 	font-size: 1.5rem;
 }

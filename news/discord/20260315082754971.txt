@@ -1,0 +1,11 @@
+You might be seeing a few more files being flagged for `Trojan:JS/Redirtector.CT!MTB` by Windows Defender.
+
+To be clear, these files are **not** harmful. They're hit for the same style of content that services.swf was hit for last year.
+
+To tell you a bit more about `Trojan:JS/Redirtector.CT!MTB`, here's a list of it's facts:
+- It was a definition created 5 days ago
+- There is no technical information for it
+- There are only 7 results on Google for the word Redirtector, 1 is about Flashpoint, and only 1 other that isn't by Microsoft's site is in English.
+- It is only a detection within Windows Defender, no other Anti-Virus software
+
+In short, Microslop is hitting us with clearly AI created virus definitions. As usual this may take a while to try and resolve while we make our AI overlords happy, because the other AI overlords in charge of reporting falsely flagged files for Windows Defender have replaced their real staff.

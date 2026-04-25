@@ -16,7 +16,7 @@
 	"Entry_Back": "Back to News",
 	"Discord_Archive": "Discord Archive",
 	"Discord_Para1": "This is a publicly-accessible archive of our Discord server's #announcements channel. It is updated manually, so it may not always be up-to-date.",
-	"Discord_Para2": "Note that announcements posted prior to May 2021 survive only in screenshot form and have been transcribed by hand for your convenience,  although their original attachments and exact post dates are lost. On the other hand, announcements posted prior to December 2018 are currently missing in their entirety.",
+	"Discord_Para2": "Note that announcements posted between December 2018 and May 2021 survive only in screenshot form. They have been transcribed by hand for your convenience, although their original attachments and exact post dates are lost. Announcements posted prior to December 2018 are currently missing in their entirety.",
 	"All_Posts": "All Posts",
 	"Discord_Byline1": "$1{$2} posted on $3:",
 	"Discord_Byline2": "$1{$2} posted circa $3:",

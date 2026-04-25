@@ -16,7 +16,7 @@
 	"Entry_Back": "返回新闻",
 	"Discord_Archive": "Discord 归档",
 	"Discord_Para1": "这是一份公开的归档，展示我们 Discord 服务器上 #announcements 频道的内容。更新是手动的，所以内容可能并不总是最新的。",
-	"Discord_Para2": "Note that announcements posted between December 2018 and May 2021 survive only in screenshot form. They have been transcribed by hand for your convenience, although their original attachments and exact post dates are lost. Announcements posted prior to December 2018 are currently missing in their entirety.",
+	"Discord_Para2": "请注意，在 2018 年 12 月到 2021 年 5 月之间发布的公告仅以截图形式记录。它们由我们手工抄录下来以便阅读，而它们的原始附件和确切发布日期已经丢失。2018 年 12 月之前发布的公告目前全部缺失。",
 	"All_Posts": "所有帖文",
 	"Discord_Byline1": "$1{$2} 发表于 $3：",
 	"Discord_Byline2": "$1{$2} 发表于约 $3：",

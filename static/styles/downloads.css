@@ -228,6 +228,9 @@
 
 .fp-downloads-hash-file {
 	margin-bottom: 1rem;
+
+	word-wrap: break-word;
+	word-break: break-word;
 }
 .fp-downloads-hash-table + .fp-downloads-hash-file {
 	margin-top: 1.5rem;

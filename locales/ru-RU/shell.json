@@ -1,16 +1,16 @@
 {
-	"Toggle_Sidebar": "Toggle Sidebar",
-	"Logo": "Logo",
+	"Toggle_Sidebar": "Переключить боковую панель",
+	"Logo": "Логотип",
 	"Home": "Главная",
 	"News": "Новости",
 	"FAQ": "Частые вопросы",
-	"Downloads": "Загрузки",
+	"Downloads": "Скачивания",
 	"Source_Code": "Исходный код",
 	"Branding": "Оформление",
 	"Contact": "Обратная связь",
 	"Search": "Search",
 	"Wiki": "Вики",
 	"Donate": "Пожертвовать",
-	"Select_Language": "Select Language",
-	"Change_Theme": "Change Theme"
+	"Select_Language": "Выбрать язык",
+	"Change_Theme": "Сменить тему"
 }

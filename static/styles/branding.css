@@ -8,8 +8,8 @@
 .fp-branding-color-1::before, .fp-branding-color-2::before {
 	width: 0.75rem;
 	height: 0.75rem;
-	margin: 0.25rem 0.25rem 0 0;
-	vertical-align: top;
+	margin-right: 0.25rem;
+	vertical-align: middle;
 	display: inline-block;
 
 	border: 0.05rem solid var(--fp-text-color);

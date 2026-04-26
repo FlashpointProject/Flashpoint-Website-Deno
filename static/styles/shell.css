@@ -98,6 +98,7 @@
 :root {
 	--fp-header-font: Tahoma, "DejaVu Sans Condensed", Verdana, "DejaVu Sans", sans-serif;
 	--fp-content-font: Verdana, "DejaVu Sans", sans-serif;
+	--fp-monospace-font: "Consolas", monospace;
 	--fp-gradient: fixed radial-gradient(ellipse at top left, var(--fp-shell-background-color-1), var(--fp-shell-background-color-2));
 	--fp-left-arrow-icon: url('data:image/svg+xml;utf8,<svg viewBox="0 0 16 16" fill="%23fff" xmlns="http://www.w3.org/2000/svg"><path d="m3 8 8-6v12Z"/></svg>');
 	--fp-right-arrow-icon: url('data:image/svg+xml;utf8,<svg viewBox="0 0 16 16" fill="%23fff" xmlns="http://www.w3.org/2000/svg"><path d="m13 8-8-6v12Z"/></svg>');
@@ -487,6 +488,7 @@ ul > li::before {
 code {
 	vertical-align: bottom;
 
+	font-family: var(--fp-monospace-font);
 	font-size: 0.9rem;
 }
 

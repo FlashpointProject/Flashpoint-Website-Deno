@@ -1,6 +1,6 @@
 {
-	"Toggle_Sidebar": "Toggle Sidebar",
-	"Logo": "Logo",
+	"Toggle_Sidebar": "Bară laterală",
+	"Logo": "Siglă",
 	"Home": "Pag. principală",
 	"News": "Știri",
 	"FAQ": "Întrebări frecvente",
@@ -11,6 +11,6 @@
 	"Search": "Search",
 	"Wiki": "Wiki (en.)",
 	"Donate": "Donații (en.)",
-	"Select_Language": "Select Language",
-	"Change_Theme": "Change Theme"
+	"Select_Language": "Limbă site",
+	"Change_Theme": "Aspect site"
 }

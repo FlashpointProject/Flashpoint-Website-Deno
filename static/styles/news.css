@@ -70,6 +70,7 @@
 }
 
 .fp-news-container {
+	word-wrap: break-word;
 	word-break: break-word;
 }
 .fp-news-container h1 {

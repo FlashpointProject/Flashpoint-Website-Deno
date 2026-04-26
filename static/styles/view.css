@@ -57,6 +57,7 @@
 }
 .fp-view-table td {
 	white-space: pre-wrap;
+	word-wrap: break-word;
 	word-break: break-word;
 }
 .fp-view-table ul {

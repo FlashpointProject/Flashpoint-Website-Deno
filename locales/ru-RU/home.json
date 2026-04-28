@@ -1,13 +1,13 @@
 {
 	"Header": "Добро пожаловать",
-	"Home_Para1": "Flashpoint Archive is the world's largest effort to preserve web-based games, animations, and interactive experiences.",
-	"Home_Para2": "The internet and the ways we interact with it are constantly evolving; the web of today might look nothing like it does tomorrow. The death of Adobe Flash put large swathes of internet history and culture at risk of disappearing forever. Since its inception in December 2017, Flashpoint has saved $1{over 200,000 of these experiences} across more than a hundred modern and legacy web technologies including Flash, Shockwave, and HTML5, thanks to the work of community contributors from around the world.",
-	"Home_Para3": "We provide a highly flexible software package for interacting with the archive, including $1{a fully-featured launcher}, $2{a proxy} that tricks games into thinking they're running on the live internet, and $3{a sandbox} that enables secure playback of plugin-enabled content - $4{all of which are open-source software}.",
-	"Home_Para4": "Flashpoint operates as a non-profit through Open Collective Europe, with 100% of proceeds being used to cover our infrastructure costs. If you would like to support us or find out more about who funds us and how exactly these funds are spent, then please visit $1{our Open Collective page}.",
-	"Search_Line1": "Search the",
-	"Search_Line2": "База данных",
+	"Home_Para1": "Flashpoint Archive — это самый масштабный в мире проект по сохранению веб-игр, анимации и интерактивных впечатлений.",
+	"Home_Para2": "Интернет и способы взаимодействия с ним постоянно меняются: уже сегодняшняя сеть может совсем не походить на ту, какой станет завтра. Смерть Adobe Flash поставила под угрозу исчезновения огромные массивы интернет-истории и культуры. С момента своего создания в декабре 2017 года Flashpoint сохранил $1{более 200 000 таких проектов} на основе более чем сотни современных и устаревших веб-технологий, включая Flash, Shockwave и HTML5, благодаря работе участников сообщества со всего мира.",
+	"Home_Para3": "Мы предоставляем высоко гибкий программный пакет для взаимодействия с архивом, включающий $1{полнофункциональный лаунчер}, $2{прокси}, который заставляет игры думать, что они работают в реальном интернете, и $3{песочницу}, обеспечивающую безопасное воспроизведение контента с плагинами, — $4{всё это является программным обеспечением с открытым исходным кодом}.",
+	"Home_Para4": "Flashpoint работает как некоммерческая организация через Open Collective Europe, при этом 100% поступлений направляются на покрытие наших инфраструктурных расходов. Если вы хотите поддержать нас или узнать больше о том, кто нас финансирует и как именно расходуются эти средства, пожалуйста, посетите $1{нашу страницу на Open Collective}.",
+	"Search_Line1": "Поиск по",
+	"Search_Line2": "базе данных",
 	"Download_Line1": "Скачать",
 	"Download_Line2": "Flashpoint",
-	"Discord_Line1": "Join the",
-	"Discord_Line2": "Community"
+	"Discord_Line1": "Вступить в",
+	"Discord_Line2": "сообщество"
 }

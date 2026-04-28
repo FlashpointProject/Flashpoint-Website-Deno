@@ -17,12 +17,12 @@
 	"Source_Para2": "Flashpoint также использует следующие сторонние проекты с открытым исходным кодом:",
 	"Apache_Description": "Веб-серверное программное обеспечение для запуска старых записей Flashpoint которые ещё не были сделаны для использования современного игрового сервера Flashpoint.",
 	"Basilisk_Description": "Веб-браузер на основе Firefox до версии Quantum, поддерживающий NPAPI-плагины. Версия, включённая в Flashpoint, переименована в $1{Flashpoint Navigator} из−за лицензионных ограничений; её репозиторий можно найти $2{здесь}.",
-	"Chromium_Description": "A modern web browser developed by Google, capable of running more recent and resource-heavy HTML5 content.",
-	"MediaWiki_Description": "The software used to power the Flashpoint Wiki.",
-	"PHP_Description": "A web scripting language used by numerous games in Flashpoint.",
+	"Chromium_Description": "Современный веб-браузер, разработанный Google, способный запускать более новое и ресурсоёмкое HTML5-содержимое.",
+	"MediaWiki_Description": "Программное обеспечение, используемое для работы вики Flashpoint.",
+	"PHP_Description": "Веб-язык скриптов, используемый множеством игр в Flashpoint.",
 	"Name": "Наименование",
 	"License": "Лицензия",
 	"Description": "Описание",
 	"No_License": "Нет",
-	"Various_Licenses": "Various"
+	"Various_Licenses": "Различные"
 }

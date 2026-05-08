@@ -9,7 +9,6 @@
 	"Launcher_Description": "一个可扩展的、基于 Electron 的启动器，作为档案馆的主要前端。",
 	"Manager_Description": "添加、删除和更新 Flashpoint 软件组件的工具。",
 	"Secure_Player_Description": "一款先进的应用程序，允许在不永久修改 Windows 注册表的情况下，播放基于插件的内容。",
-	"Ultimate_Updater_Description": "升级 Flashpoint Ultimate 版本的工具。",
 	"Website_Description": "您正在查看的网站。",
 	"FPFSS_Description": "处理 Flashpoint 策展提交和批准程序的网站。",
 	"FPCurator_Description": "管理和自动生成 Flashpoint 策展的工具。",

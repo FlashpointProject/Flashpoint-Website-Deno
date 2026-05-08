@@ -9,7 +9,6 @@
 	"Launcher_Description": "An extensible Electron-based launcher that serves as the primary frontend for the archive.",
 	"Manager_Description": "A utility for adding, removing, and updating Flashpoint's software components.",
 	"Secure_Player_Description": "An advanced application that enables playback of plugin-based content without making permanent changes to the Windows registry.",
-	"Ultimate_Updater_Description": "A utility for upgrading copies of Flashpoint Ultimate.",
 	"Website_Description": "The very website you're looking at.",
 	"FPFSS_Description": "The website that handles Flashpoint's curation submission and approval processes.",
 	"FPCurator_Description": "A tool for managing and automatically generating Flashpoint curations.",

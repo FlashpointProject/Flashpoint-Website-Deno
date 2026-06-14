@@ -41,6 +41,13 @@
 		"fragments": [],
 		"lenient": false
 	},
+	"/oldversions": {
+		"namespace": "oldversions",
+		"styles": ["oldversions.css"],
+		"scripts": [],
+		"fragments": [],
+		"lenient": false
+	},
 	"/source": {
 		"namespace": "source",
 		"styles": ["source.css"],

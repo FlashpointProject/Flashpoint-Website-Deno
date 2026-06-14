@@ -1,0 +1,27 @@
+/* Page theme */
+
+:root {
+	--fp-light-oldversions-lost-download-color: #ff3333;
+
+	--fp-dark-oldversions-lost-download-color: #ff6666;
+}
+
+:root:not([data-theme='dark']) {
+	--fp-oldversions-lost-download-color: var(--fp-light-oldversions-lost-download-color);
+}
+:root[data-theme='dark'] {
+	--fp-oldversions-lost-download-color: var(--fp-dark-oldversions-lost-download-color);
+}
+
+/* Old Versions */
+
+.fp-oldversions-downloads {
+	margin: 0.25rem 0;
+	padding-left: 2rem;
+}
+.fp-oldversions-downloads li {
+	margin-bottom: 0;
+}
+.fp-oldversions-lost-download {
+	color: var(--fp-oldversions-lost-download-color);
+}

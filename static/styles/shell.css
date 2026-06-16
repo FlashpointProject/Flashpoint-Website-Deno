@@ -305,12 +305,17 @@ body {
 	content: '\200B';
 }
 .fp-shell-spacer,
-.fp-shell-max-spacer {
+.fp-shell-max-spacer,
+.fp-shell-placeholder {
 	padding: 0.4rem 0;
 	flex-shrink: 0;
 }
 .fp-shell-max-spacer {
 	flex-grow: 1;
+}
+.fp-shell-placeholder {
+	text-align: center;
+	opacity: 0.85;
 }
 .fp-shell-socials {
 	padding: 0.5rem 1.5rem;

@@ -210,6 +210,21 @@
 	border: 0.15rem solid var(--fp-downloads-warning-border-color);
 }
 
+.fp-downloads-other-subheader {
+	font-size: 0.9rem;
+	opacity: 0.85;
+}
+.fp-downloads-other-downloads {
+	margin: 0.5rem 0;
+	padding-left: 2rem;
+}
+.fp-downloads-other-downloads li {
+	margin-bottom: 0;
+}
+.fp-downloads-other-coming-soon {
+	opacity: 0.6;
+}
+
 .fp-downloads-hash-file {
 	margin-bottom: 1rem;
 

@@ -25,6 +25,7 @@ const discordMarked = new Marked().use({
 	emojis: {
 		AngryFaic: 'AngryFaic.png',
 		cool_crab: 'cool_crab.png',
+		Flash: 'Flash.png',
 		flashpoint: 'flashpoint.png',
 		futurewave: 'futurewave.png',
 		K_Meleon: 'K_Meleon.png',

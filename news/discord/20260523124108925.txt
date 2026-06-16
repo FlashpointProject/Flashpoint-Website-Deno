@@ -1,0 +1,9 @@
+# :Flash: Support Pack Update
+
+Some Flash games make use of `.swz` files, these are digitally signed libraries from Adobe. Some of their certificates have already expired and the games will fail to load. More of these will fail to run as we get closer to the end of the year unless you update.
+
+The projectors and browser extensions in Flashpoint have been patched to remove the certificate validity checks to keep the games playable. You can update via the manager, or by manually installing the support pack. This should work on unsupported version of Flashpoint but no promises.
+
+Manual download: https://nexus-dev.unstable.life/repository/components-stable/supportpack-flash.zip
+
+Note: This has been done with a currently unreleased patcher tool from DarkTohka, the maintainer of FlashPatch.

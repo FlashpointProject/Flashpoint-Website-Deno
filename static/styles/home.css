@@ -135,6 +135,7 @@
 .fp-home-latest-news {
 	max-width: 40rem;
 	margin: 0 auto;
+	box-sizing: border-box;
 }
 .fp-home-go-to-news {
 	margin-left: auto;

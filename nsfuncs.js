@@ -105,6 +105,26 @@ export const namespaceFunctions = {
 			'LANGUAGE_SELECT': langButtons.join('\n'),
 		};
 	},
+	'home': (_, lang, defs) => {
+		// Get news page translation
+		const byAuthor = Object.assign({},
+			locales[config.defaultLang].translations['news'],
+			locales[lang]?.translations['news'],
+		)['By_Author'];
+
+		// Build latest news entry HTML
+		const latestNewsEntryArr = [];
+		for (const newsEntry of newsInfo.slice(0, 6))
+			latestNewsEntryArr.push(utils.buildHtml(templates['news'].index_entry, Object.assign({}, defs, {
+				'By_Author': byAuthor,
+				id: newsEntry.id,
+				title: newsEntry.title,
+				author: newsEntry.author,
+				date: newsEntry.date?.length >= 10 ? new Date(newsEntry.date).toLocaleDateString(lang, { timeZone: 'UTC' }) : '',
+			})));
+
+		return { newsEntries: latestNewsEntryArr.join('\n') };
+	},
 	'news': (url, lang, defs) => {
 		const subpage = utils.trimSlashes(url.pathname).substring(5);
 		if (subpage == '') {

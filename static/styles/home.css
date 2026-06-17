@@ -86,7 +86,7 @@
 }
 
 .fp-home-buttons {
-	margin: 1.25rem auto 0;
+	margin: 1.25rem auto 1.5rem;
 	display: flex;
 }
 .fp-home-buttons-lower {
@@ -130,4 +130,17 @@
 }
 .fp-home-download-button .fp-home-button-text:first-of-type {
 	font-size: 10px;
+}
+
+.fp-home-latest-news {
+	max-width: 40rem;
+	margin: 0 auto;
+}
+.fp-home-go-to-news {
+	margin-left: auto;
+	padding-left: 0.5rem;
+
+	font-size: 0.8rem;
+	font-weight: normal;
+	text-align: right;
 }

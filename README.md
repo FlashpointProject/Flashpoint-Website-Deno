@@ -1,8 +1,6 @@
-# Flashpoint Website (New)
+# Flashpoint Website
 
-This is the GitHub repository for the new Flashpoint Archive website. It is not finished yet.
-
-A public test server can be found at http://67.220.73.8:8989/.
+This is the GitHub repository for the Flashpoint Archive website, located at https://flashpointarchive.org/.
 
 ## Setup Instructions
 

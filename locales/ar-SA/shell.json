@@ -1,16 +1,17 @@
 {
 	"Toggle_Sidebar": "Toggle Sidebar",
-	"Logo": "Logo",
+	"Logo": "الشعار",
 	"Home": "الرئيسية",
-	"News": "News",
-	"FAQ": "FAQ",
+	"News": "الأخبار",
+	"FAQ": "الأسئلة الشائعة",
 	"Downloads": "التنزيلات",
 	"Source_Code": "Source Code",
 	"Branding": "Branding",
 	"Contact": "اتصال",
 	"Search": "Search",
 	"Wiki": "Wiki",
-	"Donate": "Donate",
-	"Select_Language": "Select Language",
-	"Change_Theme": "Change Theme"
+	"Donate": "دعم المشروع",
+	"Language_Notice": "المزيد من اللغات قريباً!",
+	"Select_Language": "اختر اللغة",
+	"Change_Theme": "تغيير المظهر"
 }

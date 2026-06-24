@@ -1,0 +1,26 @@
+Hi everyone,
+
+My name is Wumbo and I've been the main designer and developer of Flashpoint's website since 2019. I was only 14 years old when I was given this opportunity, and over the past seven years I've gained a ton of knowledge about what makes a website useful.
+
+The last time the site was rebuilt from the ground up was in 2020, and despite years of adjustments and a full rewrite to add support for translations, it continued to look and function mostly the same. And while it succeeded in its ultimate goal of onboarding people to Flashpoint and its community, its age and limitations became increasingly obvious over the years. To name some examples:
+- The site had no ability to display dynamic content outside of translations. Most importantly, this meant that there was no in-site support for searching or displaying information from the archive itself.
+- The site did not properly support small-width resolutions such as those used by mobile devices. Trying to view the site on a phone was a nightmare.
+- We had several social media accounts that were advertised in our Discord server but completely absent from the website (and they wouldn't have fit in the sidebar anyway without making it awkwardly long).
+- We had not one, not two, but *three* FAQ pages (the main FAQ, the Extended FAQ, and the Troubleshooting section of the manual).
+
+With that in mind, I'm excited to announce that for the first time in six years, **the Flashpoint website has received a complete overhaul.** This was a significant undertaking that required plenty of feedback from fellow Flashpoint staff members, and I hope you will find it to be an all-around improvement over the previous iteration of the site.
+
+So without further ado, let's go through the most noteworthy changes:
+
+- Firstly, and perhaps the most obvious - the site has been given a brand new look. The general layout has been retained albeit given a facelift, with proper support for mobile devices as well as a toggleable dark mode.
+- The search tool formerly located at `https://flashpointproject.github.io/flashpoint-database/` has been superseded by a brand new, in-site search tool. It comes with improved entry metadata and plenty more search options, and is automatically synched with the latest database every 24 hours. (Yep, it had to be done manually before.)
+- The news section is - *gasp* - an actual news section now! Since we don't have any new articles to show off yet (except this one), we've loaded it with changelogs, videos, and articles from [our long-abandoned Medium page](https://medium.com/bluemaximas-flashpoint) so you can easily access it all from one place. In addition, we've created [an online archive](/news/discord) of every announcement posted to our Discord server, for those who can't or prefer not to use Discord.
+- The download page has received a makeover, and the macOS and Linux versions are now offered right alongside the Windows version instead of being a tiny footnote. We also now offer CLIFp (our command-line Flashpoint launcher) and Newgrounds Auditorium (our dedicated archive of Newgrounds animations) directly on the download page.
+- The FAQ has been rewritten from scratch and greatly expanded. The Extended FAQ wiki page has been deprecated and replaced with [a new page](/datahub/Troubleshooting) specifically covering troubleshooting information.
+- And finally, we've consolidated links to every old version of Flashpoint we could find into [a dedicated page](/oldversions). No need for digging through the Internet Archive any longer!
+
+As with the rest of Flashpoint's in-house software, the new website is open-source and can be found on GitHub [here](https://github.com/FlashpointProject/Flashpoint-Website-Deno). We're currently looking for translators to help make the site available in other languages once again; if you're interested, head over to [our Crowdin page](https://crowdin.com/project/flashpoint-launcher) to get started.
+
+Thanks for reading, and I sincerely hope you'll enjoy the new Flashpoint webite experience as much as I do. Please stay tuned as we continue to build out the news section with new articles.
+
+Until next time!

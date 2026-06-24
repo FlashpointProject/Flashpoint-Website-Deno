@@ -158,7 +158,9 @@ async function serverError(error) {
 };
 
 // Log when server is started
-function serverListen(addr) { utils.logMessage(`server listening at ${addr.hostname} (port ${addr.port})`); }
+function serverListen(addr) {
+	utils.logMessage(`listening on http${addr.port == config.httpsPort ? 's' : ''}://${addr.hostname}:${addr.port}/`);
+}
 
 // (Re)define global variables
 function initGlobals() {

@@ -1,7 +1,7 @@
-import { FlashpointArchive } from 'npm:@fparchive/flashpoint-archive';
-import { parseArgs } from 'jsr:@std/cli@1.0.23/parse-args';
-import { contentType } from 'jsr:@std/media-types@1.1.0';
-import { setCookie, getCookies } from 'jsr:@std/http@1.0.21/cookie';
+import { FlashpointArchive } from 'flashpoint-archive';
+import { parseArgs } from 'parse-args';
+import { contentType } from 'media-types';
+import { setCookie, getCookies } from 'cookie';
 
 import * as utils from './utils.js';
 import { namespaceFunctions } from './nsfuncs.js';

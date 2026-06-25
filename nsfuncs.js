@@ -1,8 +1,8 @@
-import { contentType } from 'jsr:@std/media-types@1.1.0';
-import { format } from 'jsr:@std/fmt@1.0.8/bytes';
-import { GameSearchSortable, GameSearchDirection, newSubfilter } from 'npm:@fparchive/flashpoint-archive';
-import { Marked } from 'npm:marked@17.0.1';
-import { markedEmoji } from 'npm:marked-emoji@2.0.2';
+import { contentType } from 'media-types';
+import { format } from 'bytes';
+import { GameSearchSortable, GameSearchDirection, newSubfilter } from 'flashpoint-archive';
+import { Marked } from 'marked';
+import { markedEmoji } from 'marked-emoji';
 
 import * as utils from './utils.js';
 

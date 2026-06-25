@@ -1,4 +1,4 @@
-import { newSubfilter } from 'npm:@fparchive/flashpoint-archive';
+import { newSubfilter } from 'flashpoint-archive';
 
 import { namespaceFunctions } from './nsfuncs.js';
 

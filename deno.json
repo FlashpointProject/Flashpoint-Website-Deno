@@ -1,0 +1,15 @@
+{
+	"imports": {
+		"flashpoint-archive": "npm:@fparchive/flashpoint-archive",
+		"parse-args": "jsr:@std/cli@1.0.23/parse-args",
+		"media-types": "jsr:@std/media-types@1.1.0",
+		"cookie": "jsr:@std/http@1.0.21/cookie",
+		"bytes": "jsr:@std/fmt@1.0.8/bytes",
+		"marked": "npm:marked@17.0.1",
+		"marked-emoji": "npm:marked-emoji@2.0.2"
+	},
+	"tasks": {
+		"start": "deno run --allow-read --allow-write --allow-net --allow-sys --allow-ffi main.js",
+		"update": "deno run --allow-read --allow-write --allow-net --allow-sys --allow-ffi main.js --update"
+	}
+}

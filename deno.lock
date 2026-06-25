@@ -1,0 +1,84 @@
+{
+  "version": "5",
+  "specifiers": {
+    "jsr:@std/cli@1.0.23": "1.0.23",
+    "jsr:@std/fmt@1.0.8": "1.0.8",
+    "jsr:@std/http@1.0.21": "1.0.21",
+    "jsr:@std/media-types@1.1.0": "1.1.0",
+    "npm:@fparchive/flashpoint-archive@*": "0.13.7",
+    "npm:marked-emoji@2.0.2": "2.0.2_marked@17.0.1",
+    "npm:marked@17.0.1": "17.0.1"
+  },
+  "jsr": {
+    "@std/cli@1.0.23": {
+      "integrity": "bf95b7a9425ba2af1ae5a6359daf58c508f2decf711a76ed2993cd352498ccca"
+    },
+    "@std/fmt@1.0.8": {
+      "integrity": "71e1fc498787e4434d213647a6e43e794af4fd393ef8f52062246e06f7e372b7"
+    },
+    "@std/http@1.0.21": {
+      "integrity": "abb5c747651ee6e3ea6139858fd9b1810d2c97f53a5e6722f3b6d27a6d263edc"
+    },
+    "@std/media-types@1.1.0": {
+      "integrity": "c9d093f0c05c3512932b330e3cc1fe1d627b301db33a4c2c2185c02471d6eaa4"
+    }
+  },
+  "npm": {
+    "@fparchive/flashpoint-archive-darwin-arm64@0.13.7": {
+      "integrity": "sha512-bjuiO+bcsHJHmboJ4HVA4Pc4M5yzioVrJOoyzUxSzv/BdayhieJGPcpXGVhVjo/WcuYXSKoSAxCoj6XTIfR1OQ==",
+      "os": ["darwin"],
+      "cpu": ["arm64"]
+    },
+    "@fparchive/flashpoint-archive-darwin-x64@0.13.7": {
+      "integrity": "sha512-g8FI/0p0aou9srCinhM+lJVJ+aE2fdQX+bUMEb/ji6mEN0FWIbQherfUQPbl46zhIVEqO4C+BTAdNSpZi+Gvow==",
+      "os": ["darwin"],
+      "cpu": ["x64"]
+    },
+    "@fparchive/flashpoint-archive-linux-x64-gnu@0.13.7": {
+      "integrity": "sha512-OCYl0pAEhHRSoAc4qOaE64kCMLb7uO/9Xell4uuf77AREZIqmJvkQhqkn7HDqDHIWK09j4uXR+pNR6Yn50pO/g==",
+      "os": ["linux"],
+      "cpu": ["x64"]
+    },
+    "@fparchive/flashpoint-archive-win32-ia32-msvc@0.13.7": {
+      "integrity": "sha512-aVuy1M9LL8lxzK0vHQeIPwtdnzBFinhkvysmltub+XDxk6HvzEzLfFrDpUK0QKJjewZnjw2kztQ3Ep0koY+FHw==",
+      "os": ["win32"],
+      "cpu": ["ia32"]
+    },
+    "@fparchive/flashpoint-archive-win32-x64-msvc@0.13.7": {
+      "integrity": "sha512-yFo0tBqIDUOBkMGosv29gxoeH5EIWgRbh+KBwp/uUJKkWvGgsd97COfhqZhZaMxHvD6mzzKtNzQNE76QpJSVCg==",
+      "os": ["win32"],
+      "cpu": ["x64"]
+    },
+    "@fparchive/flashpoint-archive@0.13.7": {
+      "integrity": "sha512-cXb7xzf54f/y1dutS53/vHJI3zTXFLFc7JXFp63BFyz2ioOjt6JEMzPAklhNlcObEZ+Cgx0QK+vQPnEwYwuNig==",
+      "optionalDependencies": [
+        "@fparchive/flashpoint-archive-darwin-arm64",
+        "@fparchive/flashpoint-archive-darwin-x64",
+        "@fparchive/flashpoint-archive-linux-x64-gnu",
+        "@fparchive/flashpoint-archive-win32-ia32-msvc",
+        "@fparchive/flashpoint-archive-win32-x64-msvc"
+      ]
+    },
+    "marked-emoji@2.0.2_marked@17.0.1": {
+      "integrity": "sha512-EFnLQn4wTyf+6pXfptkm83Z2mt3VbdEYedHBAsDpwUas5n5satsj42RGqAijBpmetgGerI1EzUuzf7NIccINUQ==",
+      "dependencies": [
+        "marked"
+      ]
+    },
+    "marked@17.0.1": {
+      "integrity": "sha512-boeBdiS0ghpWcSwoNm/jJBwdpFaMnZWRzjA6SkUMYb40SVaN1x7mmfGKp0jvexGcx+7y2La5zRZsYFZI6Qpypg==",
+      "bin": true
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@std/cli@1.0.23",
+      "jsr:@std/fmt@1.0.8",
+      "jsr:@std/http@1.0.21",
+      "jsr:@std/media-types@1.1.0",
+      "npm:@fparchive/flashpoint-archive@*",
+      "npm:marked-emoji@2.0.2",
+      "npm:marked@17.0.1"
+    ]
+  }
+}

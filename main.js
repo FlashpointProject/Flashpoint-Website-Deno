@@ -181,8 +181,8 @@ function initGlobals() {
 	globalThis.templates = getTemplates();
 	globalThis.newsInfo = JSON.parse(Deno.readTextFileSync('data/news.json')).toSorted((a, b) => b.id - a.id);
 	globalThis.discordInfo = JSON.parse(Deno.readTextFileSync('data/discord.json')).toSorted((a, b) => a.id - b.id);
-	globalThis.searchInfo = JSON.parse(Deno.readTextFileSync(utils.getPathInfo('data/search.json')?.isFile ? 'data/search.json' : 'data/search_template.json'));
-	globalThis.searchStats = JSON.parse(Deno.readTextFileSync(utils.getPathInfo('data/stats.json')?.isFile ? 'data/stats.json' : 'data/stats_template.json'));
+	globalThis.searchInfo = JSON.parse(Deno.readTextFileSync(utils.getPathInfo(config.searchFile)?.isFile ? config.searchFile : 'data/search_template.json'));
+	globalThis.searchStats = JSON.parse(Deno.readTextFileSync(utils.getPathInfo(config.statsFile)?.isFile ? config.statsFile : 'data/stats_template.json'));
 	globalThis.viewInfo = JSON.parse(Deno.readTextFileSync('data/view.json'));
 	globalThis.filteredTags = JSON.parse(Deno.readTextFileSync('data/filter.json'));
 

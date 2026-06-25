@@ -11,6 +11,8 @@
 	"logToConsole": true,
 	"logBlockedRequests": true,
 	"databaseFile": "data/flashpoint.sqlite",
+	"searchFile": "data/search.json",
+	"statsFile": "data/stats.json",
 	"fpfssUrl": "https://fpfss.unstable.life",
 	"imageServer": "https://infinity.unstable.life/images",
 	"pageSize": 100,

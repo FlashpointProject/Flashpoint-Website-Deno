@@ -253,7 +253,7 @@ export async function updateDatabase(createNew = false) {
 		deletionsRes.games = deletionsRes.games.map(deletion => propsToCamel(deletion));
 		await fp.updateDeleteGames(deletionsRes);
 
-		// Apply games redirects
+		// Apply game redirects
 		logMessage(`applying ${redirectsRes.length} game redirects...`);
 		await fp.updateApplyRedirects(redirectsRes.map(redirect => ({
 			sourceId: redirect.source_id,

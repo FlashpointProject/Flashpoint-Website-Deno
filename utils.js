@@ -326,8 +326,8 @@ export async function updateDatabase(createNew = false) {
 
 	// Export search data
 	logMessage('exporting search info and stats...');
-	Deno.writeTextFileSync('data/search.json', JSON.stringify(searchInfo, null, '\t'));
-	Deno.writeTextFileSync('data/stats.json', JSON.stringify(searchStats, null, '\t'));
+	Deno.writeTextFileSync(config.searchFile, JSON.stringify(searchInfo, null, '\t'));
+	Deno.writeTextFileSync(config.statsFile, JSON.stringify(searchStats, null, '\t'));
 
 	// We're done
 	updateInProgress = false;

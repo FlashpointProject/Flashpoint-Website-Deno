@@ -1,5 +1,5 @@
 {
-	"Toggle_Sidebar": "Toggle Sidebar",
+	"Toggle_Sidebar": "Alternar barra lateral",
 	"Logo": "Logo",
 	"Home": "Início",
 	"News": "Notícias",
@@ -11,6 +11,7 @@
 	"Search": "Search",
 	"Wiki": "Documentação",
 	"Donate": "Doações",
-	"Select_Language": "Select Language",
-	"Change_Theme": "Change Theme"
+	"Language_Notice": "Mais idiomas em breve!",
+	"Select_Language": "Selecione o Idioma",
+	"Change_Theme": "Mudar o Tema"
 }

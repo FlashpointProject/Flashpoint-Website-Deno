@@ -460,7 +460,7 @@ export const namespaceFunctions = {
 			search.limit = config.pageSize;
 
 			// If NSFW filter needs to be active, add a subfilter containing extreme tags
-			if (params.get('nsfw') != 'true') {
+			if (params.get('nsfw') !== 'true') {
 				const tagsSubfilter = newSubfilter();
 				tagsSubfilter.exactBlacklist.tags = filteredTags.extreme;
 				tagsSubfilter.matchAny = true;

@@ -11,6 +11,16 @@ const youtubeExp = /^https?:\/\/(?:www\.)?youtu(?:be\.com\/watch\?v=|\.be\/)([a-
 const twitterExp = /^https?:\/\/(?:www\.)?(?:twitter|x)\.com\/(.*?)\/status\/([0-9]+)/;
 const idExp = /^[a-z\d]{8}-[a-z\d]{4}-[a-z\d]{4}-[a-z\d]{4}-[a-z\d]{12}$/;
 
+// Fields of each game and of its game data served by the search API
+const apiGameFields = [
+	'id', 'title', 'alternateTitles', 'series', 'developer', 'publisher',
+	'primaryPlatform', 'platforms', 'library', 'tags', 'playMode', 'status',
+	'notes', 'source', 'releaseDate', 'version', 'originalDescription', 'language',
+	'ruffleSupport', 'dateAdded', 'dateModified', 'legacyApplicationPath', 'legacyLaunchCommand',
+	'logoPath', 'screenshotPath',
+];
+const apiGameDataFields = ['dateAdded', 'size', 'sha256', 'crc32', 'applicationPath', 'launchCommand', 'parameters'];
+
 // Prevent language definitions from being consumed when parsing codeblocks
 const codeRenderer = token => {
 	const text = (token.lang != '' ? token.lang + '\n' : '') + token.text;
@@ -622,6 +632,72 @@ export const namespaceFunctions = {
 		// Serve the translated search info
 		headers.set('Content-Type', 'application/json; charset=UTF-8');
 		return new Response(JSON.stringify(langSearchInfo), { headers: headers });
+	},
+	'search-api': async (url, headers) => {
+		const params = url.searchParams;
+
+		// Initialize database search query object
+		const search = fp.parseUserSearchInput('').search;
+		search.limit = Math.max(1, Math.min(config.pageSize, parseInt(params.get('limit'), 10) || config.pageSize));
+		search.loadRelations.gameData = true;
+
+		// If NSFW filter needs to be active, add a subfilter containing extreme tags
+		if (params.get('nsfw') != 'true') {
+			const tagsSubfilter = newSubfilter();
+			tagsSubfilter.exactBlacklist.tags = filteredTags.extreme;
+			tagsSubfilter.matchAny = true;
+
+			search.filter.subfilters.push(tagsSubfilter);
+		}
+
+		// Parse query string the same way as the search page's Simple Mode
+		search.filter.subfilters.push(fp.parseUserSearchInput(params.get('query') ?? '').search.filter);
+
+		const response = {};
+		let searchResults = [];
+		if (params.get('random') == 'true') {
+			// Pick games at random, ignoring sort and page, and don't let the same pick be cached
+			searchResults = await fp.searchGamesRandom(search, search.limit);
+			headers.set('Cache-Control', 'no-store');
+		}
+		else {
+			// Apply sort column and direction
+			const sortField = params.get('sort');
+			if (Object.hasOwn(searchInfo.sort, sortField)) {
+				search.order.column = GameSearchSortable[sortField.toUpperCase()];
+				search.order.direction = GameSearchDirection[params.get('dir') == 'desc' ? 'DESC' : 'ASC'];
+			}
+
+			// Get search result total and page info; a page past the last one is served empty
+			response.total = await fp.searchGamesTotal(search);
+			response.pages = Math.max(1, Math.ceil(response.total / search.limit));
+			response.page = Math.max(1, parseInt(params.get('page'), 10) || 1);
+			if (response.page <= response.pages) {
+				// Apply offset to query based on current page
+				if (response.page > 1) {
+					const searchIndex = await fp.searchGamesIndex(search, search.limit * (response.page - 1));
+					const offset = searchIndex[response.page - 2];
+					search.offset = {
+						value: offset.orderVal,
+						title: offset.title,
+						gameId: offset.id,
+					};
+				}
+
+				searchResults = await fp.searchGames(search);
+			}
+		}
+
+		// Keep only the fields that describe the games and their game data
+		response.games = searchResults.map(searchResult => {
+			const game = Object.fromEntries(apiGameFields.map(field => [field, searchResult[field]]));
+			game.gameData = searchResult.gameData.map(gameData => Object.fromEntries(apiGameDataFields.map(field => [field, gameData[field]])));
+			return game;
+		});
+
+		// Serve the search results
+		headers.set('Content-Type', 'application/json; charset=UTF-8');
+		return new Response(JSON.stringify(response), { headers: headers });
 	},
 	'discord': () => Response.redirect('https://discord.gg/kY8r2BbPQ9'),
 };

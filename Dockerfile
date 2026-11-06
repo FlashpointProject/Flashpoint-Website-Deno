@@ -6,4 +6,5 @@ COPY deno.json deno.lock ./
 RUN deno ci --prod --skip-types
 # Then copy the rest of the source
 COPY . .
-CMD ["deno", "run", "-A", "main.js"]
+# Same permissions as `deno task start` in deno.json
+CMD ["deno", "run", "--allow-read", "--allow-write", "--allow-net", "--allow-sys", "--allow-ffi", "main.js"]

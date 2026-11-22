@@ -21,7 +21,7 @@
 	"Chromebook_Question": "Can I use Flashpoint on a Chromebook?",
 	"Chromebook_Answer_Para1": "Yes, but only if your Chromebook's processor architecture is x86_64; $1{this video} explains how to check. You'll also need to $2{install Linux on your Chromebook}, if you haven't done so yet.",
 	"Chromebook_Answer_Para2": "Once you've verified your Chromebook's processor architecture and installed Linux, you can grab the Linux version of Flashpoint from the $1{download page}.",
-	"Android_Question": "Can I use Flashpoint on Android?",
+	"Android_Question": "Flashpoint'i Android'te kullanabilirmiyim?",
 	"Android_Answer_Para1": "No, and there are a multitude of reasons why that is not feasible at the moment:",
 	"Android_Answer_Bullet1": "The last version of Android to support and run Flash natively is 4.0 (Ice Cream Sandwich) which was released in 2011. Very few, if any, current devices can support this version of Android. Even if you were able to obtain a device running Android 4.0, installation of Flash would be impossible as the installer requires connecting to a now-defunct Adobe server.",
 	"Android_Answer_Bullet2": "The vast majority of games in Flashpoint were designed to be viewed on desktop monitors and played with a keyboard and mouse, and would not be suitable for a handheld touchscreen.",

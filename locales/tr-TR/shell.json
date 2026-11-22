@@ -1,5 +1,5 @@
 {
-	"Toggle_Sidebar": "Toggle Sidebar",
+	"Toggle_Sidebar": "Kenar çubuğunu Göster/Gizle",
 	"Logo": "Logo",
 	"Home": "Ana Sayfa",
 	"News": "Haberler",
@@ -11,6 +11,7 @@
 	"Search": "Search",
 	"Wiki": "Viki",
 	"Donate": "Bağış Yap",
-	"Select_Language": "Select Language",
-	"Change_Theme": "Change Theme"
+	"Language_Notice": "Yeni diller çok yakında!",
+	"Select_Language": "Dil Seçiniz",
+	"Change_Theme": "Temayı değiştir"
 }

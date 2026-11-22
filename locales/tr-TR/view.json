@@ -1,10 +1,10 @@
 {
 	"Logo": "Logo",
 	"Screenshot": "Ekran görüntüsü",
-	"Entry_Info": "Entry Information",
+	"Entry_Info": "Girdi Bilgisi",
 	"Add_Apps": "Ek Uygulamalar",
-	"Game_Data": "Game Data",
-	"Old_Game_Data": "View Outdated Game Data",
-	"Launching_Flashpoint": "Launching Flashpoint...",
-	"Install_Flashpoint": "If Flashpoint isn't installed, $1{get it now}."
+	"Game_Data": "Oyun Verisi",
+	"Old_Game_Data": "Eski Oyun Verilerini Görüntüle",
+	"Launching_Flashpoint": "Flashpoint başlatılıyor...",
+	"Install_Flashpoint": "Eğer Flashpoint yüklü değilse, $1{hemen indirin}."
 }

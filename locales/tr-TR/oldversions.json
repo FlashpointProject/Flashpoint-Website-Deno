@@ -1,10 +1,10 @@
 {
 	"Title": "Eski Versiyonlar",
 	"Header": "Eski Versiyonlar",
-	"Old_Versions_Para1": "Below you can find links to old Flashpoint downloads. They are provided $1{as-is}, with no guarantee that they will continue to function into the future, or that technical assistence will be provided on Discord or otherwise. This especially applies to old Infinity versions due to their internet-dependent nature.",
-	"Old_Versions_Para2": "$1{Note:} Unfortunately, a considerable number of downloads (mostly Infinity-related) have gone missing over the years due to a variety of factors. You will find them listed below, where they are colored $2{red} and cannot be clicked. If you are in possession of any of these missing downloads, let us know either $3{by email} or through the $4 channel in our $5{Discord server}.",
-	"Old_Flashpoint_5_Note": "Note: must be logged into Internet Archive account to download",
-	"Old_Flashpoint_Zero_Note": "Note: no relation to the other Flashpoint Zero",
+	"Old_Versions_Para1": "Aşağıda eski Flashpoint indirmelerine ait bağlantıları bulabilirsiniz. Bunlar, gelecekte çalışmaya devam edeceklerine ya da Discord'da veya başka bir yerde teknik destek sağlanacağına dair hiçbir garanti verilmeksizin $1{as-is}\nsunulmaktadır. Bu durum, internete bağımlı yapıları nedeniyle özellikle eski Infinity sürümleri için geçerlidir.",
+	"Old_Versions_Para2": "$1{Not:} Ne yazık ki çeşitli nedenlerden dolayı yıllar içinde önemli sayıda indirme dosyası (çoğunlukla Infinity ile ilgili olanlar) kaybolmuştur. Bunları aşağıda $2{red} kırmızı renkte ve tıklanamaz durumda listelenmiş olarak bulabilirsiniz. Bu kayıp indirmelerden herhangi biri elinizde mevcutsa $3{e-posta yoluyla} veya $5{Discord sunucumuzdaki} $4 kanalı üzerinden bize bildirin.",
+	"Old_Flashpoint_5_Note": "Not: İndirmek için Internet Archive hesabına giriş yapılmış olmalıdır",
+	"Old_Flashpoint_Zero_Note": "Not: Diğer Flashpoint Zero ile bir ilgisi yoktur",
 	"Released": "$1 tarihinde yayınlandı",
 	"Download": "İndir",
 	"Torrent": "Torrent"

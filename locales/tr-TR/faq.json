@@ -84,8 +84,8 @@
 	"Ultimate_Convert_Answer_Step1": "$1{Download Flashpoint Ultimate.} $2{$3} can be skipped, as it only contains software already present in Infinity for Windows, and should not be used on macOS and Linux.",
 	"Ultimate_Convert_Answer_Step2": "Extract each zip file. A folder named $1{$2} will be created.",
 	"Ultimate_Convert_Answer_Step3": "Move the inner contents of the Ultimate folder into your Infinity folder, allowing it to overwrite files if needed.",
-	"Ultimate_Convert_Answer_Step4": "Delete the Ultimate folder.",
-	"Ultimate_Convert_Answer_Para2": "If successfully performed, you will now have an offline-ready copy of Flashpoint.",
+	"Ultimate_Convert_Answer_Step4": "Ultimate klasörünü sil.",
+	"Ultimate_Convert_Answer_Para2": "Eğer Başarıyla Gerçekleştirildiyse artık Flashpoint'in çevrimdışı kullanıma hazır bir kopyasına sahip olucaksınız.",
 	"Playlists_Question": "How do I add or remove entries from a playlist?",
 	"Playlists_Answer_Para1": "To add an entry to a playlist, simply click and drag the entry from your search view onto the desired playlist in the left sidebar; you can then drag around the entry within the playlist to rearrange it. To remove an entry from a playlist, select the entry from within the playlist and click the circled \"X\" button near the entry's title in the right sidebar.",
 	"Playlists_Answer_Para2": "To edit a playlist's metadata, click on the playlist and then the pencil icon above the description. To delete a playlist, click the trash bin icon.",
@@ -95,8 +95,8 @@
 	"Missing_Sidebars_Answer_Para1": "In the top right corner of the launcher underneath the window buttons, there are two toggles for the left and right sidebars. Click on them to show or hide the respective sidebar.",
 	"Entry_Grid_Question": "How do I change the layout/size of the search results?",
 	"Entry_Grid_Answer_Para1": "Use the slider in the bottom right corner of the launcher to change the size that search results are rendered at. Furthermore, the dropdown menu next to it can be used to switch from a grid-based layout to a list-based one.",
-	"Recently_Played_Question": "Where can I view my recently played games?",
-	"Recently_Played_Answer_Para1": "Next to the search bar, change the sort order to \"Last Played\" and the sort direction to \"Descending\". Note that playtime tracking must be enabled in order for this to work; if it isn't, go to the $1{Config} tab and check the \"Track Playtime\" box.",
+	"Recently_Played_Question": "Son oynadığım oyunları nereden görebilirim?",
+	"Recently_Played_Answer_Para1": "Arama çubuğunun yanındaki sıralama düzenini \"Son Oynanma\" ve sıralama yönünü \"Azalan\" olarak değiştirin. Bunun çalışması için oynama süresi takibinin etkinleştirilmiş olması gerektiğini unutmayın; etkin değilse, $1{Config} sekmesine gidin ve \"Oynama Süresini Takip Et\" kutusunu işaretleyin",
 	"Extreme_Content_Question": "How do I show/hide extreme content?",
 	"Extreme_Content_Answer_Para1": "Most extreme content is hidden by default. To view your extreme filters, go to the $1{Config} tab and check the \"Show Extreme Filters\" box. Click the eye icon next to a filter to toggle it; a crossed-out eye means that entries which fall under the respective filter are hidden.",
 	"Extreme_Content_Answer_Para2": "To forcefully disable extreme content from appearing in the launcher (for example, if you have children using Flashpoint), use a text editor to open the $1{$2} file in the root of your Flashpoint folder, and change the $1{$3} value next to $1{$4} to $1{$5}. Alternatively, to $6{permanently and irreversibly} remove all content belonging to a certain filter from your Flashpoint copy, click the trash bin icon next to the filter to nuke it.",
@@ -118,6 +118,6 @@
 	"Entry_Shortcuts_Answer_Para2": "If you've done everything right, a shortcut should appear in the folder you chose. Launching the shortcut should open a standalone instance of the desired entry.",
 	"LaunchBox_Question": "How can I add entries from Flashpoint to my LaunchBox collection?",
 	"LaunchBox_Answer_Para1": "You can use $1{this tool} to import entries and playlists from Flashpoint into LaunchBox.",
-	"Troubleshooting_Header": "Troubleshooting",
-	"Troubleshooting_Para1": "Please see the $1{Troubleshooting page} on the wiki."
+	"Troubleshooting_Header": "Sorun giderme",
+	"Troubleshooting_Para1": "Lütfen vikideki $1{Sorun Giderme sayfasına} bakın.\n"
 }

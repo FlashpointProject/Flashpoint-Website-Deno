@@ -14,7 +14,7 @@
 	"FPCurator_Description": "Flashpoint kürasyonlarını yönetmek ve otomatik olarak oluşturmak için bir araç.",
 	"Old_CPU_Simulator_Description": "Uygulamaları simüle edilmiş saat hızlarında çalıştıran bir yardımcı Araç; modern bilgisayarlarda çok hızlı çalışan oyunların kare hızını sınırlamak için kullanılır.",
 	"Source_Para2": "Flashpoint ayrıca aşağıdaki üçüncü taraf açık kaynaklı projeleri kullanmaktadır:",
-	"Apache_Description": "Henüz modern Flashpoint Game Server'ı kullanacak şekilde uyarlanmamış eski Flashpoint girdilerini çalıştırmak için kullanılan bir web sunucusu yazılımı.",
+	"Apache_Description": "Henüz modern Flashpoint Game Server'ı kullanacak şekilde uyarlanmamış eski Flashpoint kayıtlarını çalıştırmak için kullanılan bir web sunucusu yazılımı.",
 	"Basilisk_Description": "NPAPI eklentilerini destekleyen, Quantum öncesi Firefox tabanlı bir web tarayıcısı. Flashpoint'e dahil edilen sürümü, lisans kısıtlamaları nedeniyle $1{Flashpoint Navigator} olarak yeniden markalandırılmıştır; deposuna $2{here} buradan ulaşabilirsiniz.",
 	"Chromium_Description": "Google tarafından geliştirilen, daha yeni ve yoğun kaynak gerektiren HTML5 içeriklerini çalıştırabilen modern bir web tarayıcısı.",
 	"MediaWiki_Description": "Flashpoint Wiki'yi çalıştırmak için kullanılan yazılım.",

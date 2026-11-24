@@ -116,8 +116,8 @@
 	"Entry_Shortcuts_Answer_Step5": "Open the terminal in the root of your Flashpoint folder, and run the respective command for your platform:",
 	"Entry_Shortcuts_Answer_Step6": "When prompted, select a folder in which to save the shortcut.",
 	"Entry_Shortcuts_Answer_Para2": "If you've done everything right, a shortcut should appear in the folder you chose. Launching the shortcut should open a standalone instance of the desired entry.",
-	"LaunchBox_Question": "How can I add entries from Flashpoint to my LaunchBox collection?",
-	"LaunchBox_Answer_Para1": "You can use $1{this tool} to import entries and playlists from Flashpoint into LaunchBox.",
+	"LaunchBox_Question": "Flashpoint'ten LaunchBox koleksiyonuma nasıl öğe ekleyebilirim?",
+	"LaunchBox_Answer_Para1": "Flashpoint'ten LaunchBox'a kayıtları ve oynatma listelerini aktarmak için $1{bu aracı} kullanabilirsiniz.",
 	"Troubleshooting_Header": "Sorun giderme",
 	"Troubleshooting_Para1": "Lütfen vikideki $1{Sorun Giderme sayfasına} bakın.\n"
 }

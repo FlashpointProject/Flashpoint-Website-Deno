@@ -15,7 +15,7 @@
 	"Sort_By": "Sırala:",
 	"Sort_Ascending": "Artan",
 	"Sort_Descending": "Azalan",
-	"Toggle_NSFW": "NSFW Kayıtlarını Göster",
+	"Toggle_NSFW": "NSFW İçeriklerini Göster",
 	"Toggle_Any": "Herhangi birini seç",
 	"Toggle_Advanced": "Gelişmiş Ayarlara Geçin",
 	"Toggle_Simple": "Basit Moda Geçin",
@@ -27,7 +27,7 @@
 	"Library_Totals": "Kütüphaneye Göre Toplam Girdi",
 	"Format_Totals": "Biçime Göre Toplam Girdi",
 	"Platform_Totals": "Platforma Göre Toplam Girdi",
-	"Tag_Totals": "Kayıt Sayısına Göre En Popüler İlk $1 Etiket",
+	"Tag_Totals": "Girdi Sayısına Göre En Popüler İlk $1 Etiket",
 	"Platform": "Platform",
 	"Tag": "Etiket",
 	"Total": "Toplam"

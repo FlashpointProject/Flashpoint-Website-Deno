@@ -1,6 +1,6 @@
 {
-	"Title": "Eski Versiyonlar",
-	"Header": "Eski Versiyonlar",
+	"Title": "Eski Sürümler",
+	"Header": "Eski Sürümler",
 	"Old_Versions_Para1": "Aşağıda eski Flashpoint indirmelerine ait bağlantıları bulabilirsiniz. Bunlar, gelecekte çalışmaya devam edeceklerine ya da Discord'da veya başka bir yerde teknik destek sağlanacağına dair hiçbir garanti verilmeksizin $1{as-is}\nsunulmaktadır. Bu durum, internete bağımlı yapıları nedeniyle özellikle eski Infinity sürümleri için geçerlidir.",
 	"Old_Versions_Para2": "$1{Not:} Ne yazık ki çeşitli nedenlerden dolayı yıllar içinde önemli sayıda indirme dosyası (çoğunlukla Infinity ile ilgili olanlar) kaybolmuştur. Bunları aşağıda $2{red} kırmızı renkte ve tıklanamaz durumda listelenmiş olarak bulabilirsiniz. Bu kayıp indirmelerden herhangi biri elinizde mevcutsa $3{e-posta yoluyla} veya $5{Discord sunucumuzdaki} $4 kanalı üzerinden bize bildirin.",
 	"Old_Flashpoint_5_Note": "Not: İndirmek için Internet Archive hesabına giriş yapılmış olmalıdır",

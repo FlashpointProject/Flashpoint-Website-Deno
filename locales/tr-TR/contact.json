@@ -1,0 +1,7 @@
+{
+	"Title": "İletişim",
+	"Header": "İletişim",
+	"Contact_Para1": "Eğer proje ile doğrudan iletişime geçmeniz gerekiyorsa, $1{flashpoint (et) bluemaxima (nokta) org} adresine bir e-posta gönderin.",
+	"Contact_Para2": "Flashpoint, 2020'den sonra tarayıcıda Flash destekli içerikleri kullanılabilir hale getirmeye yönelik hizmet sunmamaktadır. Lütfen bunun yerine $1{Ruffle} gibi projelere göz atın.",
+	"Contact_Para3": "Arşivleme talepleri e-posta yoluyla yapılmamalıdır; bunun yerine $1{bu kılavuzu takip edin}. Sorun giderme e-postaları kabul edilmektedir, ancak lütfen önce $2{FAQ} bölümünü okuyun."
+}
